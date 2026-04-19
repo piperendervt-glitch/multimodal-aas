@@ -9,3 +9,10 @@ six==1.17.0
 tzdata==2026.1
 urllib3==2.6.3
 yt-dlp==2026.3.17
+
+# Phase 1.2 — visual node (YOLOv8n) and audio node (BirdNET)
+ultralytics==8.3.40
+birdnetlib==0.18.0
+librosa==0.10.2.post1
+resampy==0.4.3
+tensorflow==2.21.0

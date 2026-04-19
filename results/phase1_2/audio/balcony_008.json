@@ -1,0 +1,80 @@
+{
+  "video_id": "balcony_008",
+  "modality": "audio",
+  "extraction": {
+    "audio_path": "data/processed/audio/balcony_008.wav",
+    "duration_sec": 62.206,
+    "sample_rate": 16000
+  },
+  "birdnet_results": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.2184,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1576,
+        "time_range": [
+          36.0,
+          39.0
+        ]
+      }
+    ],
+    "filtered_relevant": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.2184,
+        "time_range": [
+          18.0,
+          21.0
+        ],
+        "matched": "sparrow"
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1576,
+        "time_range": [
+          36.0,
+          39.0
+        ],
+        "matched": "sparrow"
+      }
+    ]
+  },
+  "llm_response_raw": "{\n  \"predictions\": {\n    \"sparrow\": 1,\n    \"bulbul\": 0\n  },\n  \"confidence\": {\n    \"sparrow\": 0.2184,\n    \"bulbul\": 0.0\n  },\n  \"reasoning\": \"BirdNETがスズメを検出したため\"\n}",
+  "llm_response": {
+    "raw": "{\n  \"predictions\": {\n    \"sparrow\": 1,\n    \"bulbul\": 0\n  },\n  \"confidence\": {\n    \"sparrow\": 0.2184,\n    \"bulbul\": 0.0\n  },\n  \"reasoning\": \"BirdNETがスズメを検出したため\"\n}",
+    "predictions": {
+      "sparrow": 1,
+      "bulbul": 0
+    },
+    "confidence": {
+      "sparrow": 0.2184,
+      "bulbul": 0.0
+    },
+    "reasoning": "BirdNETがスズメを検出したため"
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "timing": {
+    "extract_sec": 0.083,
+    "birdnet_sec": 0.791,
+    "llm_sec": 4.401
+  },
+  "elapsed_sec": 5.275
+}

@@ -1,0 +1,95 @@
+{
+  "video_id": "balcony_010",
+  "modality": "audio",
+  "extraction": {
+    "audio_path": "data/processed/audio/balcony_010.wav",
+    "duration_sec": 89.211,
+    "sample_rate": 16000
+  },
+  "birdnet_results": {
+    "all_detections": [
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.9201,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Mallard",
+        "scientific_name": "Anas platyrhynchos",
+        "confidence": 0.1254,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Common Merganser",
+        "scientific_name": "Mergus merganser",
+        "confidence": 0.2206,
+        "time_range": [
+          63.0,
+          66.0
+        ]
+      },
+      {
+        "species": "Mallard",
+        "scientific_name": "Anas platyrhynchos",
+        "confidence": 0.1237,
+        "time_range": [
+          63.0,
+          66.0
+        ]
+      },
+      {
+        "species": "Common Merganser",
+        "scientific_name": "Mergus merganser",
+        "confidence": 0.1241,
+        "time_range": [
+          66.0,
+          69.0
+        ]
+      },
+      {
+        "species": "Gray Heron",
+        "scientific_name": "Ardea cinerea",
+        "confidence": 0.1139,
+        "time_range": [
+          87.0,
+          90.0
+        ]
+      }
+    ],
+    "filtered_relevant": []
+  },
+  "llm_response_raw": "{\n  \"predictions\": {\n    \"sparrow\": 0,\n    \"bulbul\": 0\n  },\n  \"confidence\": {\n    \"sparrow\": 0.0,\n    \"bulbul\": 0.0\n  },\n  \"reasoning\": \"関連する鳥種が検出されなかった\"\n}",
+  "llm_response": {
+    "raw": "{\n  \"predictions\": {\n    \"sparrow\": 0,\n    \"bulbul\": 0\n  },\n  \"confidence\": {\n    \"sparrow\": 0.0,\n    \"bulbul\": 0.0\n  },\n  \"reasoning\": \"関連する鳥種が検出されなかった\"\n}",
+    "predictions": {
+      "sparrow": 0,
+      "bulbul": 0
+    },
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    },
+    "reasoning": "関連する鳥種が検出されなかった"
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": false
+  },
+  "timing": {
+    "extract_sec": 0.097,
+    "birdnet_sec": 1.14,
+    "llm_sec": 4.397
+  },
+  "elapsed_sec": 5.633
+}

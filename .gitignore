@@ -14,7 +14,12 @@ data/raw/
 data/balcony/
 data/xeno_canto/
 data/youtube_streams/
+data/processed/
 logs/
+
+# Model weights downloaded at runtime
+yolov8n.pt
+*.pt
 
 # Jupyter
 .ipynb_checkpoints/

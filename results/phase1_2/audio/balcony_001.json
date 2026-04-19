@@ -1,0 +1,50 @@
+{
+  "video_id": "balcony_001",
+  "modality": "audio",
+  "extraction": {
+    "audio_path": "data/processed/audio/balcony_001.wav",
+    "duration_sec": 361.813,
+    "sample_rate": 16000
+  },
+  "birdnet_results": {
+    "all_detections": [
+      {
+        "species": "Northern Fulmar",
+        "scientific_name": "Fulmarus glacialis",
+        "confidence": 0.1556,
+        "time_range": [
+          240.0,
+          243.0
+        ]
+      }
+    ],
+    "filtered_relevant": []
+  },
+  "llm_response_raw": "{\n  \"predictions\": {\n    \"sparrow\": 0,\n    \"bulbul\": 0\n  },\n  \"confidence\": {\n    \"sparrow\": 0.0,\n    \"bulbul\": 0.0\n  },\n  \"reasoning\": \"関連する種が検出されなかった\"\n}",
+  "llm_response": {
+    "raw": "{\n  \"predictions\": {\n    \"sparrow\": 0,\n    \"bulbul\": 0\n  },\n  \"confidence\": {\n    \"sparrow\": 0.0,\n    \"bulbul\": 0.0\n  },\n  \"reasoning\": \"関連する種が検出されなかった\"\n}",
+    "predictions": {
+      "sparrow": 0,
+      "bulbul": 0
+    },
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    },
+    "reasoning": "関連する種が検出されなかった"
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "timing": {
+    "extract_sec": 0.184,
+    "birdnet_sec": 6.974,
+    "llm_sec": 4.406
+  },
+  "elapsed_sec": 11.564
+}
