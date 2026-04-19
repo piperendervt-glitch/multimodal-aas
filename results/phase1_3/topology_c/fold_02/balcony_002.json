@@ -1,0 +1,172 @@
+{
+  "video_id": "balcony_002",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_002.wav",
+    "duration_sec": 41.401,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 41,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 41,
+    "frames_with_bird": 10,
+    "max_bbox_size_relative": 0.151,
+    "avg_bbox_size_relative": 0.1254,
+    "std_bbox_size": 0.0174,
+    "max_detection_confidence": 0.9606,
+    "avg_detection_confidence": 0.6117,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 41,
+      "frames_with_bird": 10,
+      "max_bbox_size_relative": 0.151,
+      "avg_bbox_size_relative": 0.1254,
+      "std_bbox_size": 0.0174,
+      "avg_detection_confidence": 0.6117,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [],
+      "target_species_found": false,
+      "total_detections": 0,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.92},\n  \"reasoning\": \"中型の bbox サイズが多いため\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.92
+      },
+      "reasoning": "中型の bbox サイズが多いため",
+      "modality_used": "visual",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.559
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.92
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.514,
+    "yolo": 0.986,
+    "llm": 4.559,
+    "total": 6.059
+  },
+  "topology": "C",
+  "fold": 2
+}

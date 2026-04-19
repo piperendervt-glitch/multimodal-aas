@@ -8,6 +8,9 @@ across folds. Detections are split into:
   * ``filtered_target_species`` — sparrow / bulbul hits at or above
     ``target_min_conf``, collapsed to one record per species with the
     max confidence and the total number of 3-second windows.
+    When ``target_min_conf`` is ``None`` the threshold filter is
+    skipped entirely and this list is empty (Topology C uses this
+    branch to forward every BirdNET detection to the LLM).
   * ``other_birds``          — species names that did not match either
     target, sorted and de-duplicated.
 """
@@ -50,8 +53,15 @@ class BirdNetAnalyzer:
     def analyze(
         self,
         audio_path: Path,
-        target_min_conf: float = DEFAULT_TARGET_MIN_CONF,
+        target_min_conf: float | None = DEFAULT_TARGET_MIN_CONF,
     ) -> dict[str, Any]:
+        """Run BirdNET and return raw + filtered detections.
+
+        ``target_min_conf=None`` disables the sparrow/bulbul threshold
+        filter (Topology C). ``filtered_target_species`` is then an
+        empty list and the caller is expected to consume
+        ``all_detections`` directly.
+        """
         from birdnetlib import Recording
 
         rec = Recording(
@@ -76,9 +86,26 @@ class BirdNetAnalyzer:
                 ],
             })
 
+        if target_min_conf is None:
+            other_set: set[str] = set()
+            for d in all_detections:
+                sci = d["scientific_name"]
+                com = d["species"]
+                is_target = (
+                    SPARROW_SCI in sci or SPARROW_COMMON in com
+                    or BULBUL_SCI in sci or BULBUL_COMMON in com
+                )
+                if not is_target:
+                    other_set.add(com or "(unknown)")
+            return {
+                "all_detections": all_detections,
+                "filtered_target_species": [],
+                "other_birds": sorted(other_set),
+            }
+
         sparrow_hits: list[dict[str, Any]] = []
         bulbul_hits: list[dict[str, Any]] = []
-        other_set: set[str] = set()
+        other_set = set()
         for d in all_detections:
             sci = d["scientific_name"]
             com = d["species"]
