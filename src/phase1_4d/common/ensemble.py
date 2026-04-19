@@ -31,6 +31,28 @@ def weighted_vote(
     return out
 
 
+def weighted_vote_label_specific(
+    preds: dict[str, dict[str, int]],
+    weights: dict[str, dict[str, float]],
+    threshold: float = 0.5,
+) -> dict[str, int]:
+    """Per-label weighted vote for Phase 1.4d Stage 1 Experiment 3.
+
+    Each topology has independent weights for ``sparrow`` and ``bulbul``,
+    so the ensemble can express different relative trusts per label.
+    ``weights`` shape: ``{"A": {"sparrow": ..., "bulbul": ...}, ...}``.
+    """
+    out: dict[str, int] = {}
+    for cls in ("sparrow", "bulbul"):
+        total = sum(weights[k][cls] for k in preds.keys())
+        if total <= 0:
+            out[cls] = 0
+            continue
+        score = sum(weights[k][cls] * preds[k][cls] for k in preds.keys()) / total
+        out[cls] = 1 if score >= threshold else 0
+    return out
+
+
 def _f1(tp: int, fp: int, fn: int) -> float:
     if tp == 0:
         return 0.0
