@@ -52,6 +52,8 @@ from phase1_4d.common.flow_weight import (
     update_weight_sdnd_proof,
 )
 
+from typing import Callable
+
 YT_METADATA_PATH = REPO_ROOT / "data" / "youtube_metadata.json"
 LABELS_PATH = REPO_ROOT / "data" / "labels" / "phase1_labels.json"
 TOPOLOGY_BASES = {
@@ -124,7 +126,17 @@ def build_fold_records() -> list[dict[str, Any]]:
     return records
 
 
-def run_trial(records: list[dict[str, Any]], seed: int) -> dict[str, Any]:
+def run_trial(
+    records: list[dict[str, Any]],
+    seed: int,
+    update_fn: Callable[[float, bool], float] = update_weight_sdnd_proof,
+) -> dict[str, Any]:
+    """Run one Fixed / Adaptive trial with a configurable update rule.
+
+    ``update_fn(w, success) -> new_w`` is applied per-topology after every
+    fold in the Adaptive branch. The default is the sdnd-proof rule used
+    in Experiment 1; Experiment 2 passes the relaxed rule here.
+    """
     rng = random.Random(seed)
     order = list(range(len(records)))
     rng.shuffle(order)
@@ -164,7 +176,7 @@ def run_trial(records: list[dict[str, Any]], seed: int) -> dict[str, Any]:
         for t in ("A", "B", "C"):
             success = is_topology_success(rec["predictions"][t], rec["ground_truth"])
             topology_success[t] = success
-            adaptive_weights[t] = update_weight_sdnd_proof(adaptive_weights[t], success)
+            adaptive_weights[t] = update_fn(adaptive_weights[t], success)
 
         adaptive_per_fold.append({
             "step": step,

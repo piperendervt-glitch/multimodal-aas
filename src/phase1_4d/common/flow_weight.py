@@ -24,6 +24,25 @@ def update_weight_sdnd_proof(w: float, success: bool) -> float:
     return w * FAILURE_MULTIPLIER
 
 
+RELAXED_FAILURE_MULTIPLIER = 0.9
+
+
+def update_weight_relaxed(w: float, success: bool, failure_rate: float = RELAXED_FAILURE_MULTIPLIER) -> float:
+    """Phase 1.4d Stage 1 Experiment 2 rule: softer penalty.
+
+    The Experiment 1 evaluation showed that the sdnd-proof asymmetry
+    (0.7 multiplicative penalty) collapsed the adaptive ensemble onto
+    Topology C and lost the diversity benefit of the fixed equal-weight
+    vote. Experiment 2 tests a single change — keep the same success
+    step (+0.1 * (1 - w)) but raise the failure multiplier toward 1
+    (default 0.9) so weaker topologies decay more slowly and stay in
+    the vote.
+    """
+    if success:
+        return w + SUCCESS_STEP * (1.0 - w)
+    return w * failure_rate
+
+
 def is_topology_success(topology_pred: dict[str, int], ground_truth: dict[str, int]) -> bool:
     """Label-level correctness: success iff both sparrow and bulbul match."""
     return (
