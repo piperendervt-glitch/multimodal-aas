@@ -9,8 +9,11 @@ __pycache__/
 .Python
 *.egg-info/
 
-# Data (large files, not committed)
-data/
+# Data — raw media is not committed; JSON metadata and labels are.
+data/raw/
+data/balcony/
+data/xeno_canto/
+data/youtube_streams/
 logs/
 
 # Jupyter

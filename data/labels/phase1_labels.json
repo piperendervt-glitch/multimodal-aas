@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase1",
+  "task": "binary_classification_with_both",
+  "species_codes": {
+    "sparrow": {
+      "jp": "スズメ",
+      "scientific": "Passer montanus",
+      "english": "Eurasian Tree Sparrow"
+    },
+    "bulbul": {
+      "jp": "ヒヨドリ",
+      "scientific": "Hypsipetes amaurotis",
+      "english": "Brown-eared Bulbul"
+    }
+  },
+  "labels": [
+    {
+      "video_id": "balcony_001",
+      "filename": "Bird watching (chats_) 02.mp4",
+      "primary_label": "bulbul",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_002",
+      "filename": "Bird watching (chats_) 03.mp4",
+      "primary_label": "bulbul",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_003",
+      "filename": "Bird watching (chats_).mp4",
+      "primary_label": "bulbul",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_004",
+      "filename": "Bird watching (Hypsipetes amaurotis).mp4",
+      "primary_label": "bulbul",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_005",
+      "filename": "Bird watching (sparrow & Hypsipetes amaurotis).mp4",
+      "primary_label": "both",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_006",
+      "filename": "Bird watching (sparrow) 02.mp4",
+      "primary_label": "sparrow",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_007",
+      "filename": "Bird watching (sparrow).mp4",
+      "primary_label": "sparrow",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_008",
+      "filename": "Bird watching 08 (sparrow).mp4",
+      "primary_label": "sparrow",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_009",
+      "filename": "Bird watching 09 (sparrow).mp4",
+      "primary_label": "sparrow",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_010",
+      "filename": "Bird watching 10 (sparrow & Hypsipetes amaurotis).mp4",
+      "primary_label": "both",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "balcony",
+      "review_needed": true
+    },
+    {
+      "video_id": "balcony_011",
+      "filename": "sparrow(Hokkaido).mp4",
+      "primary_label": "sparrow",
+      "has_audio_call": null,
+      "num_individuals": null,
+      "notes": "",
+      "location_detail": "hokkaido",
+      "review_needed": true
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-04-19T02:45:54+00:00",
+  "source": "self_recorded",
+  "device": "webcam",
+  "location": "balcony",
+  "videos": [
+    {
+      "video_id": "balcony_001",
+      "filename": "Bird watching (chats_) 02.mp4",
+      "file_size_bytes": 14575012,
+      "sha256": "2f74f00b8bf6cf709be39d0081c53f596e6543a52f953f4e6b5d73f7723b3b55",
+      "duration_sec": 361.813,
+      "resolution": "480x360",
+      "fps": 30,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_002",
+      "filename": "Bird watching (chats_) 03.mp4",
+      "file_size_bytes": 1811705,
+      "sha256": "afca382b6ad2bc979cc89215839993684f06f303ab075ce487a56e58fe0f1762",
+      "duration_sec": 41.401,
+      "resolution": "480x360",
+      "fps": 30,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_003",
+      "filename": "Bird watching (chats_).mp4",
+      "file_size_bytes": 6983618,
+      "sha256": "38fddc92da67fd3102cfdee12cbb98e9dec493af601159a0d7ae5c787df2d82e",
+      "duration_sec": 167.323,
+      "resolution": "480x360",
+      "fps": 30,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_004",
+      "filename": "Bird watching (Hypsipetes amaurotis).mp4",
+      "file_size_bytes": 6328222,
+      "sha256": "a49604d899d243843ec8a78a187bb61c7683fc5153b8a5ab679e0cb1cf0cb014",
+      "duration_sec": 144.869,
+      "resolution": "480x360",
+      "fps": 30,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_005",
+      "filename": "Bird watching (sparrow & Hypsipetes amaurotis).mp4",
+      "file_size_bytes": 7870325,
+      "sha256": "4e508c671028df4b6fbee6d225abe6d1f27da0ae853b39f8d57f6e30ff1c56ff",
+      "duration_sec": 197.346,
+      "resolution": "480x360",
+      "fps": 30,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_006",
+      "filename": "Bird watching (sparrow) 02.mp4",
+      "file_size_bytes": 6113606,
+      "sha256": "04f7d0dbbce95870ab7f73061d8c1d1d6adda4380f3f456a88a8cdde6f772330",
+      "duration_sec": 159.684,
+      "resolution": "480x360",
+      "fps": 30,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_007",
+      "filename": "Bird watching (sparrow).mp4",
+      "file_size_bytes": 5320647,
+      "sha256": "3b331cdb5e256fca6d9dc636930c9de65e66cc6d7f5e7fdbf23ad622779113bd",
+      "duration_sec": 241.766,
+      "resolution": "540x360",
+      "fps": 20,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_008",
+      "filename": "Bird watching 08 (sparrow).mp4",
+      "file_size_bytes": 13301036,
+      "sha256": "b5d1751e11840d56c273ea53d1f0635a0be769426649ca051d107e6701412396",
+      "duration_sec": 62.206,
+      "resolution": "960x720",
+      "fps": 15,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_009",
+      "filename": "Bird watching 09 (sparrow).mp4",
+      "file_size_bytes": 21332007,
+      "sha256": "61f7f001f212d03c9fba86e5cae9e3bd3bdf7f928a85cf0820da526492e91f23",
+      "duration_sec": 155.086,
+      "resolution": "960x720",
+      "fps": 15,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_010",
+      "filename": "Bird watching 10 (sparrow & Hypsipetes amaurotis).mp4",
+      "file_size_bytes": 19005121,
+      "sha256": "281ce4f25d40f62ea68ba8d27d9aeed8dc19dab0bddc9cb126302eb6b0bb12bc",
+      "duration_sec": 89.211,
+      "resolution": "960x720",
+      "fps": 15,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    },
+    {
+      "video_id": "balcony_011",
+      "filename": "sparrow(Hokkaido).mp4",
+      "file_size_bytes": 2018644,
+      "sha256": "fffc61795643a0980b650c16e38462eb23446566ca8f93206af401f040304eb0",
+      "duration_sec": 42.818,
+      "resolution": "636x360",
+      "fps": 29.947,
+      "codec_video": "h264",
+      "codec_audio": "aac",
+      "has_audio": true
+    }
+  ]
+}
