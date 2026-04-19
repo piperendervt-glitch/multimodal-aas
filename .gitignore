@@ -26,6 +26,9 @@ Thumbs.db
 
 # Secrets
 .env
+.env.local
+.env.*
+!.env.example
 *.key
 
 # Claude Code local state

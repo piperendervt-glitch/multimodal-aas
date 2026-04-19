@@ -79,6 +79,33 @@ are documented in `docs/data_sources.md`.
 | 3 | CC-licensed video | attribution and license tracked per clip |
 | 4 | Balcony (self-recorded) | primary evaluation set |
 
+## Running the Xeno-canto Smoke Test
+
+`src/xeno_canto_test.py` reads the API key from the shell environment
+variable `XENO_CANTO_API_KEY` (no `.env` file is used). Register at
+https://xeno-canto.org/account to obtain a free key, then:
+
+```powershell
+# PowerShell (current session)
+$env:XENO_CANTO_API_KEY = "<your key>"
+.\.venv\Scripts\python.exe src\xeno_canto_test.py
+```
+
+```bash
+# bash / WSL
+export XENO_CANTO_API_KEY=<your key>
+./.venv/Scripts/python.exe src/xeno_canto_test.py
+```
+
+To persist the key across PowerShell sessions:
+
+```powershell
+[Environment]::SetEnvironmentVariable("XENO_CANTO_API_KEY", "<your key>", "User")
+```
+
+The script exits with code 2 and prints an instruction message if the
+variable is missing, 1 on any HTTP / network error, and 0 on success.
+
 ## References
 
 - sdnd-proof (AAS v1, LLM-node version):
