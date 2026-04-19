@@ -15,7 +15,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/JCGgh5zvEeE.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -24,7 +24,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 10747124,
-      "youtube_title": "title:スズメの鳴き声（地鳴き）"
+      "youtube_title": "title:スズメの鳴き声（地鳴き）",
+      "tier": "B",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": true,
+      "trim_start_sec": 30,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_HFN1MX3D4yM",
@@ -35,7 +42,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/HFN1MX3D4yM.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -44,7 +51,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 364119,
-      "youtube_title": "title:スズメ（鳴き声と3次元声紋：日本野鳥の会）"
+      "youtube_title": "title:スズメ（鳴き声と3次元声紋：日本野鳥の会）",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_ToG_e-OQWwI",
@@ -55,7 +69,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/ToG_e-OQWwI.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -64,7 +78,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 614256,
-      "youtube_title": "title:「こんにちはスズメ」さえずり"
+      "youtube_title": "title:「こんにちはスズメ」さえずり",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_sljwOG3KU2g",
@@ -75,7 +96,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/sljwOG3KU2g.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -84,7 +105,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 775195,
-      "youtube_title": "title:「こんにちはスズメ」地鳴き"
+      "youtube_title": "title:「こんにちはスズメ」地鳴き",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_b12Fb3C7LcY",
@@ -95,7 +123,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/b12Fb3C7LcY.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -104,7 +132,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 7560330,
-      "youtube_title": "title:スズメ幼鳥2羽 朝一番のさえずり"
+      "youtube_title": "title:スズメ幼鳥2羽 朝一番のさえずり",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_evVHoDIv1hE",
@@ -115,7 +150,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/evVHoDIv1hE.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -124,7 +159,14 @@
       "resolution": "640x360",
       "fps": 14.985,
       "file_size_bytes": 584155,
-      "youtube_title": "title:スズメ　(野鳥HD)"
+      "youtube_title": "title:スズメ　(野鳥HD)",
+      "tier": "B'",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_Ji1jooZwBSo",
@@ -144,7 +186,12 @@
       "resolution": null,
       "fps": null,
       "file_size_bytes": null,
-      "youtube_title": null
+      "youtube_title": null,
+      "tier": null,
+      "usable": false,
+      "exclusion_reason": "failed",
+      "requires_trim": false,
+      "trim_start_sec": null
     },
     {
       "video_id": "yt_RbGhZOyR7Pg",
@@ -155,7 +202,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/RbGhZOyR7Pg.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -164,7 +211,14 @@
       "resolution": "640x360",
       "fps": 25,
       "file_size_bytes": 12700162,
-      "youtube_title": "title:スズメが出す音 【効果音】朝のスズメの鳴き声"
+      "youtube_title": "title:スズメが出す音 【効果音】朝のスズメの鳴き声",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_YFdbUv65QIw",
@@ -175,7 +229,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/YFdbUv65QIw.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -184,7 +238,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 8305561,
-      "youtube_title": "title:卒業研究「夜明けにスズメが盛んに鳴くのはなぜか―鳴き声の連続回数に着目して―」神戸大学附属中等教育学校卒業研究優秀者発表会(2024/7/18)"
+      "youtube_title": "title:卒業研究「夜明けにスズメが盛んに鳴くのはなぜか―鳴き声の連続回数に着目して―」神戸大学附属中等教育学校卒業研究優秀者発表会(2024/7/18)",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_ZRQLsbGEVG8",
@@ -195,7 +256,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/ZRQLsbGEVG8.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -204,7 +265,14 @@
       "resolution": "360x640",
       "fps": 30,
       "file_size_bytes": 1935022,
-      "youtube_title": "title:スズメの鳴き声（スズメのなる木）"
+      "youtube_title": "title:スズメの鳴き声（スズメのなる木）",
+      "tier": "A",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_Z6-WL8woFPk",
@@ -215,7 +283,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/Z6-WL8woFPk.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -224,7 +292,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 2585674,
-      "youtube_title": "title:【鳥の鳴き声】スズメの鳴き声01さえずりと地鳴き？Eurasian Tree Sparrow / Passer montanus  身近な生き物語 【wild birds sounds】"
+      "youtube_title": "title:【鳥の鳴き声】スズメの鳴き声01さえずりと地鳴き？Eurasian Tree Sparrow / Passer montanus  身近な生き物語 【wild birds sounds】",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_xhvf73wRJVM",
@@ -235,7 +310,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 0,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/sparrow/xhvf73wRJVM.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -244,7 +319,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 7127402,
-      "youtube_title": "title:スズメ Tree Sparrow (Passer montanus)【狩猟鳥】"
+      "youtube_title": "title:スズメ Tree Sparrow (Passer montanus)【狩猟鳥】",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_TPgyTtnlYak",
@@ -255,7 +337,7 @@
       "source": "grok",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/TPgyTtnlYak.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -264,7 +346,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 489206,
-      "youtube_title": "title:ヒヨドリ：地鳴き（鳴き声と3次元声紋：日本野鳥の会）"
+      "youtube_title": "title:ヒヨドリ：地鳴き（鳴き声と3次元声紋：日本野鳥の会）",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_p-te4rfSFlo",
@@ -275,7 +364,7 @@
       "source": "grok",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/p-te4rfSFlo.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -284,7 +373,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 407320,
-      "youtube_title": "title:ヒヨドリ：地鳴き(飛翔の声)（鳴き声と3次元声紋：日本野鳥の会）"
+      "youtube_title": "title:ヒヨドリ：地鳴き(飛翔の声)（鳴き声と3次元声紋：日本野鳥の会）",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_4QdQnWqiekY",
@@ -295,7 +391,7 @@
       "source": "grok",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/4QdQnWqiekY.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -304,7 +400,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 345390,
-      "youtube_title": "title:ヒヨドリ：地鳴き(夕方の鳴き合い)（鳴き声と3次元声紋：日本野鳥の会）"
+      "youtube_title": "title:ヒヨドリ：地鳴き(夕方の鳴き合い)（鳴き声と3次元声紋：日本野鳥の会）",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_kMWUQOW-bTM",
@@ -315,7 +418,7 @@
       "source": "grok",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/kMWUQOW-bTM.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -324,7 +427,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 3947529,
-      "youtube_title": "title:【解説付き】ヒヨドリの鳴き声６種（地鳴き）"
+      "youtube_title": "title:【解説付き】ヒヨドリの鳴き声６種（地鳴き）",
+      "tier": "B",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": true,
+      "trim_start_sec": 30,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_QxKLx__Nzn4",
@@ -335,7 +445,7 @@
       "source": "grok",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/QxKLx__Nzn4.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -344,7 +454,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 2671623,
-      "youtube_title": "title:歌うヒヨドリ 独唱 鳴き声 地鳴き さえずり brown-eared bulbul 野鳥動画 野鳥観察 かわいい"
+      "youtube_title": "title:歌うヒヨドリ 独唱 鳴き声 地鳴き さえずり brown-eared bulbul 野鳥動画 野鳥観察 かわいい",
+      "tier": "B",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": true,
+      "trim_start_sec": 30,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_jk15DbXQV6A",
@@ -355,7 +472,7 @@
       "source": "grok",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/jk15DbXQV6A.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -364,7 +481,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 2246448,
-      "youtube_title": "title:ヒヨドリのさえずり"
+      "youtube_title": "title:ヒヨドリのさえずり",
+      "tier": "B",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": true,
+      "trim_start_sec": 30,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_lnyw5TOMea8",
@@ -375,7 +499,7 @@
       "source": "grok",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/lnyw5TOMea8.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -384,7 +508,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 4162477,
-      "youtube_title": "title:ヒヨドリの鳴き声"
+      "youtube_title": "title:ヒヨドリの鳴き声",
+      "tier": "B",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": true,
+      "trim_start_sec": 30,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_-DYmOCTDWc0",
@@ -395,7 +526,7 @@
       "source": "claude",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/-DYmOCTDWc0.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -404,7 +535,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 8461443,
-      "youtube_title": "title:【解説付き】ヒヨドリの鳴き声（地鳴き）"
+      "youtube_title": "title:【解説付き】ヒヨドリの鳴き声（地鳴き）",
+      "tier": "B",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": true,
+      "trim_start_sec": 30,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_vmrbbEe9R6M",
@@ -415,7 +553,7 @@
       "source": "claude",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/vmrbbEe9R6M.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -424,7 +562,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 12461591,
-      "youtube_title": "title:Brown-eared Bulbul Calling ヒヨドリの鳴き声2種類"
+      "youtube_title": "title:Brown-eared Bulbul Calling ヒヨドリの鳴き声2種類",
+      "tier": "A",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_8zanYHHEpiw",
@@ -435,7 +580,7 @@
       "source": "claude",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/8zanYHHEpiw.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -444,7 +589,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 52213857,
-      "youtube_title": "title:【野鳥 観察記】ヒヨドリの群れ 鳴き声　【Hypsipetes amaurotis】　Cry of Bulbul"
+      "youtube_title": "title:【野鳥 観察記】ヒヨドリの群れ 鳴き声　【Hypsipetes amaurotis】　Cry of Bulbul",
+      "tier": "A",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_8HhsjaqFITQ",
@@ -455,7 +607,7 @@
       "source": "claude",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/8HhsjaqFITQ.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -464,7 +616,14 @@
       "resolution": "360x640",
       "fps": 25,
       "file_size_bytes": 5793002,
-      "youtube_title": "title:ヒヨドリのさえずり・鳴き声～ソ・ソラシ～ Hypsipetes amaurotis sol,la,ti"
+      "youtube_title": "title:ヒヨドリのさえずり・鳴き声～ソ・ソラシ～ Hypsipetes amaurotis sol,la,ti",
+      "tier": "A",
+      "usable": true,
+      "exclusion_reason": null,
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_zYvgirz9KMo",
@@ -475,7 +634,7 @@
       "source": "claude",
       "expected_sparrow": 0,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/bulbul/zYvgirz9KMo.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -484,7 +643,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 8665005,
-      "youtube_title": "title:イソヒヨドリの鳴き声（さえずり・警戒声・地鳴き）"
+      "youtube_title": "title:イソヒヨドリの鳴き声（さえずり・警戒声・地鳴き）",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_bhp8AhQ2cvw",
@@ -495,7 +661,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/bhp8AhQ2cvw.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -504,7 +670,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 18566206,
-      "youtube_title": "title:仁義なき戦い－ヒヨドリ対スズメ－【妄想字幕付】　スロージューサーの搾りかすを争って… 家庭菜園に来る野鳥"
+      "youtube_title": "title:仁義なき戦い－ヒヨドリ対スズメ－【妄想字幕付】　スロージューサーの搾りかすを争って… 家庭菜園に来る野鳥",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_ruTTT9OdI9Q",
@@ -515,7 +688,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/ruTTT9OdI9Q.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -524,7 +697,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 16095118,
-      "youtube_title": "title:【庭の鳥の日常】(26,03,24) ヒヨドリが またスズメを追いかけ回してる"
+      "youtube_title": "title:【庭の鳥の日常】(26,03,24) ヒヨドリが またスズメを追いかけ回してる",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_RC3ELjgkUCQ",
@@ -535,7 +715,7 @@
       "source": "grok",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/RC3ELjgkUCQ.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -544,7 +724,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 26108381,
-      "youtube_title": "title:植木鉢でバードバス（野鳥の水浴び場）冬編6～スズメ/ヒヨドリ"
+      "youtube_title": "title:植木鉢でバードバス（野鳥の水浴び場）冬編6～スズメ/ヒヨドリ",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_bGk6vto6JxM",
@@ -555,7 +742,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/bGk6vto6JxM.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -564,7 +751,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 19869009,
-      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）リンゴ編～メジロ/スズメ/シロハラ/ヒヨドリ/ジョウビタキ"
+      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）リンゴ編～メジロ/スズメ/シロハラ/ヒヨドリ/ジョウビタキ",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt__K7JMyeOnjw",
@@ -575,7 +769,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/_K7JMyeOnjw.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -584,7 +778,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 18497158,
-      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）イチゴ編～メジロ/ヒヨドリ/スズメ"
+      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）イチゴ編～メジロ/ヒヨドリ/スズメ",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_IjHCLUmBqJE",
@@ -595,7 +796,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/IjHCLUmBqJE.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -604,7 +805,14 @@
       "resolution": "640x360",
       "fps": 30,
       "file_size_bytes": 18987058,
-      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）カキ編～メジロ/ジョウビタキ/ヒヨドリ/スズメ"
+      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）カキ編～メジロ/ジョウビタキ/ヒヨドリ/スズメ",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_6FQnY2jYNjM",
@@ -615,7 +823,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/6FQnY2jYNjM.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -624,7 +832,14 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 17226416,
-      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）焼き芋編2～メジロ/ヒヨドリ/スズメ/ジョウビタキ"
+      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）焼き芋編2～メジロ/ヒヨドリ/スズメ/ジョウビタキ",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     },
     {
       "video_id": "yt_I1XmEHGO19A",
@@ -635,7 +850,7 @@
       "source": "claude",
       "expected_sparrow": 1,
       "expected_bulbul": 1,
-      "review_needed": true,
+      "review_needed": false,
       "local_path": "data/raw/youtube_videos/mixed/I1XmEHGO19A.mp4",
       "download_status": "ok",
       "download_error": null,
@@ -644,7 +859,23 @@
       "resolution": "640x360",
       "fps": 29.97,
       "file_size_bytes": 13866769,
-      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）特別編～メジロ/スズメ"
+      "youtube_title": "title:植木鉢でバードフィーダー（野鳥の餌台）特別編～メジロ/スズメ",
+      "tier": "C",
+      "usable": false,
+      "exclusion_reason": "tier_c_unusable",
+      "requires_trim": false,
+      "trim_start_sec": null,
+      "reviewed_by": "robosheep",
+      "reviewed_at": "2026-04-19"
     }
-  ]
+  ],
+  "tier_review_summary": {
+    "A": 4,
+    "B": 6,
+    "B'": 1,
+    "C": 20,
+    "unknown": 1
+  },
+  "tier_reviewed_by": "robosheep",
+  "tier_reviewed_at": "2026-04-19"
 }

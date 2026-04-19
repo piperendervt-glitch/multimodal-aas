@@ -18,6 +18,7 @@ data/balcony/
 data/xeno_canto/
 data/youtube_streams/
 data/processed/
+data/processed/youtube_videos_trimmed/
 logs/
 
 # Model weights downloaded at runtime
