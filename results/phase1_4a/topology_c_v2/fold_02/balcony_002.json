@@ -1,0 +1,528 @@
+{
+  "video_id": "balcony_002",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_002.wav",
+    "duration_sec": 41.401,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 41,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 41,
+    "frames_with_bird": 10,
+    "frame_selection_rate": 0.2439,
+    "fps_sampling": 1,
+    "selected_frames": [
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1282,
+            "confidence": 0.464
+          }
+        ]
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1382,
+            "confidence": 0.5409
+          }
+        ]
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1082,
+            "confidence": 0.5252
+          }
+        ]
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1314,
+            "confidence": 0.7823
+          }
+        ]
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1234,
+            "confidence": 0.6629
+          }
+        ]
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1247,
+            "confidence": 0.3693
+          }
+        ]
+      },
+      {
+        "frame_idx": 26,
+        "timestamp_sec": 26.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0967,
+            "confidence": 0.4103
+          }
+        ]
+      },
+      {
+        "frame_idx": 29,
+        "timestamp_sec": 29.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.107,
+            "confidence": 0.6724
+          }
+        ]
+      },
+      {
+        "frame_idx": 30,
+        "timestamp_sec": 30.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1454,
+            "confidence": 0.9606
+          }
+        ]
+      },
+      {
+        "frame_idx": 32,
+        "timestamp_sec": 32.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.151,
+            "confidence": 0.7287
+          }
+        ]
+      }
+    ],
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1282,
+            "confidence": 0.464
+          }
+        ]
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1382,
+            "confidence": 0.5409
+          }
+        ]
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1082,
+            "confidence": 0.5252
+          }
+        ]
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1314,
+            "confidence": 0.7823
+          }
+        ]
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1234,
+            "confidence": 0.6629
+          }
+        ]
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1247,
+            "confidence": 0.3693
+          }
+        ]
+      },
+      {
+        "frame_idx": 25,
+        "timestamp_sec": 25.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 26,
+        "timestamp_sec": 26.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0967,
+            "confidence": 0.4103
+          }
+        ]
+      },
+      {
+        "frame_idx": 27,
+        "timestamp_sec": 27.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 28,
+        "timestamp_sec": 28.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 29,
+        "timestamp_sec": 29.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.107,
+            "confidence": 0.6724
+          }
+        ]
+      },
+      {
+        "frame_idx": 30,
+        "timestamp_sec": 30.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1454,
+            "confidence": 0.9606
+          }
+        ]
+      },
+      {
+        "frame_idx": 31,
+        "timestamp_sec": 31.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 32,
+        "timestamp_sec": 32.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.151,
+            "confidence": 0.7287
+          }
+        ]
+      },
+      {
+        "frame_idx": 33,
+        "timestamp_sec": 33.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 34,
+        "timestamp_sec": 34.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 35,
+        "timestamp_sec": 35.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 36,
+        "timestamp_sec": 36.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 37,
+        "timestamp_sec": 37.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 38,
+        "timestamp_sec": 38.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 39,
+        "timestamp_sec": 39.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 40,
+        "timestamp_sec": 40.0,
+        "num_detections": 0,
+        "detections": []
+      }
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 10,
+    "frames_with_bird": 10,
+    "max_bbox_size_relative": 0.151,
+    "avg_bbox_size_relative": 0.1254,
+    "std_bbox_size": 0.0174,
+    "max_detection_confidence": 0.9606,
+    "avg_detection_confidence": 0.6117,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "birdnet_output": {
+    "all_detections": [],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 10,
+      "frames_with_bird": 10,
+      "max_bbox_size_relative": 0.151,
+      "avg_bbox_size_relative": 0.1254,
+      "std_bbox_size": 0.0174,
+      "avg_detection_confidence": 0.6117,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "audio": {
+      "all_detections": [],
+      "target_species_found": false,
+      "total_detections": 0,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.8, \"bulbul\": 0.9},\n  \"reasoning\": \"中型の bbox サイズが多いため\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.8,
+        "bulbul": 0.9
+      },
+      "reasoning": "中型の bbox サイズが多いため",
+      "modality_used": "visual",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.551
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.8,
+      "bulbul": 0.9
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.51,
+    "yolo": 0.982,
+    "llm": 4.551,
+    "total": 6.043
+  },
+  "topology": "C_v2",
+  "fold": 2,
+  "source": "self",
+  "category": "bulbul"
+}

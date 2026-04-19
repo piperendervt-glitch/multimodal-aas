@@ -1,0 +1,343 @@
+{
+  "video_id": "yt_evVHoDIv1hE",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_evVHoDIv1hE.wav",
+    "duration_sec": 10.008,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 10,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 10,
+    "frames_with_bird": 9,
+    "frame_selection_rate": 0.9,
+    "fps_sampling": 1,
+    "selected_frames": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0423,
+            "confidence": 0.8491
+          }
+        ]
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1167,
+            "confidence": 0.9115
+          }
+        ]
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.218,
+            "confidence": 0.9033
+          }
+        ]
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2288,
+            "confidence": 0.9118
+          }
+        ]
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2206,
+            "confidence": 0.8677
+          }
+        ]
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2131,
+            "confidence": 0.9049
+          }
+        ]
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2261,
+            "confidence": 0.8872
+          }
+        ]
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2246,
+            "confidence": 0.9176
+          }
+        ]
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1983,
+            "confidence": 0.8598
+          }
+        ]
+      }
+    ],
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0423,
+            "confidence": 0.8491
+          }
+        ]
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1167,
+            "confidence": 0.9115
+          }
+        ]
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.218,
+            "confidence": 0.9033
+          }
+        ]
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2288,
+            "confidence": 0.9118
+          }
+        ]
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2206,
+            "confidence": 0.8677
+          }
+        ]
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2131,
+            "confidence": 0.9049
+          }
+        ]
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2261,
+            "confidence": 0.8872
+          }
+        ]
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2246,
+            "confidence": 0.9176
+          }
+        ]
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1983,
+            "confidence": 0.8598
+          }
+        ]
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 0,
+        "detections": []
+      }
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 9,
+    "frames_with_bird": 9,
+    "max_bbox_size_relative": 0.2288,
+    "avg_bbox_size_relative": 0.1876,
+    "std_bbox_size": 0.0647,
+    "max_detection_confidence": 0.9176,
+    "avg_detection_confidence": 0.8903,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5354,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 9,
+      "frames_with_bird": 9,
+      "max_bbox_size_relative": 0.2288,
+      "avg_bbox_size_relative": 0.1876,
+      "std_bbox_size": 0.0647,
+      "avg_detection_confidence": 0.8903,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.5354,
+          "avg_confidence": 0.5354,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 1,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.05},\n  \"reasoning\": \"視覚で頻繁に検出され、サイズはヒヨドリより小さい。\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.05
+      },
+      "reasoning": "視覚で頻繁に検出され、サイズはヒヨドリより小さい。",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.751
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.05
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.118,
+    "yolo": 0.174,
+    "llm": 4.751,
+    "total": 5.044
+  },
+  "topology": "C_v2",
+  "fold": 17,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

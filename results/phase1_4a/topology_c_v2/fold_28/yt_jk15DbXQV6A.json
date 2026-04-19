@@ -1,0 +1,829 @@
+{
+  "video_id": "yt_jk15DbXQV6A",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_jk15DbXQV6A.wav",
+    "duration_sec": 31.022,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 31,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 31,
+    "frames_with_bird": 23,
+    "frame_selection_rate": 0.7419,
+    "fps_sampling": 1,
+    "selected_frames": [
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.1431,
+            "confidence": 0.2876
+          },
+          {
+            "bbox_rel": 0.2758,
+            "confidence": 0.2833
+          }
+        ]
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2718,
+            "confidence": 0.5171
+          }
+        ]
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2643,
+            "confidence": 0.8366
+          }
+        ]
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.297,
+            "confidence": 0.8358
+          }
+        ]
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2793,
+            "confidence": 0.8285
+          }
+        ]
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2767,
+            "confidence": 0.7969
+          }
+        ]
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2673,
+            "confidence": 0.7788
+          }
+        ]
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.331,
+            "confidence": 0.7947
+          }
+        ]
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3402,
+            "confidence": 0.8425
+          }
+        ]
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2356,
+            "confidence": 0.8442
+          }
+        ]
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2467,
+            "confidence": 0.8204
+          }
+        ]
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.256,
+            "confidence": 0.8611
+          }
+        ]
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2439,
+            "confidence": 0.8811
+          }
+        ]
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3159,
+            "confidence": 0.8724
+          }
+        ]
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2807,
+            "confidence": 0.7908
+          }
+        ]
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3086,
+            "confidence": 0.7063
+          }
+        ]
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2909,
+            "confidence": 0.8246
+          }
+        ]
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2947,
+            "confidence": 0.8926
+          }
+        ]
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2808,
+            "confidence": 0.8807
+          }
+        ]
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2557,
+            "confidence": 0.908
+          }
+        ]
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2535,
+            "confidence": 0.9173
+          }
+        ]
+      },
+      {
+        "frame_idx": 25,
+        "timestamp_sec": 25.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2369,
+            "confidence": 0.8546
+          }
+        ]
+      },
+      {
+        "frame_idx": 26,
+        "timestamp_sec": 26.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2459,
+            "confidence": 0.8512
+          }
+        ]
+      }
+    ],
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.1431,
+            "confidence": 0.2876
+          },
+          {
+            "bbox_rel": 0.2758,
+            "confidence": 0.2833
+          }
+        ]
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2718,
+            "confidence": 0.5171
+          }
+        ]
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2643,
+            "confidence": 0.8366
+          }
+        ]
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.297,
+            "confidence": 0.8358
+          }
+        ]
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2793,
+            "confidence": 0.8285
+          }
+        ]
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2767,
+            "confidence": 0.7969
+          }
+        ]
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2673,
+            "confidence": 0.7788
+          }
+        ]
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.331,
+            "confidence": 0.7947
+          }
+        ]
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3402,
+            "confidence": 0.8425
+          }
+        ]
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2356,
+            "confidence": 0.8442
+          }
+        ]
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2467,
+            "confidence": 0.8204
+          }
+        ]
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.256,
+            "confidence": 0.8611
+          }
+        ]
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2439,
+            "confidence": 0.8811
+          }
+        ]
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3159,
+            "confidence": 0.8724
+          }
+        ]
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2807,
+            "confidence": 0.7908
+          }
+        ]
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3086,
+            "confidence": 0.7063
+          }
+        ]
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2909,
+            "confidence": 0.8246
+          }
+        ]
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2947,
+            "confidence": 0.8926
+          }
+        ]
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2808,
+            "confidence": 0.8807
+          }
+        ]
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2557,
+            "confidence": 0.908
+          }
+        ]
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2535,
+            "confidence": 0.9173
+          }
+        ]
+      },
+      {
+        "frame_idx": 25,
+        "timestamp_sec": 25.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2369,
+            "confidence": 0.8546
+          }
+        ]
+      },
+      {
+        "frame_idx": 26,
+        "timestamp_sec": 26.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2459,
+            "confidence": 0.8512
+          }
+        ]
+      },
+      {
+        "frame_idx": 27,
+        "timestamp_sec": 27.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 28,
+        "timestamp_sec": 28.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 29,
+        "timestamp_sec": 29.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 30,
+        "timestamp_sec": 30.0,
+        "num_detections": 0,
+        "detections": []
+      }
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 23,
+    "frames_with_bird": 23,
+    "max_bbox_size_relative": 0.3402,
+    "avg_bbox_size_relative": 0.2705,
+    "std_bbox_size": 0.0392,
+    "max_detection_confidence": 0.9173,
+    "avg_detection_confidence": 0.7795,
+    "detection_counts_per_frame": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4612,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.349,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.495,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1641,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.824,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.1234,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8522,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8376,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9394,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9078,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3227,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Richard's Pipit"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 23,
+      "frames_with_bird": 23,
+      "max_bbox_size_relative": 0.3402,
+      "avg_bbox_size_relative": 0.2705,
+      "std_bbox_size": 0.0392,
+      "avg_detection_confidence": 0.7795,
+      "detection_counts_per_frame": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9394,
+          "avg_confidence": 0.6449,
+          "num_detections": 9
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Anthus richardi",
+          "common_name": "Richard's Pipit",
+          "confidence": 0.349,
+          "avg_confidence": 0.2362,
+          "num_detections": 2
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 11,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.92},\n  \"reasoning\": \"視覚で中型鳥多数、音声でもヒヨドリ検出\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.92
+      },
+      "reasoning": "視覚で中型鳥多数、音声でもヒヨドリ検出",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.748
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.92
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.373,
+    "yolo": 0.592,
+    "llm": 4.748,
+    "total": 5.713
+  },
+  "topology": "C_v2",
+  "fold": 28,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

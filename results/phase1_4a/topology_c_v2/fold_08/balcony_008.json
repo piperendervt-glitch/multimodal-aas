@@ -1,0 +1,1056 @@
+{
+  "video_id": "balcony_008",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_008.wav",
+    "duration_sec": 62.206,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 62,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 62,
+    "frames_with_bird": 21,
+    "frame_selection_rate": 0.3387,
+    "fps_sampling": 1,
+    "selected_frames": [
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0256,
+            "confidence": 0.2744
+          }
+        ]
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0404,
+            "confidence": 0.7225
+          }
+        ]
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0413,
+            "confidence": 0.7442
+          },
+          {
+            "bbox_rel": 0.039,
+            "confidence": 0.4364
+          }
+        ]
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0282,
+            "confidence": 0.6522
+          },
+          {
+            "bbox_rel": 0.0451,
+            "confidence": 0.5101
+          }
+        ]
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1012,
+            "confidence": 0.6087
+          }
+        ]
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0505,
+            "confidence": 0.3572
+          }
+        ]
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0357,
+            "confidence": 0.5518
+          }
+        ]
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0312,
+            "confidence": 0.5025
+          }
+        ]
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0839,
+            "confidence": 0.2619
+          }
+        ]
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 4,
+        "detections": [
+          {
+            "bbox_rel": 0.0393,
+            "confidence": 0.7583
+          },
+          {
+            "bbox_rel": 0.078,
+            "confidence": 0.4986
+          },
+          {
+            "bbox_rel": 0.0139,
+            "confidence": 0.4733
+          },
+          {
+            "bbox_rel": 0.0681,
+            "confidence": 0.3233
+          }
+        ]
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0864,
+            "confidence": 0.7453
+          },
+          {
+            "bbox_rel": 0.034,
+            "confidence": 0.5029
+          },
+          {
+            "bbox_rel": 0.0499,
+            "confidence": 0.4432
+          }
+        ]
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.1467,
+            "confidence": 0.872
+          },
+          {
+            "bbox_rel": 0.0788,
+            "confidence": 0.827
+          },
+          {
+            "bbox_rel": 0.0218,
+            "confidence": 0.2746
+          }
+        ]
+      },
+      {
+        "frame_idx": 27,
+        "timestamp_sec": 27.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0158,
+            "confidence": 0.2959
+          }
+        ]
+      },
+      {
+        "frame_idx": 29,
+        "timestamp_sec": 29.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0747,
+            "confidence": 0.7693
+          },
+          {
+            "bbox_rel": 0.0385,
+            "confidence": 0.7677
+          }
+        ]
+      },
+      {
+        "frame_idx": 31,
+        "timestamp_sec": 31.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.191,
+            "confidence": 0.7033
+          }
+        ]
+      },
+      {
+        "frame_idx": 32,
+        "timestamp_sec": 32.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0458,
+            "confidence": 0.4854
+          },
+          {
+            "bbox_rel": 0.029,
+            "confidence": 0.2853
+          }
+        ]
+      },
+      {
+        "frame_idx": 36,
+        "timestamp_sec": 36.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0825,
+            "confidence": 0.5316
+          },
+          {
+            "bbox_rel": 0.085,
+            "confidence": 0.398
+          },
+          {
+            "bbox_rel": 0.145,
+            "confidence": 0.2779
+          }
+        ]
+      },
+      {
+        "frame_idx": 37,
+        "timestamp_sec": 37.0,
+        "num_detections": 5,
+        "detections": [
+          {
+            "bbox_rel": 0.0296,
+            "confidence": 0.4594
+          },
+          {
+            "bbox_rel": 0.1123,
+            "confidence": 0.4103
+          },
+          {
+            "bbox_rel": 0.0723,
+            "confidence": 0.3599
+          },
+          {
+            "bbox_rel": 0.0644,
+            "confidence": 0.2826
+          },
+          {
+            "bbox_rel": 0.0442,
+            "confidence": 0.2798
+          }
+        ]
+      },
+      {
+        "frame_idx": 38,
+        "timestamp_sec": 38.0,
+        "num_detections": 4,
+        "detections": [
+          {
+            "bbox_rel": 0.0479,
+            "confidence": 0.7029
+          },
+          {
+            "bbox_rel": 0.0957,
+            "confidence": 0.655
+          },
+          {
+            "bbox_rel": 0.0193,
+            "confidence": 0.2943
+          },
+          {
+            "bbox_rel": 0.0623,
+            "confidence": 0.2847
+          }
+        ]
+      },
+      {
+        "frame_idx": 39,
+        "timestamp_sec": 39.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.031,
+            "confidence": 0.6866
+          },
+          {
+            "bbox_rel": 0.0631,
+            "confidence": 0.3053
+          }
+        ]
+      },
+      {
+        "frame_idx": 41,
+        "timestamp_sec": 41.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.2053,
+            "confidence": 0.5499
+          },
+          {
+            "bbox_rel": 0.2064,
+            "confidence": 0.3028
+          }
+        ]
+      }
+    ],
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0256,
+            "confidence": 0.2744
+          }
+        ]
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0404,
+            "confidence": 0.7225
+          }
+        ]
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0413,
+            "confidence": 0.7442
+          },
+          {
+            "bbox_rel": 0.039,
+            "confidence": 0.4364
+          }
+        ]
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0282,
+            "confidence": 0.6522
+          },
+          {
+            "bbox_rel": 0.0451,
+            "confidence": 0.5101
+          }
+        ]
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.1012,
+            "confidence": 0.6087
+          }
+        ]
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0505,
+            "confidence": 0.3572
+          }
+        ]
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0357,
+            "confidence": 0.5518
+          }
+        ]
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0312,
+            "confidence": 0.5025
+          }
+        ]
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0839,
+            "confidence": 0.2619
+          }
+        ]
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 4,
+        "detections": [
+          {
+            "bbox_rel": 0.0393,
+            "confidence": 0.7583
+          },
+          {
+            "bbox_rel": 0.078,
+            "confidence": 0.4986
+          },
+          {
+            "bbox_rel": 0.0139,
+            "confidence": 0.4733
+          },
+          {
+            "bbox_rel": 0.0681,
+            "confidence": 0.3233
+          }
+        ]
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0864,
+            "confidence": 0.7453
+          },
+          {
+            "bbox_rel": 0.034,
+            "confidence": 0.5029
+          },
+          {
+            "bbox_rel": 0.0499,
+            "confidence": 0.4432
+          }
+        ]
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.1467,
+            "confidence": 0.872
+          },
+          {
+            "bbox_rel": 0.0788,
+            "confidence": 0.827
+          },
+          {
+            "bbox_rel": 0.0218,
+            "confidence": 0.2746
+          }
+        ]
+      },
+      {
+        "frame_idx": 25,
+        "timestamp_sec": 25.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 26,
+        "timestamp_sec": 26.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 27,
+        "timestamp_sec": 27.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0158,
+            "confidence": 0.2959
+          }
+        ]
+      },
+      {
+        "frame_idx": 28,
+        "timestamp_sec": 28.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 29,
+        "timestamp_sec": 29.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0747,
+            "confidence": 0.7693
+          },
+          {
+            "bbox_rel": 0.0385,
+            "confidence": 0.7677
+          }
+        ]
+      },
+      {
+        "frame_idx": 30,
+        "timestamp_sec": 30.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 31,
+        "timestamp_sec": 31.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.191,
+            "confidence": 0.7033
+          }
+        ]
+      },
+      {
+        "frame_idx": 32,
+        "timestamp_sec": 32.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0458,
+            "confidence": 0.4854
+          },
+          {
+            "bbox_rel": 0.029,
+            "confidence": 0.2853
+          }
+        ]
+      },
+      {
+        "frame_idx": 33,
+        "timestamp_sec": 33.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 34,
+        "timestamp_sec": 34.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 35,
+        "timestamp_sec": 35.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 36,
+        "timestamp_sec": 36.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0825,
+            "confidence": 0.5316
+          },
+          {
+            "bbox_rel": 0.085,
+            "confidence": 0.398
+          },
+          {
+            "bbox_rel": 0.145,
+            "confidence": 0.2779
+          }
+        ]
+      },
+      {
+        "frame_idx": 37,
+        "timestamp_sec": 37.0,
+        "num_detections": 5,
+        "detections": [
+          {
+            "bbox_rel": 0.0296,
+            "confidence": 0.4594
+          },
+          {
+            "bbox_rel": 0.1123,
+            "confidence": 0.4103
+          },
+          {
+            "bbox_rel": 0.0723,
+            "confidence": 0.3599
+          },
+          {
+            "bbox_rel": 0.0644,
+            "confidence": 0.2826
+          },
+          {
+            "bbox_rel": 0.0442,
+            "confidence": 0.2798
+          }
+        ]
+      },
+      {
+        "frame_idx": 38,
+        "timestamp_sec": 38.0,
+        "num_detections": 4,
+        "detections": [
+          {
+            "bbox_rel": 0.0479,
+            "confidence": 0.7029
+          },
+          {
+            "bbox_rel": 0.0957,
+            "confidence": 0.655
+          },
+          {
+            "bbox_rel": 0.0193,
+            "confidence": 0.2943
+          },
+          {
+            "bbox_rel": 0.0623,
+            "confidence": 0.2847
+          }
+        ]
+      },
+      {
+        "frame_idx": 39,
+        "timestamp_sec": 39.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.031,
+            "confidence": 0.6866
+          },
+          {
+            "bbox_rel": 0.0631,
+            "confidence": 0.3053
+          }
+        ]
+      },
+      {
+        "frame_idx": 40,
+        "timestamp_sec": 40.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 41,
+        "timestamp_sec": 41.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.2053,
+            "confidence": 0.5499
+          },
+          {
+            "bbox_rel": 0.2064,
+            "confidence": 0.3028
+          }
+        ]
+      },
+      {
+        "frame_idx": 42,
+        "timestamp_sec": 42.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 43,
+        "timestamp_sec": 43.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 44,
+        "timestamp_sec": 44.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 45,
+        "timestamp_sec": 45.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 46,
+        "timestamp_sec": 46.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 47,
+        "timestamp_sec": 47.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 48,
+        "timestamp_sec": 48.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 49,
+        "timestamp_sec": 49.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 50,
+        "timestamp_sec": 50.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 51,
+        "timestamp_sec": 51.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 52,
+        "timestamp_sec": 52.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 53,
+        "timestamp_sec": 53.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 54,
+        "timestamp_sec": 54.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 55,
+        "timestamp_sec": 55.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 56,
+        "timestamp_sec": 56.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 57,
+        "timestamp_sec": 57.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 58,
+        "timestamp_sec": 58.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 59,
+        "timestamp_sec": 59.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 60,
+        "timestamp_sec": 60.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 61,
+        "timestamp_sec": 61.0,
+        "num_detections": 0,
+        "detections": []
+      }
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 21,
+    "frames_with_bird": 21,
+    "max_bbox_size_relative": 0.2064,
+    "avg_bbox_size_relative": 0.0674,
+    "std_bbox_size": 0.0485,
+    "max_detection_confidence": 0.872,
+    "avg_detection_confidence": 0.4983,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4,
+      3,
+      3,
+      1,
+      2,
+      1,
+      2,
+      3,
+      5,
+      4,
+      2,
+      2
+    ]
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.2184,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1576,
+        "time_range": [
+          36.0,
+          39.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 21,
+      "frames_with_bird": 21,
+      "max_bbox_size_relative": 0.2064,
+      "avg_bbox_size_relative": 0.0674,
+      "std_bbox_size": 0.0485,
+      "avg_detection_confidence": 0.4983,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        3,
+        3,
+        1,
+        2,
+        1,
+        2,
+        3,
+        5,
+        4,
+        2,
+        2
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.2184,
+          "avg_confidence": 0.188,
+          "num_detections": 2
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 2,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.15},\n  \"reasoning\": \"視覚で頻繁に確認され、サイズが小型\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.15
+      },
+      "reasoning": "視覚で頻繁に確認され、サイズが小型",
+      "modality_used": "visual",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.597
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.15
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 0.778,
+    "yolo": 1.599,
+    "llm": 4.597,
+    "total": 6.974
+  },
+  "topology": "C_v2",
+  "fold": 8,
+  "source": "self",
+  "category": "sparrow"
+}

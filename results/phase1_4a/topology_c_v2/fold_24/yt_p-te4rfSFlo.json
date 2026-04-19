@@ -1,0 +1,256 @@
+{
+  "video_id": "yt_p-te4rfSFlo",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_p-te4rfSFlo.wav",
+    "duration_sec": 20.016,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 20,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 20,
+    "frames_with_bird": 0,
+    "frame_selection_rate": 0.0,
+    "fps_sampling": 1,
+    "selected_frames": [],
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 0,
+        "detections": []
+      }
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 0,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": []
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7198,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.574,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4463,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 0,
+      "frames_with_bird": 0,
+      "max_bbox_size_relative": 0.0,
+      "avg_bbox_size_relative": 0.0,
+      "std_bbox_size": 0.0,
+      "avg_detection_confidence": 0.0,
+      "detection_counts_per_frame": []
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.7198,
+          "avg_confidence": 0.58,
+          "num_detections": 3
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 3,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.8, \"bulbul\": 0.7},\n  \"reasoning\": \"音声でヒヨドリ検出あり、視覚情報無し\",\n  \"modality_used\": \"audio\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.8,
+        "bulbul": 0.7
+      },
+      "reasoning": "音声でヒヨドリ検出あり、視覚情報無し",
+      "modality_used": "audio",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.624
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.8,
+      "bulbul": 0.7
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.251,
+    "yolo": 0.376,
+    "llm": 4.624,
+    "total": 5.252
+  },
+  "topology": "C_v2",
+  "fold": 24,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}
