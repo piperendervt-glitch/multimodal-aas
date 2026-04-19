@@ -1,0 +1,1239 @@
+{
+  "video_id": "yt_jk15DbXQV6A",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_jk15DbXQV6A.wav",
+    "duration_sec": 31.022,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 31,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 31,
+    "frames_with_bird": 23,
+    "frame_selection_rate": 0.7419,
+    "fps_sampling": 1.0,
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.1431,
+            "confidence": 0.2876
+          },
+          {
+            "bbox_rel": 0.2758,
+            "confidence": 0.2833
+          }
+        ]
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2718,
+            "confidence": 0.5171
+          }
+        ]
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2643,
+            "confidence": 0.8366
+          }
+        ]
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.297,
+            "confidence": 0.8358
+          }
+        ]
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2793,
+            "confidence": 0.8285
+          }
+        ]
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2767,
+            "confidence": 0.7969
+          }
+        ]
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2673,
+            "confidence": 0.7788
+          }
+        ]
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.331,
+            "confidence": 0.7947
+          }
+        ]
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3402,
+            "confidence": 0.8425
+          }
+        ]
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2356,
+            "confidence": 0.8442
+          }
+        ]
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2467,
+            "confidence": 0.8204
+          }
+        ]
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.256,
+            "confidence": 0.8611
+          }
+        ]
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2439,
+            "confidence": 0.8811
+          }
+        ]
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3159,
+            "confidence": 0.8724
+          }
+        ]
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2807,
+            "confidence": 0.7908
+          }
+        ]
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.3086,
+            "confidence": 0.7063
+          }
+        ]
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2909,
+            "confidence": 0.8246
+          }
+        ]
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2947,
+            "confidence": 0.8926
+          }
+        ]
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2808,
+            "confidence": 0.8807
+          }
+        ]
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2557,
+            "confidence": 0.908
+          }
+        ]
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2535,
+            "confidence": 0.9173
+          }
+        ]
+      },
+      {
+        "frame_idx": 25,
+        "timestamp_sec": 25.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2369,
+            "confidence": 0.8546
+          }
+        ]
+      },
+      {
+        "frame_idx": 26,
+        "timestamp_sec": 26.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.2459,
+            "confidence": 0.8512
+          }
+        ]
+      },
+      {
+        "frame_idx": 27,
+        "timestamp_sec": 27.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 28,
+        "timestamp_sec": 28.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 29,
+        "timestamp_sec": 29.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 30,
+        "timestamp_sec": 30.0,
+        "num_detections": 0,
+        "detections": []
+      }
+    ]
+  },
+  "yolo_output_overall": {
+    "num_frames_analyzed": 31,
+    "frames_with_bird": 23,
+    "max_bbox_size_relative": 0.3402,
+    "avg_bbox_size_relative": 0.2705,
+    "std_bbox_size": 0.0392,
+    "max_detection_confidence": 0.9173,
+    "avg_detection_confidence": 0.7795,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 23,
+    "frames_with_bird": 23,
+    "max_bbox_size_relative": 0.3402,
+    "avg_bbox_size_relative": 0.2705,
+    "std_bbox_size": 0.0392,
+    "max_detection_confidence": 0.9173,
+    "avg_detection_confidence": 0.7795,
+    "detection_counts_per_frame": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4612,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.349,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.495,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1641,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.824,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.1234,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8522,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8376,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9394,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9078,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3227,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Richard's Pipit"
+    ]
+  },
+  "timeline": {
+    "window_duration_sec": 2.0,
+    "video_duration_sec": 31.022,
+    "num_windows": 16,
+    "windows": [
+      {
+        "window_idx": 0,
+        "time_range_sec": [
+          0.0,
+          2.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.4612,
+              "start_sec": 0.0,
+              "end_sec": 3.0
+            },
+            {
+              "species": "Richard's Pipit",
+              "scientific_name": "Anthus richardi",
+              "confidence": 0.349,
+              "start_sec": 0.0,
+              "end_sec": 3.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 1,
+        "time_range_sec": [
+          2.0,
+          4.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.2758,
+          "avg_bbox_size_relative": 0.2094,
+          "avg_detection_confidence": 0.2854,
+          "detection_counts": [
+            0,
+            2
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.4612,
+              "start_sec": 0.0,
+              "end_sec": 3.0
+            },
+            {
+              "species": "Richard's Pipit",
+              "scientific_name": "Anthus richardi",
+              "confidence": 0.349,
+              "start_sec": 0.0,
+              "end_sec": 3.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.495,
+              "start_sec": 3.0,
+              "end_sec": 6.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 2,
+        "time_range_sec": [
+          4.0,
+          6.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.2718,
+          "avg_bbox_size_relative": 0.2718,
+          "avg_detection_confidence": 0.5171,
+          "detection_counts": [
+            0,
+            1
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.495,
+              "start_sec": 3.0,
+              "end_sec": 6.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 3,
+        "time_range_sec": [
+          6.0,
+          8.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.297,
+          "avg_bbox_size_relative": 0.2806,
+          "avg_detection_confidence": 0.8362,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.1641,
+              "start_sec": 6.0,
+              "end_sec": 9.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 4,
+        "time_range_sec": [
+          8.0,
+          10.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.2793,
+          "avg_bbox_size_relative": 0.278,
+          "avg_detection_confidence": 0.8127,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.1641,
+              "start_sec": 6.0,
+              "end_sec": 9.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.824,
+              "start_sec": 9.0,
+              "end_sec": 12.0
+            },
+            {
+              "species": "Richard's Pipit",
+              "scientific_name": "Anthus richardi",
+              "confidence": 0.1234,
+              "start_sec": 9.0,
+              "end_sec": 12.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 5,
+        "time_range_sec": [
+          10.0,
+          12.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.331,
+          "avg_bbox_size_relative": 0.2992,
+          "avg_detection_confidence": 0.7868,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.824,
+              "start_sec": 9.0,
+              "end_sec": 12.0
+            },
+            {
+              "species": "Richard's Pipit",
+              "scientific_name": "Anthus richardi",
+              "confidence": 0.1234,
+              "start_sec": 9.0,
+              "end_sec": 12.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 6,
+        "time_range_sec": [
+          12.0,
+          14.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.3402,
+          "avg_bbox_size_relative": 0.2879,
+          "avg_detection_confidence": 0.8434,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.8522,
+              "start_sec": 12.0,
+              "end_sec": 15.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 7,
+        "time_range_sec": [
+          14.0,
+          16.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.256,
+          "avg_bbox_size_relative": 0.2514,
+          "avg_detection_confidence": 0.8407,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.8522,
+              "start_sec": 12.0,
+              "end_sec": 15.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.8376,
+              "start_sec": 15.0,
+              "end_sec": 18.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 8,
+        "time_range_sec": [
+          16.0,
+          18.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.3159,
+          "avg_bbox_size_relative": 0.2799,
+          "avg_detection_confidence": 0.8767,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.8376,
+              "start_sec": 15.0,
+              "end_sec": 18.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 9,
+        "time_range_sec": [
+          18.0,
+          20.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.3086,
+          "avg_bbox_size_relative": 0.2946,
+          "avg_detection_confidence": 0.7486,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9394,
+              "start_sec": 18.0,
+              "end_sec": 21.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 10,
+        "time_range_sec": [
+          20.0,
+          22.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.2947,
+          "avg_bbox_size_relative": 0.2928,
+          "avg_detection_confidence": 0.8586,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9394,
+              "start_sec": 18.0,
+              "end_sec": 21.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9078,
+              "start_sec": 21.0,
+              "end_sec": 24.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 11,
+        "time_range_sec": [
+          22.0,
+          24.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.2808,
+          "avg_bbox_size_relative": 0.2682,
+          "avg_detection_confidence": 0.8943,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9078,
+              "start_sec": 21.0,
+              "end_sec": 24.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 12,
+        "time_range_sec": [
+          24.0,
+          26.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.2535,
+          "avg_bbox_size_relative": 0.2452,
+          "avg_detection_confidence": 0.886,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.3227,
+              "start_sec": 24.0,
+              "end_sec": 27.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 13,
+        "time_range_sec": [
+          26.0,
+          28.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.2459,
+          "avg_bbox_size_relative": 0.2459,
+          "avg_detection_confidence": 0.8512,
+          "detection_counts": [
+            1,
+            0
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.3227,
+              "start_sec": 24.0,
+              "end_sec": 27.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 14,
+        "time_range_sec": [
+          28.0,
+          30.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 15,
+        "time_range_sec": [
+          30.0,
+          31.02
+        ],
+        "visual": {
+          "num_frames": 1,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      }
+    ],
+    "sync_summary": {
+      "both_present_windows": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "visual_only_windows": [],
+      "audio_only_windows": [
+        0
+      ],
+      "neither_windows": [
+        14,
+        15
+      ],
+      "sync_rate": 0.9286
+    }
+  },
+  "sync_summary": {
+    "both_present_windows": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "visual_only_windows": [],
+    "audio_only_windows": [
+      0
+    ],
+    "neither_windows": [
+      14,
+      15
+    ],
+    "sync_rate": 0.9286
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 31,
+      "frames_with_bird": 23,
+      "max_bbox_size_relative": 0.3402,
+      "avg_bbox_size_relative": 0.2705,
+      "std_bbox_size": 0.0392,
+      "avg_detection_confidence": 0.7795,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9394,
+          "avg_confidence": 0.6449,
+          "num_detections": 9
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Anthus richardi",
+          "common_name": "Richard's Pipit",
+          "confidence": 0.349,
+          "avg_confidence": 0.2362,
+          "num_detections": 2
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 11,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    },
+    "temporal_sync": {
+      "window_duration_sec": 2.0,
+      "total_windows": 16,
+      "both_present": 13,
+      "visual_only": 0,
+      "audio_only": 1,
+      "neither": 2,
+      "sync_rate": 0.9286
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.75, \"bulbul\": 0.85},\n  \"reasoning\": \"視覚情報と音声情報が一致し、中型鳥のbboxが多いため。\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.75,
+        "bulbul": 0.85
+      },
+      "reasoning": "視覚情報と音声情報が一致し、中型鳥のbboxが多いため。",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.886
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.75,
+      "bulbul": 0.85
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.408,
+    "yolo": 0.661,
+    "llm": 4.886,
+    "total": 5.955
+  },
+  "topology": "C_v3",
+  "fold": 28,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

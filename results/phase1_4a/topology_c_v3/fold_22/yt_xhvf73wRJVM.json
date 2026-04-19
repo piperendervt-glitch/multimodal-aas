@@ -1,0 +1,2668 @@
+{
+  "video_id": "yt_xhvf73wRJVM",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_xhvf73wRJVM.wav",
+    "duration_sec": 90.604,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 91,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 91,
+    "frames_with_bird": 32,
+    "frame_selection_rate": 0.3516,
+    "fps_sampling": 1.0,
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 24,
+        "timestamp_sec": 24.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 25,
+        "timestamp_sec": 25.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 26,
+        "timestamp_sec": 26.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 27,
+        "timestamp_sec": 27.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 28,
+        "timestamp_sec": 28.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 29,
+        "timestamp_sec": 29.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 30,
+        "timestamp_sec": 30.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 31,
+        "timestamp_sec": 31.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 32,
+        "timestamp_sec": 32.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 33,
+        "timestamp_sec": 33.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 34,
+        "timestamp_sec": 34.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 35,
+        "timestamp_sec": 35.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 36,
+        "timestamp_sec": 36.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 37,
+        "timestamp_sec": 37.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 38,
+        "timestamp_sec": 38.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 39,
+        "timestamp_sec": 39.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 40,
+        "timestamp_sec": 40.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 41,
+        "timestamp_sec": 41.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 42,
+        "timestamp_sec": 42.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0073,
+            "confidence": 0.2994
+          }
+        ]
+      },
+      {
+        "frame_idx": 43,
+        "timestamp_sec": 43.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0106,
+            "confidence": 0.6446
+          }
+        ]
+      },
+      {
+        "frame_idx": 44,
+        "timestamp_sec": 44.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0065,
+            "confidence": 0.3629
+          },
+          {
+            "bbox_rel": 0.0055,
+            "confidence": 0.3016
+          },
+          {
+            "bbox_rel": 0.0094,
+            "confidence": 0.274
+          }
+        ]
+      },
+      {
+        "frame_idx": 45,
+        "timestamp_sec": 45.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0258,
+            "confidence": 0.4675
+          },
+          {
+            "bbox_rel": 0.0078,
+            "confidence": 0.3179
+          }
+        ]
+      },
+      {
+        "frame_idx": 46,
+        "timestamp_sec": 46.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 47,
+        "timestamp_sec": 47.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0127,
+            "confidence": 0.3455
+          }
+        ]
+      },
+      {
+        "frame_idx": 48,
+        "timestamp_sec": 48.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 49,
+        "timestamp_sec": 49.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 50,
+        "timestamp_sec": 50.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 51,
+        "timestamp_sec": 51.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 52,
+        "timestamp_sec": 52.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 53,
+        "timestamp_sec": 53.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.012,
+            "confidence": 0.3791
+          }
+        ]
+      },
+      {
+        "frame_idx": 54,
+        "timestamp_sec": 54.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0178,
+            "confidence": 0.3746
+          }
+        ]
+      },
+      {
+        "frame_idx": 55,
+        "timestamp_sec": 55.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 56,
+        "timestamp_sec": 56.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 57,
+        "timestamp_sec": 57.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0127,
+            "confidence": 0.6947
+          }
+        ]
+      },
+      {
+        "frame_idx": 58,
+        "timestamp_sec": 58.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 59,
+        "timestamp_sec": 59.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 60,
+        "timestamp_sec": 60.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 61,
+        "timestamp_sec": 61.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0125,
+            "confidence": 0.2532
+          }
+        ]
+      },
+      {
+        "frame_idx": 62,
+        "timestamp_sec": 62.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 63,
+        "timestamp_sec": 63.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0067,
+            "confidence": 0.3158
+          }
+        ]
+      },
+      {
+        "frame_idx": 64,
+        "timestamp_sec": 64.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 65,
+        "timestamp_sec": 65.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 66,
+        "timestamp_sec": 66.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 67,
+        "timestamp_sec": 67.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 68,
+        "timestamp_sec": 68.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0174,
+            "confidence": 0.3493
+          },
+          {
+            "bbox_rel": 0.0033,
+            "confidence": 0.2839
+          }
+        ]
+      },
+      {
+        "frame_idx": 69,
+        "timestamp_sec": 69.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 70,
+        "timestamp_sec": 70.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0092,
+            "confidence": 0.2567
+          }
+        ]
+      },
+      {
+        "frame_idx": 71,
+        "timestamp_sec": 71.0,
+        "num_detections": 6,
+        "detections": [
+          {
+            "bbox_rel": 0.0235,
+            "confidence": 0.557
+          },
+          {
+            "bbox_rel": 0.0188,
+            "confidence": 0.5068
+          },
+          {
+            "bbox_rel": 0.0186,
+            "confidence": 0.3252
+          },
+          {
+            "bbox_rel": 0.0265,
+            "confidence": 0.3141
+          },
+          {
+            "bbox_rel": 0.0038,
+            "confidence": 0.2821
+          },
+          {
+            "bbox_rel": 0.0071,
+            "confidence": 0.2804
+          }
+        ]
+      },
+      {
+        "frame_idx": 72,
+        "timestamp_sec": 72.0,
+        "num_detections": 4,
+        "detections": [
+          {
+            "bbox_rel": 0.0163,
+            "confidence": 0.6425
+          },
+          {
+            "bbox_rel": 0.0124,
+            "confidence": 0.5436
+          },
+          {
+            "bbox_rel": 0.0245,
+            "confidence": 0.4564
+          },
+          {
+            "bbox_rel": 0.0334,
+            "confidence": 0.2591
+          }
+        ]
+      },
+      {
+        "frame_idx": 73,
+        "timestamp_sec": 73.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0214,
+            "confidence": 0.6655
+          },
+          {
+            "bbox_rel": 0.0182,
+            "confidence": 0.6353
+          },
+          {
+            "bbox_rel": 0.0173,
+            "confidence": 0.5978
+          }
+        ]
+      },
+      {
+        "frame_idx": 74,
+        "timestamp_sec": 74.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0144,
+            "confidence": 0.6001
+          },
+          {
+            "bbox_rel": 0.0139,
+            "confidence": 0.3131
+          },
+          {
+            "bbox_rel": 0.0087,
+            "confidence": 0.2853
+          }
+        ]
+      },
+      {
+        "frame_idx": 75,
+        "timestamp_sec": 75.0,
+        "num_detections": 11,
+        "detections": [
+          {
+            "bbox_rel": 0.0174,
+            "confidence": 0.7114
+          },
+          {
+            "bbox_rel": 0.019,
+            "confidence": 0.6135
+          },
+          {
+            "bbox_rel": 0.0193,
+            "confidence": 0.578
+          },
+          {
+            "bbox_rel": 0.0097,
+            "confidence": 0.4903
+          },
+          {
+            "bbox_rel": 0.0118,
+            "confidence": 0.3845
+          },
+          {
+            "bbox_rel": 0.0195,
+            "confidence": 0.3334
+          },
+          {
+            "bbox_rel": 0.0051,
+            "confidence": 0.3263
+          },
+          {
+            "bbox_rel": 0.0062,
+            "confidence": 0.2948
+          },
+          {
+            "bbox_rel": 0.0119,
+            "confidence": 0.2666
+          },
+          {
+            "bbox_rel": 0.0077,
+            "confidence": 0.2549
+          },
+          {
+            "bbox_rel": 0.0248,
+            "confidence": 0.2533
+          }
+        ]
+      },
+      {
+        "frame_idx": 76,
+        "timestamp_sec": 76.0,
+        "num_detections": 11,
+        "detections": [
+          {
+            "bbox_rel": 0.0172,
+            "confidence": 0.7905
+          },
+          {
+            "bbox_rel": 0.0159,
+            "confidence": 0.6499
+          },
+          {
+            "bbox_rel": 0.0121,
+            "confidence": 0.5689
+          },
+          {
+            "bbox_rel": 0.0051,
+            "confidence": 0.4778
+          },
+          {
+            "bbox_rel": 0.0257,
+            "confidence": 0.4223
+          },
+          {
+            "bbox_rel": 0.0114,
+            "confidence": 0.4134
+          },
+          {
+            "bbox_rel": 0.0098,
+            "confidence": 0.3742
+          },
+          {
+            "bbox_rel": 0.0106,
+            "confidence": 0.3569
+          },
+          {
+            "bbox_rel": 0.0131,
+            "confidence": 0.31
+          },
+          {
+            "bbox_rel": 0.0204,
+            "confidence": 0.2823
+          },
+          {
+            "bbox_rel": 0.0126,
+            "confidence": 0.2753
+          }
+        ]
+      },
+      {
+        "frame_idx": 77,
+        "timestamp_sec": 77.0,
+        "num_detections": 7,
+        "detections": [
+          {
+            "bbox_rel": 0.0175,
+            "confidence": 0.7062
+          },
+          {
+            "bbox_rel": 0.009,
+            "confidence": 0.5049
+          },
+          {
+            "bbox_rel": 0.0126,
+            "confidence": 0.5023
+          },
+          {
+            "bbox_rel": 0.0128,
+            "confidence": 0.4126
+          },
+          {
+            "bbox_rel": 0.0153,
+            "confidence": 0.3034
+          },
+          {
+            "bbox_rel": 0.0149,
+            "confidence": 0.2927
+          },
+          {
+            "bbox_rel": 0.029,
+            "confidence": 0.2886
+          }
+        ]
+      },
+      {
+        "frame_idx": 78,
+        "timestamp_sec": 78.0,
+        "num_detections": 6,
+        "detections": [
+          {
+            "bbox_rel": 0.016,
+            "confidence": 0.8006
+          },
+          {
+            "bbox_rel": 0.0216,
+            "confidence": 0.7874
+          },
+          {
+            "bbox_rel": 0.0088,
+            "confidence": 0.4731
+          },
+          {
+            "bbox_rel": 0.0168,
+            "confidence": 0.4382
+          },
+          {
+            "bbox_rel": 0.0114,
+            "confidence": 0.3896
+          },
+          {
+            "bbox_rel": 0.0247,
+            "confidence": 0.3631
+          }
+        ]
+      },
+      {
+        "frame_idx": 79,
+        "timestamp_sec": 79.0,
+        "num_detections": 4,
+        "detections": [
+          {
+            "bbox_rel": 0.0195,
+            "confidence": 0.6138
+          },
+          {
+            "bbox_rel": 0.0178,
+            "confidence": 0.6122
+          },
+          {
+            "bbox_rel": 0.0167,
+            "confidence": 0.5346
+          },
+          {
+            "bbox_rel": 0.0065,
+            "confidence": 0.3109
+          }
+        ]
+      },
+      {
+        "frame_idx": 80,
+        "timestamp_sec": 80.0,
+        "num_detections": 4,
+        "detections": [
+          {
+            "bbox_rel": 0.0154,
+            "confidence": 0.6719
+          },
+          {
+            "bbox_rel": 0.0167,
+            "confidence": 0.6118
+          },
+          {
+            "bbox_rel": 0.0155,
+            "confidence": 0.4576
+          },
+          {
+            "bbox_rel": 0.007,
+            "confidence": 0.2598
+          }
+        ]
+      },
+      {
+        "frame_idx": 81,
+        "timestamp_sec": 81.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0173,
+            "confidence": 0.2522
+          }
+        ]
+      },
+      {
+        "frame_idx": 82,
+        "timestamp_sec": 82.0,
+        "num_detections": 2,
+        "detections": [
+          {
+            "bbox_rel": 0.0173,
+            "confidence": 0.6789
+          },
+          {
+            "bbox_rel": 0.0174,
+            "confidence": 0.6288
+          }
+        ]
+      },
+      {
+        "frame_idx": 83,
+        "timestamp_sec": 83.0,
+        "num_detections": 1,
+        "detections": [
+          {
+            "bbox_rel": 0.0143,
+            "confidence": 0.3662
+          }
+        ]
+      },
+      {
+        "frame_idx": 84,
+        "timestamp_sec": 84.0,
+        "num_detections": 3,
+        "detections": [
+          {
+            "bbox_rel": 0.0145,
+            "confidence": 0.6936
+          },
+          {
+            "bbox_rel": 0.0154,
+            "confidence": 0.6426
+          },
+          {
+            "bbox_rel": 0.0167,
+            "confidence": 0.4101
+          }
+        ]
+      },
+      {
+        "frame_idx": 85,
+        "timestamp_sec": 85.0,
+        "num_detections": 9,
+        "detections": [
+          {
+            "bbox_rel": 0.0141,
+            "confidence": 0.7814
+          },
+          {
+            "bbox_rel": 0.023,
+            "confidence": 0.7433
+          },
+          {
+            "bbox_rel": 0.0113,
+            "confidence": 0.5263
+          },
+          {
+            "bbox_rel": 0.0174,
+            "confidence": 0.4305
+          },
+          {
+            "bbox_rel": 0.0134,
+            "confidence": 0.4225
+          },
+          {
+            "bbox_rel": 0.0169,
+            "confidence": 0.3833
+          },
+          {
+            "bbox_rel": 0.0091,
+            "confidence": 0.3296
+          },
+          {
+            "bbox_rel": 0.0117,
+            "confidence": 0.2873
+          },
+          {
+            "bbox_rel": 0.0144,
+            "confidence": 0.2502
+          }
+        ]
+      },
+      {
+        "frame_idx": 86,
+        "timestamp_sec": 86.0,
+        "num_detections": 8,
+        "detections": [
+          {
+            "bbox_rel": 0.0139,
+            "confidence": 0.7241
+          },
+          {
+            "bbox_rel": 0.0144,
+            "confidence": 0.6929
+          },
+          {
+            "bbox_rel": 0.0178,
+            "confidence": 0.45
+          },
+          {
+            "bbox_rel": 0.0135,
+            "confidence": 0.3863
+          },
+          {
+            "bbox_rel": 0.0232,
+            "confidence": 0.3807
+          },
+          {
+            "bbox_rel": 0.0139,
+            "confidence": 0.3245
+          },
+          {
+            "bbox_rel": 0.0174,
+            "confidence": 0.2874
+          },
+          {
+            "bbox_rel": 0.0066,
+            "confidence": 0.2629
+          }
+        ]
+      },
+      {
+        "frame_idx": 87,
+        "timestamp_sec": 87.0,
+        "num_detections": 12,
+        "detections": [
+          {
+            "bbox_rel": 0.0179,
+            "confidence": 0.6765
+          },
+          {
+            "bbox_rel": 0.0187,
+            "confidence": 0.6743
+          },
+          {
+            "bbox_rel": 0.0125,
+            "confidence": 0.5906
+          },
+          {
+            "bbox_rel": 0.0075,
+            "confidence": 0.5555
+          },
+          {
+            "bbox_rel": 0.0166,
+            "confidence": 0.513
+          },
+          {
+            "bbox_rel": 0.0391,
+            "confidence": 0.4797
+          },
+          {
+            "bbox_rel": 0.0139,
+            "confidence": 0.4775
+          },
+          {
+            "bbox_rel": 0.0224,
+            "confidence": 0.4154
+          },
+          {
+            "bbox_rel": 0.0239,
+            "confidence": 0.4089
+          },
+          {
+            "bbox_rel": 0.0237,
+            "confidence": 0.324
+          },
+          {
+            "bbox_rel": 0.0163,
+            "confidence": 0.284
+          },
+          {
+            "bbox_rel": 0.027,
+            "confidence": 0.2534
+          }
+        ]
+      },
+      {
+        "frame_idx": 88,
+        "timestamp_sec": 88.0,
+        "num_detections": 10,
+        "detections": [
+          {
+            "bbox_rel": 0.0201,
+            "confidence": 0.6866
+          },
+          {
+            "bbox_rel": 0.0136,
+            "confidence": 0.6272
+          },
+          {
+            "bbox_rel": 0.0124,
+            "confidence": 0.5992
+          },
+          {
+            "bbox_rel": 0.0124,
+            "confidence": 0.5422
+          },
+          {
+            "bbox_rel": 0.0185,
+            "confidence": 0.4885
+          },
+          {
+            "bbox_rel": 0.0262,
+            "confidence": 0.4115
+          },
+          {
+            "bbox_rel": 0.0132,
+            "confidence": 0.3618
+          },
+          {
+            "bbox_rel": 0.0255,
+            "confidence": 0.3057
+          },
+          {
+            "bbox_rel": 0.0098,
+            "confidence": 0.2992
+          },
+          {
+            "bbox_rel": 0.011,
+            "confidence": 0.2687
+          }
+        ]
+      },
+      {
+        "frame_idx": 89,
+        "timestamp_sec": 89.0,
+        "num_detections": 5,
+        "detections": [
+          {
+            "bbox_rel": 0.0206,
+            "confidence": 0.7896
+          },
+          {
+            "bbox_rel": 0.0396,
+            "confidence": 0.3897
+          },
+          {
+            "bbox_rel": 0.0208,
+            "confidence": 0.3126
+          },
+          {
+            "bbox_rel": 0.0189,
+            "confidence": 0.3057
+          },
+          {
+            "bbox_rel": 0.0123,
+            "confidence": 0.2883
+          }
+        ]
+      },
+      {
+        "frame_idx": 90,
+        "timestamp_sec": 90.0,
+        "num_detections": 8,
+        "detections": [
+          {
+            "bbox_rel": 0.0188,
+            "confidence": 0.8107
+          },
+          {
+            "bbox_rel": 0.0145,
+            "confidence": 0.5881
+          },
+          {
+            "bbox_rel": 0.016,
+            "confidence": 0.5628
+          },
+          {
+            "bbox_rel": 0.0192,
+            "confidence": 0.5468
+          },
+          {
+            "bbox_rel": 0.0288,
+            "confidence": 0.4099
+          },
+          {
+            "bbox_rel": 0.0236,
+            "confidence": 0.3132
+          },
+          {
+            "bbox_rel": 0.0208,
+            "confidence": 0.2704
+          },
+          {
+            "bbox_rel": 0.0154,
+            "confidence": 0.2639
+          }
+        ]
+      }
+    ]
+  },
+  "yolo_output_overall": {
+    "num_frames_analyzed": 91,
+    "frames_with_bird": 32,
+    "max_bbox_size_relative": 0.0396,
+    "avg_bbox_size_relative": 0.0159,
+    "std_bbox_size": 0.0065,
+    "max_detection_confidence": 0.8107,
+    "avg_detection_confidence": 0.4506,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      3,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      6,
+      4,
+      3,
+      3,
+      11,
+      11,
+      7,
+      6,
+      4,
+      4,
+      1,
+      2,
+      1,
+      3,
+      9,
+      8,
+      12,
+      10,
+      5,
+      8
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 32,
+    "frames_with_bird": 32,
+    "max_bbox_size_relative": 0.0396,
+    "avg_bbox_size_relative": 0.0159,
+    "std_bbox_size": 0.0065,
+    "max_detection_confidence": 0.8107,
+    "avg_detection_confidence": 0.4506,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      6,
+      4,
+      3,
+      3,
+      11,
+      11,
+      7,
+      6,
+      4,
+      4,
+      1,
+      2,
+      1,
+      3,
+      9,
+      8,
+      12,
+      10,
+      5,
+      8
+    ]
+  },
+  "birdnet_output": {
+    "all_detections": [],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "timeline": {
+    "window_duration_sec": 2.0,
+    "video_duration_sec": 90.604,
+    "num_windows": 46,
+    "windows": [
+      {
+        "window_idx": 0,
+        "time_range_sec": [
+          0.0,
+          2.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 1,
+        "time_range_sec": [
+          2.0,
+          4.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 2,
+        "time_range_sec": [
+          4.0,
+          6.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 3,
+        "time_range_sec": [
+          6.0,
+          8.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 4,
+        "time_range_sec": [
+          8.0,
+          10.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 5,
+        "time_range_sec": [
+          10.0,
+          12.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 6,
+        "time_range_sec": [
+          12.0,
+          14.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 7,
+        "time_range_sec": [
+          14.0,
+          16.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 8,
+        "time_range_sec": [
+          16.0,
+          18.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 9,
+        "time_range_sec": [
+          18.0,
+          20.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 10,
+        "time_range_sec": [
+          20.0,
+          22.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 11,
+        "time_range_sec": [
+          22.0,
+          24.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 12,
+        "time_range_sec": [
+          24.0,
+          26.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 13,
+        "time_range_sec": [
+          26.0,
+          28.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 14,
+        "time_range_sec": [
+          28.0,
+          30.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 15,
+        "time_range_sec": [
+          30.0,
+          32.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 16,
+        "time_range_sec": [
+          32.0,
+          34.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 17,
+        "time_range_sec": [
+          34.0,
+          36.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 18,
+        "time_range_sec": [
+          36.0,
+          38.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 19,
+        "time_range_sec": [
+          38.0,
+          40.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 20,
+        "time_range_sec": [
+          40.0,
+          42.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 21,
+        "time_range_sec": [
+          42.0,
+          44.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0106,
+          "avg_bbox_size_relative": 0.0089,
+          "avg_detection_confidence": 0.472,
+          "detection_counts": [
+            1,
+            1
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 22,
+        "time_range_sec": [
+          44.0,
+          46.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0258,
+          "avg_bbox_size_relative": 0.011,
+          "avg_detection_confidence": 0.3448,
+          "detection_counts": [
+            3,
+            2
+          ],
+          "total_detections": 5
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 23,
+        "time_range_sec": [
+          46.0,
+          48.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.0127,
+          "avg_bbox_size_relative": 0.0127,
+          "avg_detection_confidence": 0.3455,
+          "detection_counts": [
+            0,
+            1
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 24,
+        "time_range_sec": [
+          48.0,
+          50.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 25,
+        "time_range_sec": [
+          50.0,
+          52.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 26,
+        "time_range_sec": [
+          52.0,
+          54.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.012,
+          "avg_bbox_size_relative": 0.012,
+          "avg_detection_confidence": 0.3791,
+          "detection_counts": [
+            0,
+            1
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 27,
+        "time_range_sec": [
+          54.0,
+          56.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.0178,
+          "avg_bbox_size_relative": 0.0178,
+          "avg_detection_confidence": 0.3746,
+          "detection_counts": [
+            1,
+            0
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 28,
+        "time_range_sec": [
+          56.0,
+          58.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.0127,
+          "avg_bbox_size_relative": 0.0127,
+          "avg_detection_confidence": 0.6947,
+          "detection_counts": [
+            0,
+            1
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 29,
+        "time_range_sec": [
+          58.0,
+          60.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 30,
+        "time_range_sec": [
+          60.0,
+          62.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.0125,
+          "avg_bbox_size_relative": 0.0125,
+          "avg_detection_confidence": 0.2532,
+          "detection_counts": [
+            0,
+            1
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 31,
+        "time_range_sec": [
+          62.0,
+          64.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.0067,
+          "avg_bbox_size_relative": 0.0067,
+          "avg_detection_confidence": 0.3158,
+          "detection_counts": [
+            0,
+            1
+          ],
+          "total_detections": 1
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 32,
+        "time_range_sec": [
+          64.0,
+          66.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 33,
+        "time_range_sec": [
+          66.0,
+          68.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 34,
+        "time_range_sec": [
+          68.0,
+          70.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.0174,
+          "avg_bbox_size_relative": 0.0103,
+          "avg_detection_confidence": 0.3166,
+          "detection_counts": [
+            2,
+            0
+          ],
+          "total_detections": 2
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 35,
+        "time_range_sec": [
+          70.0,
+          72.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0265,
+          "avg_bbox_size_relative": 0.0154,
+          "avg_detection_confidence": 0.3603,
+          "detection_counts": [
+            1,
+            6
+          ],
+          "total_detections": 7
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 36,
+        "time_range_sec": [
+          72.0,
+          74.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0334,
+          "avg_bbox_size_relative": 0.0205,
+          "avg_detection_confidence": 0.5429,
+          "detection_counts": [
+            4,
+            3
+          ],
+          "total_detections": 7
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 37,
+        "time_range_sec": [
+          74.0,
+          76.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0248,
+          "avg_bbox_size_relative": 0.0135,
+          "avg_detection_confidence": 0.4075,
+          "detection_counts": [
+            3,
+            11
+          ],
+          "total_detections": 14
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 38,
+        "time_range_sec": [
+          76.0,
+          78.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.029,
+          "avg_bbox_size_relative": 0.0147,
+          "avg_detection_confidence": 0.4407,
+          "detection_counts": [
+            11,
+            7
+          ],
+          "total_detections": 18
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 39,
+        "time_range_sec": [
+          78.0,
+          80.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0247,
+          "avg_bbox_size_relative": 0.016,
+          "avg_detection_confidence": 0.5323,
+          "detection_counts": [
+            6,
+            4
+          ],
+          "total_detections": 10
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 40,
+        "time_range_sec": [
+          80.0,
+          82.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0173,
+          "avg_bbox_size_relative": 0.0144,
+          "avg_detection_confidence": 0.4507,
+          "detection_counts": [
+            4,
+            1
+          ],
+          "total_detections": 5
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 41,
+        "time_range_sec": [
+          82.0,
+          84.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0174,
+          "avg_bbox_size_relative": 0.0163,
+          "avg_detection_confidence": 0.558,
+          "detection_counts": [
+            2,
+            1
+          ],
+          "total_detections": 3
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 42,
+        "time_range_sec": [
+          84.0,
+          86.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.023,
+          "avg_bbox_size_relative": 0.0148,
+          "avg_detection_confidence": 0.4917,
+          "detection_counts": [
+            3,
+            9
+          ],
+          "total_detections": 12
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 43,
+        "time_range_sec": [
+          86.0,
+          88.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0391,
+          "avg_bbox_size_relative": 0.018,
+          "avg_detection_confidence": 0.4581,
+          "detection_counts": [
+            8,
+            12
+          ],
+          "total_detections": 20
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 44,
+        "time_range_sec": [
+          88.0,
+          90.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 2,
+          "max_bbox_size_relative": 0.0396,
+          "avg_bbox_size_relative": 0.0183,
+          "avg_detection_confidence": 0.4451,
+          "detection_counts": [
+            10,
+            5
+          ],
+          "total_detections": 15
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      },
+      {
+        "window_idx": 45,
+        "time_range_sec": [
+          90.0,
+          90.6
+        ],
+        "visual": {
+          "num_frames": 1,
+          "frames_with_bird": 1,
+          "max_bbox_size_relative": 0.0288,
+          "avg_bbox_size_relative": 0.0196,
+          "avg_detection_confidence": 0.4707,
+          "detection_counts": [
+            8
+          ],
+          "total_detections": 8
+        },
+        "audio": {
+          "detections": [],
+          "target_species_found": false,
+          "dominant_species": null
+        }
+      }
+    ],
+    "sync_summary": {
+      "both_present_windows": [],
+      "visual_only_windows": [
+        21,
+        22,
+        23,
+        26,
+        27,
+        28,
+        30,
+        31,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "audio_only_windows": [],
+      "neither_windows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        29,
+        32,
+        33
+      ],
+      "sync_rate": 0.0
+    }
+  },
+  "sync_summary": {
+    "both_present_windows": [],
+    "visual_only_windows": [
+      21,
+      22,
+      23,
+      26,
+      27,
+      28,
+      30,
+      31,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "audio_only_windows": [],
+    "neither_windows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24,
+      25,
+      29,
+      32,
+      33
+    ],
+    "sync_rate": 0.0
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 91,
+      "frames_with_bird": 32,
+      "max_bbox_size_relative": 0.0396,
+      "avg_bbox_size_relative": 0.0159,
+      "std_bbox_size": 0.0065,
+      "avg_detection_confidence": 0.4506,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        3,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        6,
+        4,
+        3,
+        3,
+        11,
+        11,
+        7,
+        6,
+        4,
+        4,
+        1,
+        2,
+        1,
+        3,
+        9,
+        8,
+        12,
+        10,
+        5,
+        8
+      ]
+    },
+    "audio": {
+      "all_detections": [],
+      "target_species_found": false,
+      "total_detections": 0,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    },
+    "temporal_sync": {
+      "window_duration_sec": 2.0,
+      "total_windows": 46,
+      "both_present": 0,
+      "visual_only": 20,
+      "audio_only": 0,
+      "neither": 26,
+      "sync_rate": 0.0
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.15},\n  \"reasoning\": \"視覚情報から小型の鳥が多く、音声情報はなし。\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.15
+      },
+      "reasoning": "視覚情報から小型の鳥が多く、音声情報はなし。",
+      "modality_used": "visual",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.797
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.15
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 1.151,
+    "yolo": 1.865,
+    "llm": 4.797,
+    "total": 7.814
+  },
+  "topology": "C_v3",
+  "fold": 22,
+  "source": "youtube-claude",
+  "category": "sparrow"
+}

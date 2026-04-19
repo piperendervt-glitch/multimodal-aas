@@ -1,0 +1,885 @@
+{
+  "video_id": "yt_TPgyTtnlYak",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_TPgyTtnlYak.wav",
+    "duration_sec": 23.708,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 24,
+    "fps_sampling": 1.0
+  },
+  "frame_extractor": {
+    "total_frames_sampled": 24,
+    "frames_with_bird": 0,
+    "frame_selection_rate": 0.0,
+    "fps_sampling": 1.0,
+    "all_frames_yolo_output": [
+      {
+        "frame_idx": 0,
+        "timestamp_sec": 0.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 1,
+        "timestamp_sec": 1.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 2,
+        "timestamp_sec": 2.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 3,
+        "timestamp_sec": 3.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 4,
+        "timestamp_sec": 4.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 5,
+        "timestamp_sec": 5.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 6,
+        "timestamp_sec": 6.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 7,
+        "timestamp_sec": 7.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 8,
+        "timestamp_sec": 8.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 9,
+        "timestamp_sec": 9.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 10,
+        "timestamp_sec": 10.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 11,
+        "timestamp_sec": 11.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 12,
+        "timestamp_sec": 12.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 13,
+        "timestamp_sec": 13.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 14,
+        "timestamp_sec": 14.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 15,
+        "timestamp_sec": 15.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 16,
+        "timestamp_sec": 16.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 17,
+        "timestamp_sec": 17.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 18,
+        "timestamp_sec": 18.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 19,
+        "timestamp_sec": 19.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 20,
+        "timestamp_sec": 20.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 21,
+        "timestamp_sec": 21.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 22,
+        "timestamp_sec": 22.0,
+        "num_detections": 0,
+        "detections": []
+      },
+      {
+        "frame_idx": 23,
+        "timestamp_sec": 23.0,
+        "num_detections": 0,
+        "detections": []
+      }
+    ]
+  },
+  "yolo_output_overall": {
+    "num_frames_analyzed": 24,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "yolo_output_selected_only": {
+    "num_frames_analyzed": 0,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": []
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.132,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9458,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9927,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9991,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9888,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9952,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9928,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.1136,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1064,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Blue Rock-Thrush"
+    ]
+  },
+  "timeline": {
+    "window_duration_sec": 2.0,
+    "video_duration_sec": 23.708,
+    "num_windows": 12,
+    "windows": [
+      {
+        "window_idx": 0,
+        "time_range_sec": [
+          0.0,
+          2.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.132,
+              "start_sec": 0.0,
+              "end_sec": 3.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 1,
+        "time_range_sec": [
+          2.0,
+          4.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.132,
+              "start_sec": 0.0,
+              "end_sec": 3.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9458,
+              "start_sec": 3.0,
+              "end_sec": 6.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 2,
+        "time_range_sec": [
+          4.0,
+          6.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9458,
+              "start_sec": 3.0,
+              "end_sec": 6.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 3,
+        "time_range_sec": [
+          6.0,
+          8.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9927,
+              "start_sec": 6.0,
+              "end_sec": 9.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 4,
+        "time_range_sec": [
+          8.0,
+          10.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9927,
+              "start_sec": 6.0,
+              "end_sec": 9.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9991,
+              "start_sec": 9.0,
+              "end_sec": 12.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 5,
+        "time_range_sec": [
+          10.0,
+          12.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9991,
+              "start_sec": 9.0,
+              "end_sec": 12.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 6,
+        "time_range_sec": [
+          12.0,
+          14.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9888,
+              "start_sec": 12.0,
+              "end_sec": 15.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 7,
+        "time_range_sec": [
+          14.0,
+          16.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9888,
+              "start_sec": 12.0,
+              "end_sec": 15.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9952,
+              "start_sec": 15.0,
+              "end_sec": 18.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 8,
+        "time_range_sec": [
+          16.0,
+          18.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9952,
+              "start_sec": 15.0,
+              "end_sec": 18.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 9,
+        "time_range_sec": [
+          18.0,
+          20.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9928,
+              "start_sec": 18.0,
+              "end_sec": 21.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 10,
+        "time_range_sec": [
+          20.0,
+          22.0
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.9928,
+              "start_sec": 18.0,
+              "end_sec": 21.0
+            },
+            {
+              "species": "Blue Rock-Thrush",
+              "scientific_name": "Monticola solitarius",
+              "confidence": 0.1136,
+              "start_sec": 21.0,
+              "end_sec": 24.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.1064,
+              "start_sec": 21.0,
+              "end_sec": 24.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Brown-eared Bulbul"
+        }
+      },
+      {
+        "window_idx": 11,
+        "time_range_sec": [
+          22.0,
+          23.71
+        ],
+        "visual": {
+          "num_frames": 2,
+          "frames_with_bird": 0,
+          "max_bbox_size_relative": 0.0,
+          "avg_bbox_size_relative": 0.0,
+          "avg_detection_confidence": 0.0,
+          "detection_counts": [
+            0,
+            0
+          ],
+          "total_detections": 0
+        },
+        "audio": {
+          "detections": [
+            {
+              "species": "Blue Rock-Thrush",
+              "scientific_name": "Monticola solitarius",
+              "confidence": 0.1136,
+              "start_sec": 21.0,
+              "end_sec": 24.0
+            },
+            {
+              "species": "Brown-eared Bulbul",
+              "scientific_name": "Hypsipetes amaurotis",
+              "confidence": 0.1064,
+              "start_sec": 21.0,
+              "end_sec": 24.0
+            }
+          ],
+          "target_species_found": true,
+          "dominant_species": "Blue Rock-Thrush"
+        }
+      }
+    ],
+    "sync_summary": {
+      "both_present_windows": [],
+      "visual_only_windows": [],
+      "audio_only_windows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "neither_windows": [],
+      "sync_rate": 0.0
+    }
+  },
+  "sync_summary": {
+    "both_present_windows": [],
+    "visual_only_windows": [],
+    "audio_only_windows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "neither_windows": [],
+    "sync_rate": 0.0
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 24,
+      "frames_with_bird": 0,
+      "max_bbox_size_relative": 0.0,
+      "avg_bbox_size_relative": 0.0,
+      "std_bbox_size": 0.0,
+      "avg_detection_confidence": 0.0,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9991,
+          "avg_confidence": 0.7691,
+          "num_detections": 8
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Monticola solitarius",
+          "common_name": "Blue Rock-Thrush",
+          "confidence": 0.1136,
+          "avg_confidence": 0.1136,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 9,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    },
+    "temporal_sync": {
+      "window_duration_sec": 2.0,
+      "total_windows": 12,
+      "both_present": 0,
+      "visual_only": 0,
+      "audio_only": 12,
+      "neither": 0,
+      "sync_rate": 0.0
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.0, \"bulbul\": 0.0},\n  \"reasoning\": \"視覚情報なし、音声のみ対象種無し\",\n  \"modality_used\": \"none\",\n  \"fallback_used\": true\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "視覚情報なし、音声のみ対象種無し",
+      "modality_used": "none",
+      "fallback_used": true
+    },
+    "elapsed_sec": 4.718
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.3,
+    "yolo": 0.469,
+    "llm": 4.718,
+    "total": 5.487
+  },
+  "topology": "C_v3",
+  "fold": 23,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}
