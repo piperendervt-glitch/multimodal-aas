@@ -1,0 +1,197 @@
+{
+  "video_id": "yt_sljwOG3KU2g",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_sljwOG3KU2g.wav",
+    "duration_sec": 35.016,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.972,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.9172,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8653,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5636,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8648,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7613,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7451,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.2976,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4599,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.9512,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Russet Sparrow",
+        "scientific_name": "Passer cinnamomeus",
+        "confidence": 0.1101,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.514,
+        "time_range": [
+          30.0,
+          33.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1971,
+        "time_range": [
+          33.0,
+          36.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.972,
+        "num_detections": 10
+      }
+    ],
+    "other_birds": [
+      "Russet Sparrow"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.972,
+        "num_detections": 10
+      }
+    ],
+    "other_birds_detected": [
+      "Russet Sparrow"
+    ],
+    "total_audio_duration_sec": 35.02
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.972, \"bulbul\": 0.0},\n  \"reasoning\": \"BirdNETがsparrowを高確信度で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.972,
+        "bulbul": 0.0
+      },
+      "reasoning": "BirdNETがsparrowを高確信度で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.313
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.972,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.045,
+    "birdnet": 0.428,
+    "llm": 4.313,
+    "total": 4.786
+  },
+  "topology": "A",
+  "fold": 15,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

@@ -1,0 +1,85 @@
+{
+  "video_id": "yt_evVHoDIv1hE",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_evVHoDIv1hE.wav",
+    "duration_sec": 10.008,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5354,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5354,
+        "num_detections": 1
+      }
+    ],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5354,
+        "num_detections": 1
+      }
+    ],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 10.01
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.5354, \"bulbul\": 0.0},\n  \"reasoning\": \"sparrowの信頼度が0.3以上\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.5354,
+        "bulbul": 0.0
+      },
+      "reasoning": "sparrowの信頼度が0.3以上",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.309
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.5354,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.035,
+    "birdnet": 0.115,
+    "llm": 4.309,
+    "total": 4.459
+  },
+  "topology": "A",
+  "fold": 17,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

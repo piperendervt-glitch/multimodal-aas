@@ -1,0 +1,130 @@
+{
+  "video_id": "yt_HFN1MX3D4yM",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_HFN1MX3D4yM.wav",
+    "duration_sec": 16.602,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.675,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8033,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.6763,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3161,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4671,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.772,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8033,
+        "num_detections": 6
+      }
+    ],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8033,
+        "num_detections": 6
+      }
+    ],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 16.6
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.8033, \"bulbul\": 0.0},\n  \"reasoning\": \"BirdNETがスズメを0.8以上で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.8033,
+        "bulbul": 0.0
+      },
+      "reasoning": "BirdNETがスズメを0.8以上で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.441
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.8033,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.038,
+    "birdnet": 0.213,
+    "llm": 4.441,
+    "total": 4.693
+  },
+  "topology": "A",
+  "fold": 13,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

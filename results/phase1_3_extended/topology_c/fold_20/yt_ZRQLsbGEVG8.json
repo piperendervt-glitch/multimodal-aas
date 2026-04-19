@@ -1,0 +1,130 @@
+{
+  "video_id": "yt_ZRQLsbGEVG8",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_ZRQLsbGEVG8.wav",
+    "duration_sec": 19.017,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 19,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 19,
+    "frames_with_bird": 19,
+    "max_bbox_size_relative": 0.5581,
+    "avg_bbox_size_relative": 0.1693,
+    "std_bbox_size": 0.136,
+    "max_detection_confidence": 0.8522,
+    "avg_detection_confidence": 0.5511,
+    "detection_counts_per_frame": [
+      2,
+      3,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      3,
+      2,
+      2
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 19,
+      "frames_with_bird": 19,
+      "max_bbox_size_relative": 0.5581,
+      "avg_bbox_size_relative": 0.1693,
+      "std_bbox_size": 0.136,
+      "avg_detection_confidence": 0.5511,
+      "detection_counts_per_frame": [
+        2,
+        3,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2
+      ]
+    },
+    "audio": {
+      "all_detections": [],
+      "target_species_found": false,
+      "total_detections": 0,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.92},\n  \"reasoning\": \"平均 bbox サイズがヒヨドリの範囲内。音声情報なし。\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.92
+      },
+      "reasoning": "平均 bbox サイズがヒヨドリの範囲内。音声情報なし。",
+      "modality_used": "visual",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.76
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.92
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.228,
+    "yolo": 0.382,
+    "llm": 4.76,
+    "total": 5.37
+  },
+  "topology": "C",
+  "fold": 20,
+  "source": "youtube-claude",
+  "category": "sparrow"
+}

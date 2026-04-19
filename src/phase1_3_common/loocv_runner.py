@@ -106,6 +106,80 @@ def run_loocv(
     return rows
 
 
+def run_loocv_over(
+    topology: str,
+    fold_fn: FoldFn,
+    output_base: Path,
+    videos: list[dict[str, Any]],
+    extra_fields: tuple[str, ...] = ("source", "category"),
+) -> list[dict[str, Any]]:
+    """Variant of :func:`run_loocv` that consumes an explicit video list.
+
+    Used by the Phase 1.3 extended runs to iterate over self-recorded +
+    YouTube videos together. ``extra_fields`` names video-dict keys that
+    should be carried through into the saved row (e.g. ``source``,
+    ``category``) so downstream summaries can break metrics down by
+    origin without re-reading the metadata files.
+    """
+    output_base.mkdir(parents=True, exist_ok=True)
+    rows: list[dict[str, Any]] = []
+    for i, v in enumerate(videos, start=1):
+        fold_dir = output_base / f"fold_{i:02d}"
+        fold_dir.mkdir(parents=True, exist_ok=True)
+        out_path = fold_dir / f"{v['video_id']}.json"
+        gt = {
+            "sparrow": int(v.get("expected_sparrow", 0)),
+            "bulbul":  int(v.get("expected_bulbul", 0)),
+        }
+        print(
+            f"[{topology} fold {i:02d}/{len(videos)}] "
+            f"{v['video_id']} ({v.get('source','?')}/{v.get('category','?')}) ...",
+            flush=True,
+        )
+        t0 = time.perf_counter()
+        try:
+            row = fold_fn(i, v, gt)
+        except Exception as e:  # noqa: BLE001 - per-fold isolation
+            print(f"  [error] {type(e).__name__}: {e}", file=sys.stderr)
+            traceback.print_exc(file=sys.stderr)
+            err_row: dict[str, Any] = {
+                "topology": topology,
+                "fold": i,
+                "video_id": v["video_id"],
+                "error": f"{type(e).__name__}: {e}",
+                "ground_truth": gt,
+            }
+            for k in extra_fields:
+                if k in v:
+                    err_row[k] = v[k]
+            out_path.write_text(
+                json.dumps(err_row, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            rows.append(err_row)
+            continue
+
+        row["topology"] = topology
+        row["fold"] = i
+        for k in extra_fields:
+            if k in v:
+                row[k] = v[k]
+        out_path.write_text(
+            json.dumps(row, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        rows.append(row)
+        pred = row.get("final_prediction") or {}
+        fb = row.get("fallback_triggered", False)
+        dt = time.perf_counter() - t0
+        print(
+            f"  pred=(S:{pred.get('sparrow','?')},B:{pred.get('bulbul','?')}) "
+            f"gt=(S:{gt['sparrow']},B:{gt['bulbul']}) fallback={fb} "
+            f"({dt:.1f}s)"
+        )
+    return rows
+
+
 def compute_metrics(rows: list[dict[str, Any]]) -> dict[str, Any]:
     """Multi-label metrics over rows with ``final_prediction`` and ``ground_truth``.
 

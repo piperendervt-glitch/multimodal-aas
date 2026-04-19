@@ -1,0 +1,128 @@
+{
+  "video_id": "yt_ToG_e-OQWwI",
+  "frame_extraction": {
+    "num_frames": 28,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 28,
+    "frames_with_bird": 28,
+    "max_bbox_size_relative": 0.1043,
+    "avg_bbox_size_relative": 0.1038,
+    "std_bbox_size": 0.0005,
+    "max_detection_confidence": 0.9069,
+    "avg_detection_confidence": 0.8993,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "num_frames_analyzed": 28,
+    "frames_with_bird": 28,
+    "max_bbox_size_relative": 0.1043,
+    "avg_bbox_size_relative": 0.1038,
+    "std_bbox_size": 0.0005,
+    "max_detection_confidence": 0.9069,
+    "avg_detection_confidence": 0.8993,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.95},\n  \"reasoning\": \"最大 bbox サイズがヒヨドリの範囲内であり、検出数も一定。\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.95
+      },
+      "reasoning": "最大 bbox サイズがヒヨドリの範囲内であり、検出数も一定。",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.602
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.95
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.078,
+    "yolo": 0.558,
+    "llm": 4.602,
+    "total": 5.238
+  },
+  "topology": "B",
+  "fold": 14,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

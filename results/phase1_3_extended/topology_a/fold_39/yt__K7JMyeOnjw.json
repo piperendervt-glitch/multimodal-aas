@@ -1,0 +1,115 @@
+{
+  "video_id": "yt__K7JMyeOnjw",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt__K7JMyeOnjw.wav",
+    "duration_sec": 300.002,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.366,
+        "time_range": [
+          87.0,
+          90.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3531,
+        "time_range": [
+          93.0,
+          96.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7984,
+        "time_range": [
+          99.0,
+          102.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.366,
+        "num_detections": 1
+      },
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7984,
+        "num_detections": 2
+      }
+    ],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.366,
+        "num_detections": 1
+      },
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7984,
+        "num_detections": 2
+      }
+    ],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 300.0
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.366, \"bulbul\": 0.7984},\n  \"reasoning\": \"sparrowとbulbulの信頼度が閾値を超える\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.366,
+        "bulbul": 0.7984
+      },
+      "reasoning": "sparrowとbulbulの信頼度が閾値を超える",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.631
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.366,
+      "bulbul": 0.7984
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.153,
+    "birdnet": 3.603,
+    "llm": 4.631,
+    "total": 8.387
+  },
+  "topology": "A",
+  "fold": 39,
+  "source": "youtube-claude",
+  "category": "mixed"
+}

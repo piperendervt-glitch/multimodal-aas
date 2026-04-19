@@ -1,0 +1,61 @@
+{
+  "video_id": "yt_xhvf73wRJVM",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_xhvf73wRJVM.wav",
+    "duration_sec": 90.604,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 90.6
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.067,
+    "birdnet": 1.079,
+    "llm": 0.0,
+    "total": 1.146
+  },
+  "topology": "A",
+  "fold": 22,
+  "source": "youtube-claude",
+  "category": "sparrow"
+}

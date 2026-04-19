@@ -1,0 +1,179 @@
+{
+  "video_id": "yt_jk15DbXQV6A",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_jk15DbXQV6A.wav",
+    "duration_sec": 31.022,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4612,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.349,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.495,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1641,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.824,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.1234,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8522,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8376,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9394,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9078,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3227,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9394,
+        "num_detections": 8
+      }
+    ],
+    "other_birds": [
+      "Richard's Pipit"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9394,
+        "num_detections": 8
+      }
+    ],
+    "other_birds_detected": [
+      "Richard's Pipit"
+    ],
+    "total_audio_duration_sec": 31.02
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.94},\n  \"reasoning\": \"BirdNETがbulbulを高確信度で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.94
+      },
+      "reasoning": "BirdNETがbulbulを高確信度で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.277
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.94
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.045,
+    "birdnet": 0.369,
+    "llm": 4.277,
+    "total": 4.691
+  },
+  "topology": "A",
+  "fold": 28,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

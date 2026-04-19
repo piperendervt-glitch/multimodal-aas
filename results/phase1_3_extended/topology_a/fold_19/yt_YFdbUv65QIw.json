@@ -1,0 +1,121 @@
+{
+  "video_id": "yt_YFdbUv65QIw",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_YFdbUv65QIw.wav",
+    "duration_sec": 300.002,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.2645,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4746,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1857,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3729,
+        "time_range": [
+          48.0,
+          51.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1792,
+        "time_range": [
+          279.0,
+          282.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4746,
+        "num_detections": 2
+      }
+    ],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4746,
+        "num_detections": 2
+      }
+    ],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 300.0
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.4746, \"bulbul\": 0.0},\n  \"reasoning\": \"sparrowの信頼度が0.3以上\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.4746,
+        "bulbul": 0.0
+      },
+      "reasoning": "sparrowの信頼度が0.3以上",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.438
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.4746,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.147,
+    "birdnet": 3.578,
+    "llm": 4.438,
+    "total": 8.164
+  },
+  "topology": "A",
+  "fold": 19,
+  "source": "youtube-claude",
+  "category": "sparrow"
+}

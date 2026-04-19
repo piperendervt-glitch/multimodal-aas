@@ -1,0 +1,194 @@
+{
+  "video_id": "yt_JCGgh5zvEeE",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_JCGgh5zvEeE.wav",
+    "duration_sec": 126.015,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3346,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1037,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1316,
+        "time_range": [
+          45.0,
+          48.0
+        ]
+      },
+      {
+        "species": "Black Kite",
+        "scientific_name": "Milvus migrans",
+        "confidence": 0.5839,
+        "time_range": [
+          72.0,
+          75.0
+        ]
+      },
+      {
+        "species": "Little Grebe",
+        "scientific_name": "Tachybaptus ruficollis",
+        "confidence": 0.1106,
+        "time_range": [
+          72.0,
+          75.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1033,
+        "time_range": [
+          78.0,
+          81.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1041,
+        "time_range": [
+          81.0,
+          84.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.175,
+        "time_range": [
+          93.0,
+          96.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1243,
+        "time_range": [
+          99.0,
+          102.0
+        ]
+      },
+      {
+        "species": "Ruddy Kingfisher",
+        "scientific_name": "Halcyon coromanda",
+        "confidence": 0.9948,
+        "time_range": [
+          111.0,
+          114.0
+        ]
+      },
+      {
+        "species": "Eurasian Wren",
+        "scientific_name": "Troglodytes troglodytes",
+        "confidence": 0.9845,
+        "time_range": [
+          120.0,
+          123.0
+        ]
+      },
+      {
+        "species": "Eurasian Wren",
+        "scientific_name": "Troglodytes troglodytes",
+        "confidence": 0.9957,
+        "time_range": [
+          123.0,
+          126.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3346,
+        "num_detections": 1
+      }
+    ],
+    "other_birds": [
+      "Black Kite",
+      "Eurasian Wren",
+      "Little Grebe",
+      "Ruddy Kingfisher"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3346,
+        "num_detections": 1
+      }
+    ],
+    "other_birds_detected": [
+      "Black Kite",
+      "Eurasian Wren",
+      "Little Grebe",
+      "Ruddy Kingfisher"
+    ],
+    "total_audio_duration_sec": 126.01
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.3346, \"bulbul\": 0.0},\n  \"reasoning\": \"sparrow の信頼度が基準未満\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.3346,
+        "bulbul": 0.0
+      },
+      "reasoning": "sparrow の信頼度が基準未満",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.45
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.3346,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.076,
+    "birdnet": 1.507,
+    "llm": 4.45,
+    "total": 6.033
+  },
+  "topology": "A",
+  "fold": 12,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

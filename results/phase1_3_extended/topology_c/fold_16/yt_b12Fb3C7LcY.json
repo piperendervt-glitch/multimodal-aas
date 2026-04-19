@@ -1,0 +1,280 @@
+{
+  "video_id": "yt_b12Fb3C7LcY",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_b12Fb3C7LcY.wav",
+    "duration_sec": 66.456,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 66,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Russet Sparrow",
+        "scientific_name": "Passer cinnamomeus",
+        "confidence": 0.1147,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1554,
+        "time_range": [
+          33.0,
+          36.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.172,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1728,
+        "time_range": [
+          45.0,
+          48.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Russet Sparrow"
+    ]
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 66,
+    "frames_with_bird": 37,
+    "max_bbox_size_relative": 0.3558,
+    "avg_bbox_size_relative": 0.1068,
+    "std_bbox_size": 0.0873,
+    "max_detection_confidence": 0.9268,
+    "avg_detection_confidence": 0.8395,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 66,
+      "frames_with_bird": 37,
+      "max_bbox_size_relative": 0.3558,
+      "avg_bbox_size_relative": 0.1068,
+      "std_bbox_size": 0.0873,
+      "avg_detection_confidence": 0.8395,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.1728,
+          "avg_confidence": 0.1667,
+          "num_detections": 3
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Passer cinnamomeus",
+          "common_name": "Russet Sparrow",
+          "confidence": 0.1147,
+          "avg_confidence": 0.1147,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 4,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.8},\n  \"reasoning\": \"視覚情報より中型鳥が多いため、ヒヨドリと判断。音声は補強\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.8
+      },
+      "reasoning": "視覚情報より中型鳥が多いため、ヒヨドリと判断。音声は補強",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.913
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.8
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 0.831,
+    "yolo": 1.32,
+    "llm": 4.913,
+    "total": 7.065
+  },
+  "topology": "C",
+  "fold": 16,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

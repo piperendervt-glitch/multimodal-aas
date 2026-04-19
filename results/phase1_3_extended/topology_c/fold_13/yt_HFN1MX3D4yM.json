@@ -1,0 +1,190 @@
+{
+  "video_id": "yt_HFN1MX3D4yM",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_HFN1MX3D4yM.wav",
+    "duration_sec": 16.602,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 17,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.675,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8033,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.6763,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3161,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4671,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.772,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 17,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 17,
+      "frames_with_bird": 0,
+      "max_bbox_size_relative": 0.0,
+      "avg_bbox_size_relative": 0.0,
+      "std_bbox_size": 0.0,
+      "avg_detection_confidence": 0.0,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.8033,
+          "avg_confidence": 0.6183,
+          "num_detections": 6
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 6,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.8, \"bulbul\": 0.2},\n  \"reasoning\": \"音声でスズメが検出され、視覚情報はなし。\",\n  \"modality_used\": \"audio\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.8,
+        "bulbul": 0.2
+      },
+      "reasoning": "音声でスズメが検出され、視覚情報はなし。",
+      "modality_used": "audio",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.602
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.8,
+      "bulbul": 0.2
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.213,
+    "yolo": 0.327,
+    "llm": 4.602,
+    "total": 5.142
+  },
+  "topology": "C",
+  "fold": 13,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

@@ -1,0 +1,120 @@
+{
+  "video_id": "yt_6FQnY2jYNjM",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_6FQnY2jYNjM.wav",
+    "duration_sec": 300.002,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Whooper Swan",
+        "scientific_name": "Cygnus cygnus",
+        "confidence": 0.1208,
+        "time_range": [
+          153.0,
+          156.0
+        ]
+      },
+      {
+        "species": "Whooper Swan",
+        "scientific_name": "Cygnus cygnus",
+        "confidence": 0.7034,
+        "time_range": [
+          162.0,
+          165.0
+        ]
+      },
+      {
+        "species": "Whooper Swan",
+        "scientific_name": "Cygnus cygnus",
+        "confidence": 0.5335,
+        "time_range": [
+          165.0,
+          168.0
+        ]
+      },
+      {
+        "species": "Whooper Swan",
+        "scientific_name": "Cygnus cygnus",
+        "confidence": 0.577,
+        "time_range": [
+          168.0,
+          171.0
+        ]
+      },
+      {
+        "species": "Whooper Swan",
+        "scientific_name": "Cygnus cygnus",
+        "confidence": 0.1373,
+        "time_range": [
+          171.0,
+          174.0
+        ]
+      },
+      {
+        "species": "Whooper Swan",
+        "scientific_name": "Cygnus cygnus",
+        "confidence": 0.2456,
+        "time_range": [
+          180.0,
+          183.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Whooper Swan"
+    ]
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [
+      "Whooper Swan"
+    ],
+    "total_audio_duration_sec": 300.0
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.147,
+    "birdnet": 3.6,
+    "llm": 0.0,
+    "total": 3.747
+  },
+  "topology": "A",
+  "fold": 41,
+  "source": "youtube-claude",
+  "category": "mixed"
+}

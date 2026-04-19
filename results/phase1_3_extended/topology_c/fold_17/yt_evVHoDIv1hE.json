@@ -1,0 +1,131 @@
+{
+  "video_id": "yt_evVHoDIv1hE",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_evVHoDIv1hE.wav",
+    "duration_sec": 10.008,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 10,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5354,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 10,
+    "frames_with_bird": 9,
+    "max_bbox_size_relative": 0.2288,
+    "avg_bbox_size_relative": 0.1876,
+    "std_bbox_size": 0.0647,
+    "max_detection_confidence": 0.9176,
+    "avg_detection_confidence": 0.8903,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 10,
+      "frames_with_bird": 9,
+      "max_bbox_size_relative": 0.2288,
+      "avg_bbox_size_relative": 0.1876,
+      "std_bbox_size": 0.0647,
+      "avg_detection_confidence": 0.8903,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.5354,
+          "avg_confidence": 0.5354,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 1,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.05},\n  \"reasoning\": \"視覚で多数のスズメ、音声でも対象種検出\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.05
+      },
+      "reasoning": "視覚で多数のスズメ、音声でも対象種検出",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.691
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.05
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.119,
+    "yolo": 0.17,
+    "llm": 4.691,
+    "total": 4.98
+  },
+  "topology": "C",
+  "fold": 17,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

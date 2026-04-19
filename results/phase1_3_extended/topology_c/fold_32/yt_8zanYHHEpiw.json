@@ -1,0 +1,1180 @@
+{
+  "video_id": "yt_8zanYHHEpiw",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_8zanYHHEpiw.wav",
+    "duration_sec": 300.002,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 300,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8743,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1302,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4743,
+        "time_range": [
+          33.0,
+          36.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2152,
+        "time_range": [
+          36.0,
+          39.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9149,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1652,
+        "time_range": [
+          42.0,
+          45.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4481,
+        "time_range": [
+          45.0,
+          48.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3611,
+        "time_range": [
+          48.0,
+          51.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9671,
+        "time_range": [
+          51.0,
+          54.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.1199,
+        "time_range": [
+          51.0,
+          54.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3233,
+        "time_range": [
+          54.0,
+          57.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1645,
+        "time_range": [
+          57.0,
+          60.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.6609,
+        "time_range": [
+          60.0,
+          63.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1114,
+        "time_range": [
+          63.0,
+          66.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1471,
+        "time_range": [
+          72.0,
+          75.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3811,
+        "time_range": [
+          75.0,
+          78.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.1222,
+        "time_range": [
+          90.0,
+          93.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1352,
+        "time_range": [
+          93.0,
+          96.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7833,
+        "time_range": [
+          96.0,
+          99.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3235,
+        "time_range": [
+          99.0,
+          102.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4689,
+        "time_range": [
+          105.0,
+          108.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9111,
+        "time_range": [
+          108.0,
+          111.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1621,
+        "time_range": [
+          117.0,
+          120.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8925,
+        "time_range": [
+          147.0,
+          150.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.5087,
+        "time_range": [
+          153.0,
+          156.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.13,
+        "time_range": [
+          168.0,
+          171.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.601,
+        "time_range": [
+          174.0,
+          177.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4119,
+        "time_range": [
+          189.0,
+          192.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1476,
+        "time_range": [
+          219.0,
+          222.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8268,
+        "time_range": [
+          222.0,
+          225.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2699,
+        "time_range": [
+          234.0,
+          237.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.643,
+        "time_range": [
+          237.0,
+          240.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4518,
+        "time_range": [
+          240.0,
+          243.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8123,
+        "time_range": [
+          255.0,
+          258.0
+        ]
+      },
+      {
+        "species": "Eurasian Siskin",
+        "scientific_name": "Spinus spinus",
+        "confidence": 0.3083,
+        "time_range": [
+          258.0,
+          261.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1088,
+        "time_range": [
+          261.0,
+          264.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9602,
+        "time_range": [
+          264.0,
+          267.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3,
+        "time_range": [
+          267.0,
+          270.0
+        ]
+      },
+      {
+        "species": "Ashy Minivet",
+        "scientific_name": "Pericrocotus divaricatus",
+        "confidence": 0.1089,
+        "time_range": [
+          267.0,
+          270.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1073,
+        "time_range": [
+          270.0,
+          273.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.598,
+        "time_range": [
+          279.0,
+          282.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.455,
+        "time_range": [
+          282.0,
+          285.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.1173,
+        "time_range": [
+          282.0,
+          285.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.3061,
+        "time_range": [
+          285.0,
+          288.0
+        ]
+      },
+      {
+        "species": "Narcissus Flycatcher",
+        "scientific_name": "Ficedula narcissina",
+        "confidence": 0.1156,
+        "time_range": [
+          285.0,
+          288.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.2709,
+        "time_range": [
+          288.0,
+          291.0
+        ]
+      },
+      {
+        "species": "Narcissus Flycatcher",
+        "scientific_name": "Ficedula narcissina",
+        "confidence": 0.2581,
+        "time_range": [
+          288.0,
+          291.0
+        ]
+      },
+      {
+        "species": "Yellow-throated Bunting",
+        "scientific_name": "Emberiza elegans",
+        "confidence": 0.1304,
+        "time_range": [
+          297.0,
+          300.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Ashy Minivet",
+      "Blue Rock-Thrush",
+      "Eurasian Siskin",
+      "Narcissus Flycatcher",
+      "Yellow-throated Bunting"
+    ]
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 300,
+    "frames_with_bird": 24,
+    "max_bbox_size_relative": 0.165,
+    "avg_bbox_size_relative": 0.0583,
+    "std_bbox_size": 0.0433,
+    "max_detection_confidence": 0.85,
+    "avg_detection_confidence": 0.4157,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      2,
+      1,
+      2,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 300,
+      "frames_with_bird": 24,
+      "max_bbox_size_relative": 0.165,
+      "avg_bbox_size_relative": 0.0583,
+      "std_bbox_size": 0.0433,
+      "avg_detection_confidence": 0.4157,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9671,
+          "avg_confidence": 0.4565,
+          "num_detections": 38
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Spinus spinus",
+          "common_name": "Eurasian Siskin",
+          "confidence": 0.3083,
+          "avg_confidence": 0.3083,
+          "num_detections": 1
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Monticola solitarius",
+          "common_name": "Blue Rock-Thrush",
+          "confidence": 0.3061,
+          "avg_confidence": 0.1873,
+          "num_detections": 5
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Ficedula narcissina",
+          "common_name": "Narcissus Flycatcher",
+          "confidence": 0.2581,
+          "avg_confidence": 0.1868,
+          "num_detections": 2
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Emberiza elegans",
+          "common_name": "Yellow-throated Bunting",
+          "confidence": 0.1304,
+          "avg_confidence": 0.1304,
+          "num_detections": 1
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Pericrocotus divaricatus",
+          "common_name": "Ashy Minivet",
+          "confidence": 0.1089,
+          "avg_confidence": 0.1089,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 48,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.92},\n  \"reasoning\": \"視覚情報よりヒヨドリの bbox サイズが大きい。音声でもヒヨドリが検出。\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.92
+      },
+      "reasoning": "視覚情報よりヒヨドリの bbox サイズが大きい。音声でもヒヨドリが検出。",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 5.385
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.92
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 3.709,
+    "yolo": 6.029,
+    "llm": 5.385,
+    "total": 15.125
+  },
+  "topology": "C",
+  "fold": 32,
+  "source": "youtube-claude",
+  "category": "bulbul"
+}

@@ -1,0 +1,244 @@
+{
+  "video_id": "balcony_008",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_008.wav",
+    "duration_sec": 62.206,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 62,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.2184,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1576,
+        "time_range": [
+          36.0,
+          39.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 62,
+    "frames_with_bird": 21,
+    "max_bbox_size_relative": 0.2064,
+    "avg_bbox_size_relative": 0.0674,
+    "std_bbox_size": 0.0484,
+    "max_detection_confidence": 0.872,
+    "avg_detection_confidence": 0.4983,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      4,
+      3,
+      3,
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      1,
+      2,
+      0,
+      0,
+      0,
+      3,
+      5,
+      4,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 62,
+      "frames_with_bird": 21,
+      "max_bbox_size_relative": 0.2064,
+      "avg_bbox_size_relative": 0.0674,
+      "std_bbox_size": 0.0484,
+      "avg_detection_confidence": 0.4983,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        4,
+        3,
+        3,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        5,
+        4,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.2184,
+          "avg_confidence": 0.188,
+          "num_detections": 2
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 2,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.8, \"bulbul\": 0.2},\n  \"reasoning\": \"視覚でスズメの bbox サイズが小さい。音声は低い信頼性。\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.8,
+        "bulbul": 0.2
+      },
+      "reasoning": "視覚でスズメの bbox サイズが小さい。音声は低い信頼性。",
+      "modality_used": "visual",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.778
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.8,
+      "bulbul": 0.2
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 0.756,
+    "yolo": 1.609,
+    "llm": 4.778,
+    "total": 7.144
+  },
+  "topology": "C",
+  "fold": 8,
+  "source": "self",
+  "category": "sparrow"
+}

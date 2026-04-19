@@ -1,0 +1,161 @@
+{
+  "video_id": "yt_TPgyTtnlYak",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_TPgyTtnlYak.wav",
+    "duration_sec": 23.708,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.132,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9458,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9927,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9991,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9888,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9952,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9928,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.1136,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1064,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9991,
+        "num_detections": 6
+      }
+    ],
+    "other_birds": [
+      "Blue Rock-Thrush"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9991,
+        "num_detections": 6
+      }
+    ],
+    "other_birds_detected": [
+      "Blue Rock-Thrush"
+    ],
+    "total_audio_duration_sec": 23.71
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.9991},\n  \"reasoning\": \"BirdNETがbulbulを高確信度で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.9991
+      },
+      "reasoning": "BirdNETがbulbulを高確信度で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.368
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.9991
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.039,
+    "birdnet": 0.292,
+    "llm": 4.368,
+    "total": 4.699
+  },
+  "topology": "A",
+  "fold": 23,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

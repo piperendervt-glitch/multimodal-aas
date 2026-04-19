@@ -1,0 +1,362 @@
+{
+  "video_id": "yt_QxKLx__Nzn4",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_QxKLx__Nzn4.wav",
+    "duration_sec": 70.821,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 71,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8034,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.783,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7132,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9684,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Large-billed Crow",
+        "scientific_name": "Corvus macrorhynchos",
+        "confidence": 0.2935,
+        "time_range": [
+          30.0,
+          33.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.917,
+        "time_range": [
+          33.0,
+          36.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2431,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2075,
+        "time_range": [
+          45.0,
+          48.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.6492,
+        "time_range": [
+          48.0,
+          51.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8903,
+        "time_range": [
+          51.0,
+          54.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.6035,
+        "time_range": [
+          54.0,
+          57.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4256,
+        "time_range": [
+          57.0,
+          60.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Large-billed Crow"
+    ]
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 71,
+    "frames_with_bird": 55,
+    "max_bbox_size_relative": 0.2135,
+    "avg_bbox_size_relative": 0.1405,
+    "std_bbox_size": 0.0411,
+    "max_detection_confidence": 0.8877,
+    "avg_detection_confidence": 0.5679,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      3,
+      2,
+      2,
+      2,
+      2,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 71,
+      "frames_with_bird": 55,
+      "max_bbox_size_relative": 0.2135,
+      "avg_bbox_size_relative": 0.1405,
+      "std_bbox_size": 0.0411,
+      "avg_detection_confidence": 0.5679,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9684,
+          "avg_confidence": 0.6549,
+          "num_detections": 11
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Corvus macrorhynchos",
+          "common_name": "Large-billed Crow",
+          "confidence": 0.2935,
+          "avg_confidence": 0.2935,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 12,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.92},\n  \"reasoning\": \"視覚情報で中型鳥多数、音声でもヒヨドリが検出\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.92
+      },
+      "reasoning": "視覚情報で中型鳥多数、音声でもヒヨドリが検出",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.773
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.92
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 0.878,
+    "yolo": 1.431,
+    "llm": 4.773,
+    "total": 7.083
+  },
+  "topology": "C",
+  "fold": 27,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

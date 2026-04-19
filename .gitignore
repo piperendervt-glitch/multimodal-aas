@@ -13,6 +13,7 @@ __pycache__/
 data/raw/
 data/raw/birdnet_baseline/
 data/raw/birdnet_japan/
+data/raw/youtube_videos/
 data/balcony/
 data/xeno_canto/
 data/youtube_streams/

@@ -1,0 +1,102 @@
+{
+  "video_id": "yt_b12Fb3C7LcY",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_b12Fb3C7LcY.wav",
+    "duration_sec": 66.456,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Russet Sparrow",
+        "scientific_name": "Passer cinnamomeus",
+        "confidence": 0.1147,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1554,
+        "time_range": [
+          33.0,
+          36.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.172,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1728,
+        "time_range": [
+          45.0,
+          48.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Russet Sparrow"
+    ]
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [
+      "Russet Sparrow"
+    ],
+    "total_audio_duration_sec": 66.46
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.057,
+    "birdnet": 0.791,
+    "llm": 0.0,
+    "total": 0.848
+  },
+  "topology": "A",
+  "fold": 16,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

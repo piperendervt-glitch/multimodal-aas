@@ -1,0 +1,273 @@
+{
+  "video_id": "yt_jk15DbXQV6A",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_jk15DbXQV6A.wav",
+    "duration_sec": 31.022,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 31,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4612,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.349,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.495,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1641,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.824,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Richard's Pipit",
+        "scientific_name": "Anthus richardi",
+        "confidence": 0.1234,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8522,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8376,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9394,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9078,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3227,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Richard's Pipit"
+    ]
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 31,
+    "frames_with_bird": 23,
+    "max_bbox_size_relative": 0.3402,
+    "avg_bbox_size_relative": 0.2705,
+    "std_bbox_size": 0.0392,
+    "max_detection_confidence": 0.9173,
+    "avg_detection_confidence": 0.7795,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 31,
+      "frames_with_bird": 23,
+      "max_bbox_size_relative": 0.3402,
+      "avg_bbox_size_relative": 0.2705,
+      "std_bbox_size": 0.0392,
+      "avg_detection_confidence": 0.7795,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9394,
+          "avg_confidence": 0.6449,
+          "num_detections": 9
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Anthus richardi",
+          "common_name": "Richard's Pipit",
+          "confidence": 0.349,
+          "avg_confidence": 0.2362,
+          "num_detections": 2
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 11,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.92},\n  \"reasoning\": \"視覚で中型鳥多数、音声でもヒヨドリ検出\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.92
+      },
+      "reasoning": "視覚で中型鳥多数、音声でもヒヨドリ検出",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.754
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.92
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.368,
+    "yolo": 0.602,
+    "llm": 4.754,
+    "total": 5.724
+  },
+  "topology": "C",
+  "fold": 28,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

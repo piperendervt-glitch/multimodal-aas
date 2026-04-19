@@ -1,0 +1,80 @@
+{
+  "video_id": "balcony_008",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_008.wav",
+    "duration_sec": 62.206,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.2184,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1576,
+        "time_range": [
+          36.0,
+          39.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 62.21
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.0,
+    "birdnet": 0.752,
+    "llm": 0.0,
+    "total": 0.752
+  },
+  "topology": "A",
+  "fold": 8,
+  "source": "self",
+  "category": "sparrow"
+}

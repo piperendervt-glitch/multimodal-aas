@@ -1,0 +1,241 @@
+{
+  "video_id": "yt_Z6-WL8woFPk",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_Z6-WL8woFPk.wav",
+    "duration_sec": 33.019,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 33,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8198,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3344,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1246,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5023,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Common Redpoll",
+        "scientific_name": "Acanthis flammea",
+        "confidence": 0.1855,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4687,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1494,
+        "time_range": [
+          30.0,
+          33.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Common Redpoll"
+    ]
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 33,
+    "frames_with_bird": 28,
+    "max_bbox_size_relative": 0.9736,
+    "avg_bbox_size_relative": 0.4751,
+    "std_bbox_size": 0.279,
+    "max_detection_confidence": 0.956,
+    "avg_detection_confidence": 0.7519,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 33,
+      "frames_with_bird": 28,
+      "max_bbox_size_relative": 0.9736,
+      "avg_bbox_size_relative": 0.4751,
+      "std_bbox_size": 0.279,
+      "avg_detection_confidence": 0.7519,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.8198,
+          "avg_confidence": 0.3999,
+          "num_detections": 6
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Acanthis flammea",
+          "common_name": "Common Redpoll",
+          "confidence": 0.1855,
+          "avg_confidence": 0.1855,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 7,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.0},\n  \"reasoning\": \"視覚で中型鳥多数、音声でもEurasian Tree Sparrow検出\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.0
+      },
+      "reasoning": "視覚で中型鳥多数、音声でもEurasian Tree Sparrow検出",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.73
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.465,
+    "yolo": 0.65,
+    "llm": 4.73,
+    "total": 5.846
+  },
+  "topology": "C",
+  "fold": 21,
+  "source": "youtube-claude",
+  "category": "sparrow"
+}

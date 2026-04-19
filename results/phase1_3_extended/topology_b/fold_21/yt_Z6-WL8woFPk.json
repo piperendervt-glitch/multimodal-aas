@@ -1,0 +1,138 @@
+{
+  "video_id": "yt_Z6-WL8woFPk",
+  "frame_extraction": {
+    "num_frames": 33,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 33,
+    "frames_with_bird": 28,
+    "max_bbox_size_relative": 0.9736,
+    "avg_bbox_size_relative": 0.4751,
+    "std_bbox_size": 0.279,
+    "max_detection_confidence": 0.956,
+    "avg_detection_confidence": 0.7519,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "num_frames_analyzed": 33,
+    "frames_with_bird": 28,
+    "max_bbox_size_relative": 0.9736,
+    "avg_bbox_size_relative": 0.4751,
+    "std_bbox_size": 0.279,
+    "max_detection_confidence": 0.956,
+    "avg_detection_confidence": 0.7519,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.75},\n  \"reasoning\": \"最大サイズが大きいが、複数の検出があり検出数が多い。\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.75
+      },
+      "reasoning": "最大サイズが大きいが、複数の検出があり検出数が多い。",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.402
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.75
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.11,
+    "yolo": 0.705,
+    "llm": 4.402,
+    "total": 5.217
+  },
+  "topology": "B",
+  "fold": 21,
+  "source": "youtube-claude",
+  "category": "sparrow"
+}

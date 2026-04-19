@@ -1,0 +1,239 @@
+{
+  "video_id": "yt_ToG_e-OQWwI",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_ToG_e-OQWwI.wav",
+    "duration_sec": 28.003,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 28,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7295,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7979,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.6218,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7995,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7405,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4242,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4269,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5419,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5067,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 28,
+    "frames_with_bird": 28,
+    "max_bbox_size_relative": 0.1043,
+    "avg_bbox_size_relative": 0.1038,
+    "std_bbox_size": 0.0005,
+    "max_detection_confidence": 0.9069,
+    "avg_detection_confidence": 0.8993,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 28,
+      "frames_with_bird": 28,
+      "max_bbox_size_relative": 0.1043,
+      "avg_bbox_size_relative": 0.1038,
+      "std_bbox_size": 0.0005,
+      "avg_detection_confidence": 0.8993,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.7995,
+          "avg_confidence": 0.621,
+          "num_detections": 9
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 9,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.8},\n  \"reasoning\": \"視覚で頻繁に検出され、サイズもヒヨドリより大きい。\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.8
+      },
+      "reasoning": "視覚で頻繁に検出され、サイズもヒヨドリより大きい。",
+      "modality_used": "both",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.747
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.8
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.336,
+    "yolo": 0.536,
+    "llm": 4.747,
+    "total": 5.619
+  },
+  "topology": "C",
+  "fold": 14,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

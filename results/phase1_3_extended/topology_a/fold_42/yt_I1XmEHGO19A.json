@@ -1,0 +1,163 @@
+{
+  "video_id": "yt_I1XmEHGO19A",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_I1XmEHGO19A.wav",
+    "duration_sec": 180.86,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Barn Swallow",
+        "scientific_name": "Hirundo rustica",
+        "confidence": 0.2821,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Red-rumped Swallow",
+        "scientific_name": "Cecropis daurica",
+        "confidence": 0.3861,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Barn Swallow",
+        "scientific_name": "Hirundo rustica",
+        "confidence": 0.5996,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.109,
+        "time_range": [
+          36.0,
+          39.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3582,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Barn Swallow",
+        "scientific_name": "Hirundo rustica",
+        "confidence": 0.7748,
+        "time_range": [
+          93.0,
+          96.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1537,
+        "time_range": [
+          117.0,
+          120.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.336,
+        "time_range": [
+          168.0,
+          171.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5077,
+        "time_range": [
+          171.0,
+          174.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5077,
+        "num_detections": 3
+      }
+    ],
+    "other_birds": [
+      "Barn Swallow",
+      "Red-rumped Swallow"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5077,
+        "num_detections": 3
+      }
+    ],
+    "other_birds_detected": [
+      "Barn Swallow",
+      "Red-rumped Swallow"
+    ],
+    "total_audio_duration_sec": 180.86
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.5077, \"bulbul\": 0},\n  \"reasoning\": \"BirdNETがスズメを0.5077の確信で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.5077,
+        "bulbul": 0
+      },
+      "reasoning": "BirdNETがスズメを0.5077の確信で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.529
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.5077,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.105,
+    "birdnet": 2.165,
+    "llm": 4.529,
+    "total": 6.799
+  },
+  "topology": "A",
+  "fold": 42,
+  "source": "youtube-claude",
+  "category": "mixed"
+}

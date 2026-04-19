@@ -1,0 +1,103 @@
+{
+  "video_id": "yt_p-te4rfSFlo",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_p-te4rfSFlo.wav",
+    "duration_sec": 20.016,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7198,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.574,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4463,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7198,
+        "num_detections": 3
+      }
+    ],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7198,
+        "num_detections": 3
+      }
+    ],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 20.02
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.7198, \"bulbul\": 0.7198},\n  \"reasoning\": \"BirdNETがbulbulを0.7198の確信で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.7198,
+        "bulbul": 0.7198
+      },
+      "reasoning": "BirdNETがbulbulを0.7198の確信で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.507
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.7198,
+      "bulbul": 0.7198
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.039,
+    "birdnet": 0.249,
+    "llm": 4.507,
+    "total": 4.795
+  },
+  "topology": "A",
+  "fold": 24,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

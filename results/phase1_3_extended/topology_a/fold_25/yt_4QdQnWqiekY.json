@@ -1,0 +1,121 @@
+{
+  "video_id": "yt_4QdQnWqiekY",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_4QdQnWqiekY.wav",
+    "duration_sec": 16.022,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7844,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8985,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8409,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9327,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9852,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9852,
+        "num_detections": 5
+      }
+    ],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9852,
+        "num_detections": 5
+      }
+    ],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 16.02
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.9852, \"bulbul\": 0.9852},\n  \"reasoning\": \"BirdNETがbulbulを高確信度で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.9852,
+        "bulbul": 0.9852
+      },
+      "reasoning": "BirdNETがbulbulを高確信度で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.433
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.9852,
+      "bulbul": 0.9852
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.037,
+    "birdnet": 0.185,
+    "llm": 4.433,
+    "total": 4.655
+  },
+  "topology": "A",
+  "fold": 25,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

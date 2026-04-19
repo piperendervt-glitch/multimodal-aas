@@ -1,0 +1,84 @@
+{
+  "video_id": "balcony_011",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_011.wav",
+    "duration_sec": 42.818,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Large-billed Crow",
+        "scientific_name": "Corvus macrorhynchos",
+        "confidence": 0.1434,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Large-billed Crow",
+        "scientific_name": "Corvus macrorhynchos",
+        "confidence": 0.1313,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Large-billed Crow"
+    ]
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [
+      "Large-billed Crow"
+    ],
+    "total_audio_duration_sec": 42.82
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.0,
+    "birdnet": 0.508,
+    "llm": 0.0,
+    "total": 0.508
+  },
+  "topology": "A",
+  "fold": 11,
+  "source": "self",
+  "category": "sparrow"
+}

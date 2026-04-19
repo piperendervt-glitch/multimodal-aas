@@ -1,0 +1,112 @@
+{
+  "video_id": "yt_bhp8AhQ2cvw",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_bhp8AhQ2cvw.wav",
+    "duration_sec": 300.002,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7113,
+        "time_range": [
+          222.0,
+          225.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.572,
+        "time_range": [
+          225.0,
+          228.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.155,
+        "time_range": [
+          228.0,
+          231.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3633,
+        "time_range": [
+          234.0,
+          237.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7113,
+        "num_detections": 3
+      }
+    ],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.7113,
+        "num_detections": 3
+      }
+    ],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 300.0
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.7113, \"bulbul\": 0.0},\n  \"reasoning\": \"BirdNETがスズメを0.71の確信で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.7113,
+        "bulbul": 0.0
+      },
+      "reasoning": "BirdNETがスズメを0.71の確信で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.47
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.7113,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.152,
+    "birdnet": 3.55,
+    "llm": 4.47,
+    "total": 8.173
+  },
+  "topology": "A",
+  "fold": 35,
+  "source": "youtube-grok",
+  "category": "mixed"
+}

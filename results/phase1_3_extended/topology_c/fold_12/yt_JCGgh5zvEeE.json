@@ -1,0 +1,499 @@
+{
+  "video_id": "yt_JCGgh5zvEeE",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_JCGgh5zvEeE.wav",
+    "duration_sec": 126.015,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 126,
+    "fps_sampling": 1.0
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3346,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1037,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1316,
+        "time_range": [
+          45.0,
+          48.0
+        ]
+      },
+      {
+        "species": "Black Kite",
+        "scientific_name": "Milvus migrans",
+        "confidence": 0.5839,
+        "time_range": [
+          72.0,
+          75.0
+        ]
+      },
+      {
+        "species": "Little Grebe",
+        "scientific_name": "Tachybaptus ruficollis",
+        "confidence": 0.1106,
+        "time_range": [
+          72.0,
+          75.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1033,
+        "time_range": [
+          78.0,
+          81.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1041,
+        "time_range": [
+          81.0,
+          84.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.175,
+        "time_range": [
+          93.0,
+          96.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1243,
+        "time_range": [
+          99.0,
+          102.0
+        ]
+      },
+      {
+        "species": "Ruddy Kingfisher",
+        "scientific_name": "Halcyon coromanda",
+        "confidence": 0.9948,
+        "time_range": [
+          111.0,
+          114.0
+        ]
+      },
+      {
+        "species": "Eurasian Wren",
+        "scientific_name": "Troglodytes troglodytes",
+        "confidence": 0.9845,
+        "time_range": [
+          120.0,
+          123.0
+        ]
+      },
+      {
+        "species": "Eurasian Wren",
+        "scientific_name": "Troglodytes troglodytes",
+        "confidence": 0.9957,
+        "time_range": [
+          123.0,
+          126.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Black Kite",
+      "Eurasian Wren",
+      "Little Grebe",
+      "Ruddy Kingfisher"
+    ]
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 126,
+    "frames_with_bird": 91,
+    "max_bbox_size_relative": 0.1602,
+    "avg_bbox_size_relative": 0.0304,
+    "std_bbox_size": 0.0282,
+    "max_detection_confidence": 0.894,
+    "avg_detection_confidence": 0.5492,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4,
+      0,
+      3,
+      4,
+      2,
+      1,
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      0,
+      1,
+      2,
+      1,
+      4,
+      1,
+      2,
+      3,
+      1,
+      3,
+      2,
+      2,
+      2,
+      1,
+      1,
+      2,
+      4,
+      5,
+      6,
+      5,
+      3,
+      3,
+      6,
+      0,
+      3,
+      3,
+      5,
+      5,
+      4,
+      6,
+      2,
+      2,
+      2,
+      2,
+      1,
+      4,
+      0,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual": {
+      "num_frames_analyzed": 126,
+      "frames_with_bird": 91,
+      "max_bbox_size_relative": 0.1602,
+      "avg_bbox_size_relative": 0.0304,
+      "std_bbox_size": 0.0282,
+      "avg_detection_confidence": 0.5492,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        0,
+        3,
+        4,
+        2,
+        1,
+        0,
+        1,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        3,
+        1,
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        4,
+        5,
+        6,
+        5,
+        3,
+        3,
+        6,
+        0,
+        3,
+        3,
+        5,
+        5,
+        4,
+        6,
+        2,
+        2,
+        2,
+        2,
+        1,
+        4,
+        0,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "other",
+          "scientific_name": "Troglodytes troglodytes",
+          "common_name": "Eurasian Wren",
+          "confidence": 0.9957,
+          "avg_confidence": 0.9901,
+          "num_detections": 2
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Halcyon coromanda",
+          "common_name": "Ruddy Kingfisher",
+          "confidence": 0.9948,
+          "avg_confidence": 0.9948,
+          "num_detections": 1
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Milvus migrans",
+          "common_name": "Black Kite",
+          "confidence": 0.5839,
+          "avg_confidence": 0.5839,
+          "num_detections": 1
+        },
+        {
+          "species_code": "sparrow",
+          "scientific_name": "Passer montanus",
+          "common_name": "Eurasian Tree Sparrow",
+          "confidence": 0.3346,
+          "avg_confidence": 0.1538,
+          "num_detections": 7
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Tachybaptus ruficollis",
+          "common_name": "Little Grebe",
+          "confidence": 0.1106,
+          "avg_confidence": 0.1106,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 12,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.15},\n  \"reasoning\": \"視覚情報よりスズメの bbox サイズが小さい。音声は信頼性低い。\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.15
+      },
+      "reasoning": "視覚情報よりスズメの bbox サイズが小さい。音声は信頼性低い。",
+      "modality_used": "visual",
+      "fallback_used": false
+    },
+    "elapsed_sec": 5.016
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.15
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.002,
+    "birdnet": 1.53,
+    "yolo": 2.492,
+    "llm": 5.016,
+    "total": 9.04
+  },
+  "topology": "C",
+  "fold": 12,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

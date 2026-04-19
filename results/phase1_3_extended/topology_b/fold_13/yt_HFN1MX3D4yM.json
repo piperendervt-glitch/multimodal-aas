@@ -1,0 +1,106 @@
+{
+  "video_id": "yt_HFN1MX3D4yM",
+  "frame_extraction": {
+    "num_frames": 17,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 17,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "num_frames_analyzed": 17,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "鳥が検出されたフレームなし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.061,
+    "yolo": 0.348,
+    "llm": 0.0,
+    "total": 0.408
+  },
+  "topology": "B",
+  "fold": 13,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

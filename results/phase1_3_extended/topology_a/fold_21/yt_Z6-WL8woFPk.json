@@ -1,0 +1,143 @@
+{
+  "video_id": "yt_Z6-WL8woFPk",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_Z6-WL8woFPk.wav",
+    "duration_sec": 33.019,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8198,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.3344,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1246,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.5023,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Common Redpoll",
+        "scientific_name": "Acanthis flammea",
+        "confidence": 0.1855,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.4687,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Eurasian Tree Sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.1494,
+        "time_range": [
+          30.0,
+          33.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8198,
+        "num_detections": 4
+      }
+    ],
+    "other_birds": [
+      "Common Redpoll"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "sparrow",
+        "scientific_name": "Passer montanus",
+        "confidence": 0.8198,
+        "num_detections": 4
+      }
+    ],
+    "other_birds_detected": [
+      "Common Redpoll"
+    ],
+    "total_audio_duration_sec": 33.02
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.8198, \"bulbul\": 0},\n  \"reasoning\": \"BirdNETがスズメを0.8198の確信で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.8198,
+        "bulbul": 0
+      },
+      "reasoning": "BirdNETがスズメを0.8198の確信で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.451
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.8198,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.043,
+    "birdnet": 0.397,
+    "llm": 4.451,
+    "total": 4.891
+  },
+  "topology": "A",
+  "fold": 21,
+  "source": "youtube-claude",
+  "category": "sparrow"
+}
