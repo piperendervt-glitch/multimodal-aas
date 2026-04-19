@@ -1,0 +1,1180 @@
+{
+  "source": "YouTube JvfFRAP6qG8",
+  "source_description": "10 Hours of North American Bird Songs (Badgerland Birding Extras)",
+  "source_url": "https://www.youtube.com/watch?v=JvfFRAP6qG8",
+  "source_license": "CC BY 4.0 (per video description)",
+  "audio_duration_sec": 1200.0,
+  "audio_sample_rate": 16000,
+  "birdnet_config": {
+    "min_conf": 0.1,
+    "sensitivity": 1.0,
+    "lat": null,
+    "lon": null
+  },
+  "total_detections": 423,
+  "unique_species": 91,
+  "top_10_species": [
+    {
+      "species": "American Robin",
+      "scientific_name": "Turdus migratorius",
+      "num_detections": 39,
+      "avg_confidence": 0.6599,
+      "max_confidence": 0.9981
+    },
+    {
+      "species": "Brown Thrasher",
+      "scientific_name": "Toxostoma rufum",
+      "num_detections": 38,
+      "avg_confidence": 0.5055,
+      "max_confidence": 0.9699
+    },
+    {
+      "species": "American Goldfinch",
+      "scientific_name": "Spinus tristis",
+      "num_detections": 29,
+      "avg_confidence": 0.8159,
+      "max_confidence": 0.993
+    },
+    {
+      "species": "Gray Catbird",
+      "scientific_name": "Dumetella carolinensis",
+      "num_detections": 24,
+      "avg_confidence": 0.4488,
+      "max_confidence": 0.9111
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "num_detections": 22,
+      "avg_confidence": 0.807,
+      "max_confidence": 0.9809
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "num_detections": 22,
+      "avg_confidence": 0.3383,
+      "max_confidence": 0.748
+    },
+    {
+      "species": "Song Sparrow",
+      "scientific_name": "Melospiza melodia",
+      "num_detections": 22,
+      "avg_confidence": 0.8353,
+      "max_confidence": 0.98
+    },
+    {
+      "species": "House Finch",
+      "scientific_name": "Haemorhous mexicanus",
+      "num_detections": 20,
+      "avg_confidence": 0.6988,
+      "max_confidence": 0.9903
+    },
+    {
+      "species": "Red-winged Blackbird",
+      "scientific_name": "Agelaius phoeniceus",
+      "num_detections": 15,
+      "avg_confidence": 0.3688,
+      "max_confidence": 0.6779
+    },
+    {
+      "species": "Eastern Towhee",
+      "scientific_name": "Pipilo erythrophthalmus",
+      "num_detections": 14,
+      "avg_confidence": 0.8951,
+      "max_confidence": 0.9952
+    }
+  ],
+  "all_species_ranked": [
+    {
+      "species": "American Robin",
+      "scientific_name": "Turdus migratorius",
+      "num_detections": 39,
+      "avg_confidence": 0.6599,
+      "max_confidence": 0.9981
+    },
+    {
+      "species": "Brown Thrasher",
+      "scientific_name": "Toxostoma rufum",
+      "num_detections": 38,
+      "avg_confidence": 0.5055,
+      "max_confidence": 0.9699
+    },
+    {
+      "species": "American Goldfinch",
+      "scientific_name": "Spinus tristis",
+      "num_detections": 29,
+      "avg_confidence": 0.8159,
+      "max_confidence": 0.993
+    },
+    {
+      "species": "Gray Catbird",
+      "scientific_name": "Dumetella carolinensis",
+      "num_detections": 24,
+      "avg_confidence": 0.4488,
+      "max_confidence": 0.9111
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "num_detections": 22,
+      "avg_confidence": 0.807,
+      "max_confidence": 0.9809
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "num_detections": 22,
+      "avg_confidence": 0.3383,
+      "max_confidence": 0.748
+    },
+    {
+      "species": "Song Sparrow",
+      "scientific_name": "Melospiza melodia",
+      "num_detections": 22,
+      "avg_confidence": 0.8353,
+      "max_confidence": 0.98
+    },
+    {
+      "species": "House Finch",
+      "scientific_name": "Haemorhous mexicanus",
+      "num_detections": 20,
+      "avg_confidence": 0.6988,
+      "max_confidence": 0.9903
+    },
+    {
+      "species": "Red-winged Blackbird",
+      "scientific_name": "Agelaius phoeniceus",
+      "num_detections": 15,
+      "avg_confidence": 0.3688,
+      "max_confidence": 0.6779
+    },
+    {
+      "species": "Eastern Towhee",
+      "scientific_name": "Pipilo erythrophthalmus",
+      "num_detections": 14,
+      "avg_confidence": 0.8951,
+      "max_confidence": 0.9952
+    },
+    {
+      "species": "Baltimore Oriole",
+      "scientific_name": "Icterus galbula",
+      "num_detections": 10,
+      "avg_confidence": 0.3072,
+      "max_confidence": 0.5843
+    },
+    {
+      "species": "Mourning Dove",
+      "scientific_name": "Zenaida macroura",
+      "num_detections": 9,
+      "avg_confidence": 0.9242,
+      "max_confidence": 0.993
+    },
+    {
+      "species": "Song Thrush",
+      "scientific_name": "Turdus philomelos",
+      "num_detections": 9,
+      "avg_confidence": 0.1682,
+      "max_confidence": 0.2681
+    },
+    {
+      "species": "Carolina Wren",
+      "scientific_name": "Thryothorus ludovicianus",
+      "num_detections": 9,
+      "avg_confidence": 0.8884,
+      "max_confidence": 0.9847
+    },
+    {
+      "species": "Crissal Thrasher",
+      "scientific_name": "Toxostoma crissale",
+      "num_detections": 9,
+      "avg_confidence": 0.2945,
+      "max_confidence": 0.8106
+    },
+    {
+      "species": "Blue Jay",
+      "scientific_name": "Cyanocitta cristata",
+      "num_detections": 7,
+      "avg_confidence": 0.8927,
+      "max_confidence": 0.9903
+    },
+    {
+      "species": "Gray-winged Blackbird",
+      "scientific_name": "Turdus boulboul",
+      "num_detections": 6,
+      "avg_confidence": 0.218,
+      "max_confidence": 0.5942
+    },
+    {
+      "species": "American Crow",
+      "scientific_name": "Corvus brachyrhynchos",
+      "num_detections": 5,
+      "avg_confidence": 0.1636,
+      "max_confidence": 0.1969
+    },
+    {
+      "species": "Mistle Thrush",
+      "scientific_name": "Turdus viscivorus",
+      "num_detections": 5,
+      "avg_confidence": 0.334,
+      "max_confidence": 0.6632
+    },
+    {
+      "species": "Northern Waterthrush",
+      "scientific_name": "Parkesia noveboracensis",
+      "num_detections": 5,
+      "avg_confidence": 0.5808,
+      "max_confidence": 0.7096
+    },
+    {
+      "species": "Eurasian Blackcap",
+      "scientific_name": "Sylvia atricapilla",
+      "num_detections": 5,
+      "avg_confidence": 0.162,
+      "max_confidence": 0.2204
+    },
+    {
+      "species": "Cirl Bunting",
+      "scientific_name": "Emberiza cirlus",
+      "num_detections": 5,
+      "avg_confidence": 0.5929,
+      "max_confidence": 0.802
+    },
+    {
+      "species": "Rusty Blackbird",
+      "scientific_name": "Euphagus carolinus",
+      "num_detections": 4,
+      "avg_confidence": 0.1838,
+      "max_confidence": 0.2387
+    },
+    {
+      "species": "Twite",
+      "scientific_name": "Linaria flavirostris",
+      "num_detections": 3,
+      "avg_confidence": 0.4301,
+      "max_confidence": 0.5168
+    },
+    {
+      "species": "Downy Woodpecker",
+      "scientific_name": "Dryobates pubescens",
+      "num_detections": 3,
+      "avg_confidence": 0.5434,
+      "max_confidence": 0.725
+    },
+    {
+      "species": "Connecticut Warbler",
+      "scientific_name": "Oporornis agilis",
+      "num_detections": 3,
+      "avg_confidence": 0.4246,
+      "max_confidence": 0.7857
+    },
+    {
+      "species": "Gray-crowned Yellowthroat",
+      "scientific_name": "Geothlypis poliocephala",
+      "num_detections": 3,
+      "avg_confidence": 0.2935,
+      "max_confidence": 0.6006
+    },
+    {
+      "species": "Orchard Oriole",
+      "scientific_name": "Icterus spurius",
+      "num_detections": 2,
+      "avg_confidence": 0.1739,
+      "max_confidence": 0.1954
+    },
+    {
+      "species": "Italian Sparrow",
+      "scientific_name": "Passer italiae",
+      "num_detections": 2,
+      "avg_confidence": 0.101,
+      "max_confidence": 0.1012
+    },
+    {
+      "species": "White-whiskered Laughingthrush",
+      "scientific_name": "Trochalopteron morrisonianum",
+      "num_detections": 2,
+      "avg_confidence": 0.3234,
+      "max_confidence": 0.5447
+    },
+    {
+      "species": "Bald Eagle",
+      "scientific_name": "Haliaeetus leucocephalus",
+      "num_detections": 2,
+      "avg_confidence": 0.1902,
+      "max_confidence": 0.2297
+    },
+    {
+      "species": "Black-billed Thrush",
+      "scientific_name": "Turdus ignobilis",
+      "num_detections": 2,
+      "avg_confidence": 0.2373,
+      "max_confidence": 0.3021
+    },
+    {
+      "species": "Cooper's Hawk",
+      "scientific_name": "Accipiter cooperii",
+      "num_detections": 2,
+      "avg_confidence": 0.1211,
+      "max_confidence": 0.1312
+    },
+    {
+      "species": "Black-headed Canary",
+      "scientific_name": "Serinus alario",
+      "num_detections": 2,
+      "avg_confidence": 0.311,
+      "max_confidence": 0.4325
+    },
+    {
+      "species": "Ashy Prinia",
+      "scientific_name": "Prinia socialis",
+      "num_detections": 2,
+      "avg_confidence": 0.2926,
+      "max_confidence": 0.4787
+    },
+    {
+      "species": "Common Grackle",
+      "scientific_name": "Quiscalus quiscula",
+      "num_detections": 2,
+      "avg_confidence": 0.2606,
+      "max_confidence": 0.3624
+    },
+    {
+      "species": "Red-crested Cardinal",
+      "scientific_name": "Paroaria coronata",
+      "num_detections": 2,
+      "avg_confidence": 0.1696,
+      "max_confidence": 0.1719
+    },
+    {
+      "species": "Northern Mockingbird",
+      "scientific_name": "Mimus polyglottos",
+      "num_detections": 2,
+      "avg_confidence": 0.1236,
+      "max_confidence": 0.1249
+    },
+    {
+      "species": "Siberian Rubythroat",
+      "scientific_name": "Calliope calliope",
+      "num_detections": 2,
+      "avg_confidence": 0.1613,
+      "max_confidence": 0.1927
+    },
+    {
+      "species": "Garden Warbler",
+      "scientific_name": "Sylvia borin",
+      "num_detections": 2,
+      "avg_confidence": 0.2025,
+      "max_confidence": 0.2962
+    },
+    {
+      "species": "Chestnut-bellied Seed-Finch",
+      "scientific_name": "Sporophila angolensis",
+      "num_detections": 2,
+      "avg_confidence": 0.143,
+      "max_confidence": 0.1675
+    },
+    {
+      "species": "Worm-eating Warbler",
+      "scientific_name": "Helmitheros vermivorum",
+      "num_detections": 1,
+      "avg_confidence": 0.3496,
+      "max_confidence": 0.3496
+    },
+    {
+      "species": "Blue-gray Saltator",
+      "scientific_name": "Saltator coerulescens",
+      "num_detections": 1,
+      "avg_confidence": 0.2138,
+      "max_confidence": 0.2138
+    },
+    {
+      "species": "Common Nightingale",
+      "scientific_name": "Luscinia megarhynchos",
+      "num_detections": 1,
+      "avg_confidence": 0.3272,
+      "max_confidence": 0.3272
+    },
+    {
+      "species": "Manchurian Bush Warbler",
+      "scientific_name": "Horornis canturians",
+      "num_detections": 1,
+      "avg_confidence": 0.1001,
+      "max_confidence": 0.1001
+    },
+    {
+      "species": "Summer Tanager",
+      "scientific_name": "Piranga rubra",
+      "num_detections": 1,
+      "avg_confidence": 0.1492,
+      "max_confidence": 0.1492
+    },
+    {
+      "species": "Black Thrush",
+      "scientific_name": "Turdus infuscatus",
+      "num_detections": 1,
+      "avg_confidence": 0.2645,
+      "max_confidence": 0.2645
+    },
+    {
+      "species": "Eurasian Blackbird",
+      "scientific_name": "Turdus merula",
+      "num_detections": 1,
+      "avg_confidence": 0.1221,
+      "max_confidence": 0.1221
+    },
+    {
+      "species": "Whimbrel",
+      "scientific_name": "Numenius phaeopus",
+      "num_detections": 1,
+      "avg_confidence": 0.273,
+      "max_confidence": 0.273
+    },
+    {
+      "species": "Iberian Green Woodpecker",
+      "scientific_name": "Picus sharpei",
+      "num_detections": 1,
+      "avg_confidence": 0.1257,
+      "max_confidence": 0.1257
+    },
+    {
+      "species": "Great Thrush",
+      "scientific_name": "Turdus fuscater",
+      "num_detections": 1,
+      "avg_confidence": 0.1283,
+      "max_confidence": 0.1283
+    },
+    {
+      "species": "Bearded Reedling",
+      "scientific_name": "Panurus biarmicus",
+      "num_detections": 1,
+      "avg_confidence": 0.2195,
+      "max_confidence": 0.2195
+    },
+    {
+      "species": "Rock Sparrow",
+      "scientific_name": "Petronia petronia",
+      "num_detections": 1,
+      "avg_confidence": 0.3195,
+      "max_confidence": 0.3195
+    },
+    {
+      "species": "Field Sparrow",
+      "scientific_name": "Spizella pusilla",
+      "num_detections": 1,
+      "avg_confidence": 0.7601,
+      "max_confidence": 0.7601
+    },
+    {
+      "species": "Tawny-flanked Prinia",
+      "scientific_name": "Prinia subflava",
+      "num_detections": 1,
+      "avg_confidence": 0.2965,
+      "max_confidence": 0.2965
+    },
+    {
+      "species": "Red-fronted Prinia",
+      "scientific_name": "Prinia rufifrons",
+      "num_detections": 1,
+      "avg_confidence": 0.1614,
+      "max_confidence": 0.1614
+    },
+    {
+      "species": "Ash-browed Spinetail",
+      "scientific_name": "Cranioleuca curtata",
+      "num_detections": 1,
+      "avg_confidence": 0.3875,
+      "max_confidence": 0.3875
+    },
+    {
+      "species": "Long-tailed Sibia",
+      "scientific_name": "Heterophasia picaoides",
+      "num_detections": 1,
+      "avg_confidence": 0.3193,
+      "max_confidence": 0.3193
+    },
+    {
+      "species": "Bridled Titmouse",
+      "scientific_name": "Baeolophus wollweberi",
+      "num_detections": 1,
+      "avg_confidence": 0.2437,
+      "max_confidence": 0.2437
+    },
+    {
+      "species": "Eurasian Collared-Dove",
+      "scientific_name": "Streptopelia decaocto",
+      "num_detections": 1,
+      "avg_confidence": 0.2969,
+      "max_confidence": 0.2969
+    },
+    {
+      "species": "Barred Owl",
+      "scientific_name": "Strix varia",
+      "num_detections": 1,
+      "avg_confidence": 0.1216,
+      "max_confidence": 0.1216
+    },
+    {
+      "species": "Virginia Rail",
+      "scientific_name": "Rallus limicola",
+      "num_detections": 1,
+      "avg_confidence": 0.1332,
+      "max_confidence": 0.1332
+    },
+    {
+      "species": "Seaside Sparrow",
+      "scientific_name": "Ammospiza maritima",
+      "num_detections": 1,
+      "avg_confidence": 0.1407,
+      "max_confidence": 0.1407
+    },
+    {
+      "species": "Least Flycatcher",
+      "scientific_name": "Empidonax minimus",
+      "num_detections": 1,
+      "avg_confidence": 0.1053,
+      "max_confidence": 0.1053
+    },
+    {
+      "species": "Sombre Greenbul",
+      "scientific_name": "Andropadus importunus",
+      "num_detections": 1,
+      "avg_confidence": 0.3949,
+      "max_confidence": 0.3949
+    },
+    {
+      "species": "Collared Grosbeak",
+      "scientific_name": "Mycerobas affinis",
+      "num_detections": 1,
+      "avg_confidence": 0.1398,
+      "max_confidence": 0.1398
+    },
+    {
+      "species": "Striated Pardalote",
+      "scientific_name": "Pardalotus striatus",
+      "num_detections": 1,
+      "avg_confidence": 0.1713,
+      "max_confidence": 0.1713
+    },
+    {
+      "species": "White-cheeked Honeyeater",
+      "scientific_name": "Phylidonyris niger",
+      "num_detections": 1,
+      "avg_confidence": 0.1223,
+      "max_confidence": 0.1223
+    },
+    {
+      "species": "White-browed Wagtail",
+      "scientific_name": "Motacilla maderaspatensis",
+      "num_detections": 1,
+      "avg_confidence": 0.1565,
+      "max_confidence": 0.1565
+    },
+    {
+      "species": "Eastern Bluebird",
+      "scientific_name": "Sialia sialis",
+      "num_detections": 1,
+      "avg_confidence": 0.7729,
+      "max_confidence": 0.7729
+    },
+    {
+      "species": "Long-billed Thrasher",
+      "scientific_name": "Toxostoma longirostre",
+      "num_detections": 1,
+      "avg_confidence": 0.3856,
+      "max_confidence": 0.3856
+    },
+    {
+      "species": "Ocellated Thrasher",
+      "scientific_name": "Toxostoma ocellatum",
+      "num_detections": 1,
+      "avg_confidence": 0.2713,
+      "max_confidence": 0.2713
+    },
+    {
+      "species": "American Redstart",
+      "scientific_name": "Setophaga ruticilla",
+      "num_detections": 1,
+      "avg_confidence": 0.2466,
+      "max_confidence": 0.2466
+    },
+    {
+      "species": "Ruby-crowned Kinglet",
+      "scientific_name": "Corthylio calendula",
+      "num_detections": 1,
+      "avg_confidence": 0.2684,
+      "max_confidence": 0.2684
+    },
+    {
+      "species": "Blue Rock-Thrush",
+      "scientific_name": "Monticola solitarius",
+      "num_detections": 1,
+      "avg_confidence": 0.147,
+      "max_confidence": 0.147
+    },
+    {
+      "species": "Swamp Sparrow",
+      "scientific_name": "Melospiza georgiana",
+      "num_detections": 1,
+      "avg_confidence": 0.2213,
+      "max_confidence": 0.2213
+    },
+    {
+      "species": "Marsh Tit",
+      "scientific_name": "Poecile palustris",
+      "num_detections": 1,
+      "avg_confidence": 0.133,
+      "max_confidence": 0.133
+    },
+    {
+      "species": "Red-tailed Hawk",
+      "scientific_name": "Buteo jamaicensis",
+      "num_detections": 1,
+      "avg_confidence": 0.206,
+      "max_confidence": 0.206
+    },
+    {
+      "species": "Yellow-rumped Marshbird",
+      "scientific_name": "Pseudoleistes guirahuro",
+      "num_detections": 1,
+      "avg_confidence": 0.113,
+      "max_confidence": 0.113
+    },
+    {
+      "species": "Canyon Towhee",
+      "scientific_name": "Melozone fusca",
+      "num_detections": 1,
+      "avg_confidence": 0.1091,
+      "max_confidence": 0.1091
+    },
+    {
+      "species": "White-bellied Seedeater",
+      "scientific_name": "Sporophila leucoptera",
+      "num_detections": 1,
+      "avg_confidence": 0.2893,
+      "max_confidence": 0.2893
+    },
+    {
+      "species": "Variable Seedeater",
+      "scientific_name": "Sporophila corvina",
+      "num_detections": 1,
+      "avg_confidence": 0.2894,
+      "max_confidence": 0.2894
+    },
+    {
+      "species": "Masked Yellowthroat",
+      "scientific_name": "Geothlypis aequinoctialis",
+      "num_detections": 1,
+      "avg_confidence": 0.1404,
+      "max_confidence": 0.1404
+    },
+    {
+      "species": "Plumbeous Seedeater",
+      "scientific_name": "Sporophila plumbea",
+      "num_detections": 1,
+      "avg_confidence": 0.1047,
+      "max_confidence": 0.1047
+    },
+    {
+      "species": "Yellow-bellied Seedeater",
+      "scientific_name": "Sporophila nigricollis",
+      "num_detections": 1,
+      "avg_confidence": 0.1042,
+      "max_confidence": 0.1042
+    },
+    {
+      "species": "Hooded Oriole",
+      "scientific_name": "Icterus cucullatus",
+      "num_detections": 1,
+      "avg_confidence": 0.196,
+      "max_confidence": 0.196
+    },
+    {
+      "species": "Black-headed Bunting",
+      "scientific_name": "Emberiza melanocephala",
+      "num_detections": 1,
+      "avg_confidence": 0.1255,
+      "max_confidence": 0.1255
+    },
+    {
+      "species": "Thekla's Lark",
+      "scientific_name": "Galerida theklae",
+      "num_detections": 1,
+      "avg_confidence": 0.2636,
+      "max_confidence": 0.2636
+    },
+    {
+      "species": "Dark-eyed Junco",
+      "scientific_name": "Junco hyemalis",
+      "num_detections": 1,
+      "avg_confidence": 0.19,
+      "max_confidence": 0.19
+    },
+    {
+      "species": "Cedar Waxwing",
+      "scientific_name": "Bombycilla cedrorum",
+      "num_detections": 1,
+      "avg_confidence": 0.4823,
+      "max_confidence": 0.4823
+    },
+    {
+      "species": "Gray Vireo",
+      "scientific_name": "Vireo vicinior",
+      "num_detections": 1,
+      "avg_confidence": 0.179,
+      "max_confidence": 0.179
+    }
+  ],
+  "all_detections_sample": [
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9636,
+      "time_range": [
+        0.0,
+        3.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.8075,
+      "time_range": [
+        3.0,
+        6.0
+      ]
+    },
+    {
+      "species": "Worm-eating Warbler",
+      "scientific_name": "Helmitheros vermivorum",
+      "confidence": 0.3496,
+      "time_range": [
+        6.0,
+        9.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.8274,
+      "time_range": [
+        12.0,
+        15.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9778,
+      "time_range": [
+        15.0,
+        18.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.1288,
+      "time_range": [
+        18.0,
+        21.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.1554,
+      "time_range": [
+        21.0,
+        24.0
+      ]
+    },
+    {
+      "species": "American Crow",
+      "scientific_name": "Corvus brachyrhynchos",
+      "confidence": 0.1516,
+      "time_range": [
+        21.0,
+        24.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.8692,
+      "time_range": [
+        24.0,
+        27.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9582,
+      "time_range": [
+        27.0,
+        30.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.2255,
+      "time_range": [
+        30.0,
+        33.0
+      ]
+    },
+    {
+      "species": "Blue-gray Saltator",
+      "scientific_name": "Saltator coerulescens",
+      "confidence": 0.2138,
+      "time_range": [
+        30.0,
+        33.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.1307,
+      "time_range": [
+        33.0,
+        36.0
+      ]
+    },
+    {
+      "species": "Orchard Oriole",
+      "scientific_name": "Icterus spurius",
+      "confidence": 0.1954,
+      "time_range": [
+        36.0,
+        39.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.8937,
+      "time_range": [
+        39.0,
+        42.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9809,
+      "time_range": [
+        42.0,
+        45.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.1036,
+      "time_range": [
+        45.0,
+        48.0
+      ]
+    },
+    {
+      "species": "Orchard Oriole",
+      "scientific_name": "Icterus spurius",
+      "confidence": 0.1524,
+      "time_range": [
+        48.0,
+        51.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.942,
+      "time_range": [
+        51.0,
+        54.0
+      ]
+    },
+    {
+      "species": "Common Nightingale",
+      "scientific_name": "Luscinia megarhynchos",
+      "confidence": 0.3272,
+      "time_range": [
+        54.0,
+        57.0
+      ]
+    },
+    {
+      "species": "Manchurian Bush Warbler",
+      "scientific_name": "Horornis canturians",
+      "confidence": 0.1001,
+      "time_range": [
+        54.0,
+        57.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.2044,
+      "time_range": [
+        57.0,
+        60.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.7642,
+      "time_range": [
+        60.0,
+        63.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9745,
+      "time_range": [
+        63.0,
+        66.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.1245,
+      "time_range": [
+        66.0,
+        69.0
+      ]
+    },
+    {
+      "species": "American Crow",
+      "scientific_name": "Corvus brachyrhynchos",
+      "confidence": 0.1969,
+      "time_range": [
+        69.0,
+        72.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.6215,
+      "time_range": [
+        72.0,
+        75.0
+      ]
+    },
+    {
+      "species": "Italian Sparrow",
+      "scientific_name": "Passer italiae",
+      "confidence": 0.1012,
+      "time_range": [
+        72.0,
+        75.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.4998,
+      "time_range": [
+        75.0,
+        78.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9621,
+      "time_range": [
+        78.0,
+        81.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.1589,
+      "time_range": [
+        84.0,
+        87.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.4459,
+      "time_range": [
+        87.0,
+        90.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.3038,
+      "time_range": [
+        87.0,
+        90.0
+      ]
+    },
+    {
+      "species": "Italian Sparrow",
+      "scientific_name": "Passer italiae",
+      "confidence": 0.1007,
+      "time_range": [
+        87.0,
+        90.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.5756,
+      "time_range": [
+        90.0,
+        93.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.8025,
+      "time_range": [
+        96.0,
+        99.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9769,
+      "time_range": [
+        99.0,
+        102.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.7963,
+      "time_range": [
+        105.0,
+        108.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.9725,
+      "time_range": [
+        108.0,
+        111.0
+      ]
+    },
+    {
+      "species": "American Crow",
+      "scientific_name": "Corvus brachyrhynchos",
+      "confidence": 0.1687,
+      "time_range": [
+        111.0,
+        114.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.1262,
+      "time_range": [
+        111.0,
+        114.0
+      ]
+    },
+    {
+      "species": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "confidence": 0.5178,
+      "time_range": [
+        114.0,
+        117.0
+      ]
+    },
+    {
+      "species": "American Crow",
+      "scientific_name": "Corvus brachyrhynchos",
+      "confidence": 0.1826,
+      "time_range": [
+        114.0,
+        117.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.8598,
+      "time_range": [
+        117.0,
+        120.0
+      ]
+    },
+    {
+      "species": "Northern Cardinal",
+      "scientific_name": "Cardinalis cardinalis",
+      "confidence": 0.7785,
+      "time_range": [
+        120.0,
+        123.0
+      ]
+    },
+    {
+      "species": "American Robin",
+      "scientific_name": "Turdus migratorius",
+      "confidence": 0.9979,
+      "time_range": [
+        123.0,
+        126.0
+      ]
+    },
+    {
+      "species": "Mistle Thrush",
+      "scientific_name": "Turdus viscivorus",
+      "confidence": 0.2565,
+      "time_range": [
+        126.0,
+        129.0
+      ]
+    },
+    {
+      "species": "American Robin",
+      "scientific_name": "Turdus migratorius",
+      "confidence": 0.8247,
+      "time_range": [
+        129.0,
+        132.0
+      ]
+    },
+    {
+      "species": "American Robin",
+      "scientific_name": "Turdus migratorius",
+      "confidence": 0.6589,
+      "time_range": [
+        132.0,
+        135.0
+      ]
+    },
+    {
+      "species": "American Robin",
+      "scientific_name": "Turdus migratorius",
+      "confidence": 0.9691,
+      "time_range": [
+        135.0,
+        138.0
+      ]
+    }
+  ],
+  "analysis_elapsed_sec": 18.1
+}
