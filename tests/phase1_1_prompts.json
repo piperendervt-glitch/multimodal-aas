@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "phase": "phase1.1",
+  "language": "ja",
+  "context": "balcony with bird cake, self-recorded videos of sparrow and bulbul only",
+  "prompts": [
+    {
+      "id": "p01",
+      "category": "simple_sparrow",
+      "description": "ベランダの手すりに小さな茶色い鳥が数羽止まっていた。バードケーキをついばんでいる。",
+      "expected_primary": "sparrow",
+      "expected_fallback": "unknown"
+    },
+    {
+      "id": "p02",
+      "category": "simple_bulbul",
+      "description": "鉢植えの上に大きめの灰色の鳥が1羽止まっている。ピーヨと鳴きながらバードケーキを食べている。",
+      "expected_primary": "bulbul",
+      "expected_fallback": "unknown"
+    },
+    {
+      "id": "p03",
+      "category": "ambiguous",
+      "description": "ベランダに鳥が来ていた。",
+      "expected_primary": "unknown",
+      "expected_fallback": null
+    },
+    {
+      "id": "p04",
+      "category": "mixed",
+      "description": "バードケーキのまわりに、小さい茶色の鳥たちと、大きめの灰色の鳥が一緒に集まっていた。",
+      "expected_primary": "both",
+      "expected_fallback": "unknown"
+    },
+    {
+      "id": "p05",
+      "category": "none",
+      "description": "ベランダには鉢植えとバードケーキが置いてあるが、まだ鳥は来ていない。",
+      "expected_primary": "none",
+      "expected_fallback": "unknown"
+    }
+  ]
+}

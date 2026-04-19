@@ -1,0 +1,102 @@
+{
+  "model": "qwen2.5:7b",
+  "temperature": 0.1,
+  "system_prompt": "あなたは日本の野鳥観察を支援するアシスタントです。\nベランダに設置したバードケーキに来る鳥を観察しています。\n撮影環境にはスズメとヒヨドリのみが飛来します。\n\n以下の記述を読んで、どの鳥について記述されているかを判定してください。\n\n候補:\n- sparrow: スズメ (Passer montanus)\n- bulbul: ヒヨドリ (Hypsipetes amaurotis)\n- both: スズメとヒヨドリの両方\n- none: 鳥がいない、または鳥の記述ではない\n- unknown: 記述が曖昧で判定不能\n\n以下の JSON 形式で厳密に応答してください。余計な前置きや説明は不要です。\n\n{\n  \"predicted_species\": \"sparrow\" | \"bulbul\" | \"both\" | \"none\" | \"unknown\",\n  \"confidence\": 0.0 から 1.0 の数値,\n  \"reasoning\": \"判定の理由を日本語で簡潔に（50字以内）\"\n}",
+  "results": [
+    {
+      "prompt_id": "p01",
+      "category": "simple_sparrow",
+      "description": "ベランダの手すりに小さな茶色い鳥が数羽止まっていた。バードケーキをついばんでいる。",
+      "expected_primary": "sparrow",
+      "expected_fallback": "unknown",
+      "raw_response": "{\n  \"predicted_species\": \"sparrow\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"記述からスズメの行動が推測できる\"\n}",
+      "parsed": {
+        "predicted_species": "sparrow",
+        "confidence": 0.9,
+        "reasoning": "記述からスズメの行動が推測できる"
+      },
+      "predicted_species": "sparrow",
+      "confidence": 0.9,
+      "reasoning": "記述からスズメの行動が推測できる",
+      "score": 1.0,
+      "is_json_valid": true,
+      "elapsed_sec": 7.009
+    },
+    {
+      "prompt_id": "p02",
+      "category": "simple_bulbul",
+      "description": "鉢植えの上に大きめの灰色の鳥が1羽止まっている。ピーヨと鳴きながらバードケーキを食べている。",
+      "expected_primary": "bulbul",
+      "expected_fallback": "unknown",
+      "raw_response": "{\n  \"predicted_species\": \"sparrow\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"灰色の鳥でピーヨと鳴くのはスズメの特徴\"\n}",
+      "parsed": {
+        "predicted_species": "sparrow",
+        "confidence": 0.9,
+        "reasoning": "灰色の鳥でピーヨと鳴くのはスズメの特徴"
+      },
+      "predicted_species": "sparrow",
+      "confidence": 0.9,
+      "reasoning": "灰色の鳥でピーヨと鳴くのはスズメの特徴",
+      "score": 0.0,
+      "is_json_valid": true,
+      "elapsed_sec": 3.804
+    },
+    {
+      "prompt_id": "p03",
+      "category": "ambiguous",
+      "description": "ベランダに鳥が来ていた。",
+      "expected_primary": "unknown",
+      "expected_fallback": null,
+      "raw_response": "{\n  \"predicted_species\": \"both\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"スズメとヒヨドリが飛来するという条件から、どちらも来ている可能性が高い\"\n}",
+      "parsed": {
+        "predicted_species": "both",
+        "confidence": 1.0,
+        "reasoning": "スズメとヒヨドリが飛来するという条件から、どちらも来ている可能性が高い"
+      },
+      "predicted_species": "both",
+      "confidence": 1.0,
+      "reasoning": "スズメとヒヨドリが飛来するという条件から、どちらも来ている可能性が高い",
+      "score": 0.0,
+      "is_json_valid": true,
+      "elapsed_sec": 3.959
+    },
+    {
+      "prompt_id": "p04",
+      "category": "mixed",
+      "description": "バードケーキのまわりに、小さい茶色の鳥たちと、大きめの灰色の鳥が一緒に集まっていた。",
+      "expected_primary": "both",
+      "expected_fallback": "unknown",
+      "raw_response": "{\n  \"predicted_species\": \"both\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"記述にスズメとヒヨドリの特徴が両方含まれている\"\n}",
+      "parsed": {
+        "predicted_species": "both",
+        "confidence": 1.0,
+        "reasoning": "記述にスズメとヒヨドリの特徴が両方含まれている"
+      },
+      "predicted_species": "both",
+      "confidence": 1.0,
+      "reasoning": "記述にスズメとヒヨドリの特徴が両方含まれている",
+      "score": 1.0,
+      "is_json_valid": true,
+      "elapsed_sec": 3.87
+    },
+    {
+      "prompt_id": "p05",
+      "category": "none",
+      "description": "ベランダには鉢植えとバードケーキが置いてあるが、まだ鳥は来ていない。",
+      "expected_primary": "none",
+      "expected_fallback": "unknown",
+      "raw_response": "{\n  \"predicted_species\": \"none\",\n  \"confidence\": 1.0,\n  \"reasoning\": \"記述に鳥の来訪はなく、現在の状況のみが述べられている\"\n}",
+      "parsed": {
+        "predicted_species": "none",
+        "confidence": 1.0,
+        "reasoning": "記述に鳥の来訪はなく、現在の状況のみが述べられている"
+      },
+      "predicted_species": "none",
+      "confidence": 1.0,
+      "reasoning": "記述に鳥の来訪はなく、現在の状況のみが述べられている",
+      "score": 1.0,
+      "is_json_valid": true,
+      "elapsed_sec": 3.682
+    }
+  ]
+}
