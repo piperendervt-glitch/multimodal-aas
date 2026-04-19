@@ -21,14 +21,15 @@ from typing import Any
 
 
 DETAIL_THRESHOLDS = (0.4, 0.7)  # <=0.4 -> brief, <=0.7 -> medium, else full
+DETAIL_THRESHOLDS_V2 = (0.4, 0.6)  # Stage 2 Exp 2: tighter "full" band
 
 SPARROW_MATCH = ("Passer montanus", "Eurasian Tree Sparrow")
 BULBUL_MATCH = ("Hypsipetes amaurotis", "Brown-eared Bulbul")
 
 
-def get_detail_level(w_avg: float) -> str:
+def get_detail_level(w_avg: float, thresholds: tuple[float, float] = DETAIL_THRESHOLDS) -> str:
     """Map a modality's average weight to one of {``brief``, ``medium``, ``full``}."""
-    lo, hi = DETAIL_THRESHOLDS
+    lo, hi = thresholds
     if w_avg <= lo:
         return "brief"
     if w_avg <= hi:
@@ -257,6 +258,54 @@ def build_prompt(
         "\n"
         f"Audio Detection ({aud_level} detail):\n"
         f"{audio_section}\n"
+        "\n"
+        "Environment context: feeder is on a balcony in Japan; only sparrow "
+        "and bulbul can visit. 'No evidence' on both modalities should map "
+        "to `{\"sparrow\": 0, \"bulbul\": 0}`.\n"
+        "\n"
+        "Determine whether sparrow and/or bulbul are present.\n"
+        "Respond strictly in JSON: {\"sparrow\": 0 or 1, \"bulbul\": 0 or 1}"
+    )
+    return prompt, {"visual_level": vis_level, "audio_level": aud_level}
+
+
+SYSTEM_PROMPT_NO_SCORE = (
+    "You are an expert at Japanese backyard bird identification. "
+    "Bird candidates are Eurasian Tree Sparrow (Passer montanus, `sparrow`) "
+    "and Brown-eared Bulbul (Hypsipetes amaurotis, `bulbul`). "
+    "Determine whether each species is present given the detection evidence. "
+    "Respond strictly in JSON with keys `sparrow` and `bulbul`, each 0 or 1."
+)
+
+
+def build_prompt_no_score(
+    yolo_output: dict[str, Any],
+    bbox_dist: dict[str, Any],
+    birdnet_output: dict[str, Any],
+    weights: dict[str, dict[str, float]],
+    thresholds: tuple[float, float] = DETAIL_THRESHOLDS_V2,
+) -> tuple[str, dict[str, str]]:
+    """Stage 2 Experiment 2 prompt: hide weights, only vary detail level.
+
+    The prompt looks like a normal bird-ID request — the LLM never sees
+    the four reliability scores — but the detail sections are still
+    filtered by the modality-average weight behind the scenes.
+    ``metadata`` records which detail tier was chosen for audit.
+    """
+    w_v_avg = (weights["visual"]["sparrow"] + weights["visual"]["bulbul"]) / 2.0
+    w_a_avg = (weights["audio"]["sparrow"] + weights["audio"]["bulbul"]) / 2.0
+    vis_level = get_detail_level(w_v_avg, thresholds)
+    aud_level = get_detail_level(w_a_avg, thresholds)
+
+    visual_section = format_visual(yolo_output, bbox_dist, vis_level)
+    audio_section = format_audio(birdnet_output, aud_level)
+
+    prompt = (
+        "Analyze the following detection data for bird identification.\n"
+        "\n"
+        f"Visual Detection:\n{visual_section}\n"
+        "\n"
+        f"Audio Detection:\n{audio_section}\n"
         "\n"
         "Environment context: feeder is on a balcony in Japan; only sparrow "
         "and bulbul can visit. 'No evidence' on both modalities should map "
