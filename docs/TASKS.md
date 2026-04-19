@@ -182,107 +182,80 @@ failure: new_weight = old_weight × 0.7
 
 ---
 
-## Phase 1.4d: AAS v1 応用実験 [計画確定、実装次回]
+## Phase 1.4d: AAS v1 応用実験 [完了 — Paper 1 drafting ready]
 
-### 設計方針: sdnd-proof 対照実験の継承
+### 最終状態サマリ
 
-**sdnd-proof と同じ実験デザインパターン**:
+Phase 1.4d は Stage 1 / 2 / 3 の全実験を完了。4 つの決定的な結果を得て、
+Paper 1 の下書きに必要な統計的根拠が揃った。詳細は
+`docs/PHASE_1_4D_SUMMARY.md`、論文構成は `docs/PAPER1_OUTLINE.md` 参照。
 
-| | Experiment A (Fixed) | Experiment B (Adaptive) |
-|---|---|---|
-| Structure | 固定重み (均等 or 学習なし) | flow_weight 更新 |
-| Model | qwen2.5:7b | qwen2.5:7b |
-| Hardware | identical | identical |
-| Data | Clean 22 fold | Clean 22 fold |
-| Update Rule | none | sdnd-proof 継承 |
+### 4 つの柱 (Paper 1 headline)
 
-### flow_weight 更新式 (sdnd-proof から継承)
+1. **Negative Go — prompt injection harms** (Stage 2 Exp 1, bootstrap n=55)
+   - d = **−2.073**, p = 0.0001, CI **[−0.171, −0.015]**
+   - LLM プロンプトに数値信頼度を注入すると macro F1 が有意に劣化
+   - commits: `2f247e0` (実験), `0d0903c` (bootstrap)
 
-```python
-success: new_weight = old_weight + 0.1 × (1.0 - old_weight)
-failure: new_weight = old_weight × 0.7
-```
+2. **No Transfer — silent info filter collapses at n=220** (Stage 2 Exp 2 extended)
+   - n=5 で d=+0.447 → n=55 で d=+0.978 → n=220 で **d=−0.115**
+   - 小サンプル positive の artefact を detect したエピソード
+   - commits: `2dd8756` (実験), `d2fc14e` (extended)
 
-**数学的性質**:
-- Success 則: 指数的な 1 への接近 (上限あり、max +0.1)
-- Failure 則: 指数的減衰 (max -0.3)
-- **非対称性**: 失敗は成功の 3 倍のインパクト
-- リスク回避型学習、粘菌 (Physarum polycephalum) の管路動態に着想
+3. **Positive Go weak — ensemble voting, label-specific weights** (Stage 1 Exp 5b extended)
+   - d = **+2.041**, p = 0.0001, CI **[+0.003, +0.026]**
+   - A + B_v3 + C_v3 の 3 topology × label ごとの 6 重みで投票
+   - Δ-sign: 4 positive / 16 zero / 0 negative (20 trial)
+   - commit: `2db9ca2`
 
-### 評価基準 (sdnd-proof と同じ 3 基準)
+4. **Positive Go strong — gate routing over weights** (Stage 3 Target C)
+   - trial t-test d = **+0.899**, p = 0.0007
+   - bootstrap d = **+4.014**, p = 0.0001, CI **[+0.024, +0.067]**
+   - 6 weights + 6 gates、effective contribution = `w × g`
+   - Routing: sparrow → C_v3 70%, bulbul → C_v3 56% + A 34%
+   - commit: `bfd840d`
 
-- p < 0.05
-- Cohen's d ≥ 0.8
-- 95% CI が 0 を含まない
+### 発見したアーキテクチャ境界
 
-### 実行方針: 完全マトリクス実験
+**sdnd-proof `flow_weight` ルールは "LLM の外" では転移、"LLM の中" では破綻する。**
 
-**4 対象 × 4 アルゴリズム = 16 実験**
+| substrate | weight signal | Cohen's d (n=220) | 判定 |
+|---|---|---:|---|
+| single-LLM, reliability scores | prompt-visible | **−2.073** | Negative Go |
+| single-LLM, silent info filter | prompt-invisible | −0.115 | No transfer |
+| ensemble vote, label weights | outside LLM | +2.041 | Positive Go (weak) |
+| ensemble vote, `w × g` gated | outside LLM | **+4.014** | Positive Go (strong) |
 
-#### 対象 (実行順)
+### 方法論的貢献
 
-1. **A: トポロジ間の重み** (最もシンプル、最初に実装)
-   - Topology A, B, C の信頼度重み
-   - Fixed: w_A=w_B=w_C=0.5 固定
-   - Adaptive: flow_weight 更新
+- 全小サンプル positive は n=220 paired fold bootstrap で re-audit
+- Exp 2 (+0.447 → −0.115) は artefact dissolution の教訓例
+- Exp 5b (+0.447 → +2.041) は real effect survival の対比例
+- Paper 1 Chapter 6 として、この re-audit 手順を明示的に論文化
 
-2. **B: モダリティ間の重み** (Visual vs Audio)
-   - Topology C 内での統合重み
-   - マルチモーダル研究の本丸
+### 統計プロトコル (全 Phase 1.4d 共通)
 
-3. **C: ノード内の重み** (LLM 判断の詳細)
-   - プロンプト内の判断材料の重み
-
-4. **D: 複合的** (多階層)
-   - 上記の組み合わせ
-
-#### アルゴリズム (実行順)
-
-1. **sdnd-proof AAS v1 学習ルール** (継承)
-   - success: w + 0.1 × (1-w)
-   - failure: w × 0.7
-
-2. **Reinforcement Learning**
-3. **EMA (Exponential Moving Average)** (sdnd-proof との比較対照)
-4. **Gradient-based**
-
-#### 実装段階
-
-- **Phase 1.4d-prototype**: 対象 A + sdnd-proof で最小動作確認
-- **Phase 1.4d-full**: 全 16 実験 + Stage 3 で Mirror Effect 本格観察
-
-### Mirror Effect 観察
-
-- **Stage 1, 2**: 純粋な重み更新のみ (Mirror Effect 観察しない)
-- **Stage 3**: 最良組み合わせで Mirror Effect を集約的に観察
-- Phase 1.3 拡張で観察された現象 (A vs C > B vs C) の動的追跡
-
-### 推定工数
-
-- 16 実験 × 1-3 時間 = 16-48 時間
-- 複数週間の大規模実験
-- Phase 1.4d 完成は数週間後
-
-### 次回セッションの作業項目
-
-1. Stage 1 第一実験 (対象 A + sdnd-proof) の詳細設計
-2. Fixed vs Adaptive 対照実験の具体的手順
-3. Claude Code 依頼文作成
-4. 実装開始
+- Clean 22 fold (11 自前 + 11 Robosheep-reviewed YouTube Tier A/B/B')
+- 20 trial × 11 second-half fold = **n=220 paired bootstrap**、10,000 resample、seed=42
+- sdnd-proof update rule: success `w + 0.1×(1−w)`, failure `w × 0.7`
+- 3 基準 Go gate: p<0.05 AND |d|≥0.8 AND 95% CI excludes 0 (direction 別報告)
 
 ---
 
-## Phase 1.4b, 1.4c, 1.4e: 今後のタスク
+## Phase 1.4b, 1.4c, 1.4e: optional (Paper 1 には不要)
 
-### Phase 1.4b: YOLOv8n 並列化 [優先度: 中]
+Target C が既に gold-standard Go を通過しているため、以下は
+Paper 1 の submission blocker ではない。Paper 2 以降で再検討。
+
+### Phase 1.4b: YOLOv8n 並列化 [optional]
 - 異なる閾値での multi-head YOLOv8n
 - B_v3 で視覚側は既に改善済み、相対的優先度低下
 
-### Phase 1.4c: LLM 並列化 [優先度: 中]
+### Phase 1.4c: LLM 並列化 [optional]
 - qwen2.5:7b + llama3 + mistral の 3 LLM 多数決
 - Grok 指摘の盲点: 複数モデル検証
 
-### Phase 1.4e: 合議モード [優先度: 低]
+### Phase 1.4e: 合議モード [optional]
 
 ---
 
@@ -368,14 +341,15 @@ failure: new_weight = old_weight × 0.7
 
 ### 論文化候補
 
-**Paper 1 (副次的、即時)**: "Negative results in multimodal LLM fusion: when adding information hurts"
-- Phase 1.4a の No-Go 群
-- データ品質 gate の定量化 (65% unusable)
-- arXiv preprint 候補
+**Paper 1 (メイン、drafting ready)**: "Where sdnd-proof transfers and where it does not: an architecture boundary for `flow_weight` learning in multimodal LLM ensembles"
+- 4 pillars: Negative Go (prompt injection), No Transfer (artefact), Positive Go weak (voting), Positive Go strong (gate routing)
+- アーキテクチャ境界: ensemble voting は転移、single-LLM prompt injection は害
+- 方法論的貢献: 全 small-n positive を n=220 bootstrap で re-audit
+- `docs/PAPER1_OUTLINE.md` に全 chapter skeleton
 
-**Paper 2 (メイン、Phase 1.4d 完了後)**: AAS v1 応用 — sdnd-proof flow_weight の多モーダル分類への適用
-- sdnd-proof 対照実験の継承
-- Mirror Effect の実証 (Phase 1.4d Stage 3)
+**Paper 2 (Phase 2 以降)**: 保留
+- Macaulay Library + 外部マイクでクリーン音声再測定
+- Mirror Effect 本格観察 (現 Paper 1 の routing 構造から発展)
 - **scale を超えない安全設計**
 
 ---
@@ -413,33 +387,29 @@ failure: new_weight = old_weight × 0.7
 | e63162f | Session summary v2 for Grok |
 | b6a2580 | Paired bootstrap CI |
 | 54e8de3 | TASKS.md Phase 1.4a 完了版 |
+| 2f247e0 | Phase 1.4d Stage 2 Exp 1 (scores shown, negative Go) |
+| 2dd8756 | Phase 1.4d Stage 2 Exp 2 (scores hidden, baseline) |
+| 3729f75 | Phase 1.4d Stage 2 Exp 3 (stronger penalty) |
+| 0d0903c | Phase 1.4d Stage 2 paired fold bootstrap n=55 |
+| d2fc14e | Phase 1.4d Stage 2 Exp 2 extended (n=220 artefact reveal) |
+| 2db9ca2 | Phase 1.4d Stage 1 Exp 5b extended (n=220 Positive Go weak) |
+| bfd840d | Phase 1.4d Stage 3 Target C (gate learning, Positive Go strong) |
 
 ---
 
 ## 次のマイルストーン
 
-### 次回セッション
-- [ ] Phase 1.4d Stage 1 第一実験 (対象 A + sdnd-proof) の詳細設計
-- [ ] Fixed vs Adaptive 対照実験の具体的手順
-- [ ] Phase 1.4d-prototype の Claude Code 依頼文作成
-- [ ] constitution.md safety principles の適用確認
+### Paper 1 drafting (現在のフォーカス)
+- [ ] `docs/PAPER1_OUTLINE.md` を元に第一稿執筆
+- [ ] 4 figures の作成 (architecture boundary table, Cohen's d vs n, routing share, Δ-sign stacked)
+- [ ] Robosheep 内部レビュー → Grok / ChatGPT / 人間 (判定者 III round 3)
+- [ ] 投稿先最終決定 (workshop / short-paper track)
 
-### 今週中
-- [ ] Phase 1.4d Stage 1 完了 (対象 A × sdnd-proof)
-- [ ] 評価基準 (p<0.05, d≥0.8, 95%CI excludes 0) の検証
-
-### 今月中
-- [ ] Phase 1.4d Stage 1, 2 完了 (対象 A, B, C, D × sdnd-proof)
-- [ ] Phase 1.4d Stage 3 開始 (Mirror Effect 観察)
-
-### 長期 (2-3 ヶ月)
-- [ ] Phase 1.4d 全 16 実験完了
-- [ ] Paper 1 (negative results) arXiv preprint
-- [ ] Paper 2 (AAS 応用) 準備
+### Paper 1 完成後
+- [ ] arXiv preprint + Zenodo DOI リリース
+- [ ] Phase 1.4b/c/e (optional) を必要に応じて実施
 - [ ] Phase 2 hardware (外部マイク) 調達計画
-- [ ] Macaulay Library データ取得 (Phase 2)
-- [ ] ChatGPT 判定取得 (Phase 1 完了時)
-- [ ] Zenodo DOI リリース
+- [ ] Macaulay Library データ取得申請
 
 ---
 
@@ -465,4 +435,4 @@ failure: new_weight = old_weight × 0.7
 
 ---
 
-**Last Updated**: 2026-04-19 (Phase 1.4a 完了、Phase 1.4d 計画確定、sdnd-proof 対照実験方式継承)
+**Last Updated**: 2026-04-20 (Phase 1.4d 完了、Paper 1 drafting ready、アーキテクチャ境界の発見)

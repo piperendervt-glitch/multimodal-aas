@@ -3,124 +3,187 @@
 Adaptive Artificial Synapse (AAS) architecture with heterogeneous nodes
 (vision + audio + LLM) for bird identification tasks.
 
-This project extends the LLM-node AAS (sdnd-proof) to heterogeneous
-neural-network nodes, validated on bird observation data collected from
-a balcony camera, public bioacoustic archives, and live video streams.
+This project extends the single-node LLM AAS
+([sdnd-proof](https://github.com/piperendervt-glitch/sdnd-proof),
+p=0.0007, Cohen's d=4.29) to a multi-node heterogeneous ensemble and
+asks where sdnd-proof's `flow_weight` learning rule transfers, where
+it fails, and where the resulting architecture boundary lies.
 
-## Project Status
-
-Phase 0: Environment setup and data source preparation (in progress).
+## Project Status — Phase 1.4d complete (Paper 1 drafting ready)
 
 | Phase | Scope | Status |
 |------:|-------|--------|
-| 0     | Environment, repo, data sources, pre-registration | in progress |
-| 1     | Raspberry Pi 4B + HQ Camera (SC0870 wide-angle) data collection | planned |
-| 2     | Seven-node PC-side implementation | planned |
-| 3     | Minimal end-to-end run | planned |
-| 4a    | Component selection (2 detectors x 2 classifiers) | planned |
-| 4b    | Topology comparison (6 fixed topologies, statistical test) | planned |
+| 0     | Environment, data sources, pre-registration | complete |
+| 1.1   | `qwen2.5:7b` single-node integrator sanity check | complete (Go, 3.0/5.0) |
+| 1.2   | Visual-only and audio-only single-topology pipelines | complete |
+| 1.3   | Topologies A / B / C on 11 self-recorded clips | complete |
+| 1.3-ext | Extended evaluation on 11 self + 31 YouTube = 42 folds | complete |
+| 1.4a  | Frame extractor, temporal sync, bbox prompt v3 | complete (1× Statistical Go) |
+| 1.4a-clean | Robosheep tier review + paired bootstrap | complete |
+| **1.4d** | **AAS `flow_weight` transfer — Stage 1 / 2 / 3** | **complete** |
+| 1.4b  | YOLO parallelism (multi-threshold) | optional |
+| 1.4c  | Heterogeneous LLM ensemble | optional |
+| 1.4e  | Consensus / conflict resolution | optional |
+
+## Phase 1.4d — the four pillars of Paper 1
+
+Four decisive results came out of Phase 1.4d. All four use the clean
+22-fold dataset (11 self-recorded balcony clips + 11 Robosheep-vetted
+YouTube clips) and pass / fail the sdnd-proof 3-criterion gate
+(`p < 0.05`, `|Cohen's d| ≥ 0.8`, 95% CI excludes 0).
+
+1. **Negative Go — prompt injection harms** (Stage 2 Exp 1, bootstrap n=55).
+   Showing the LLM numerical `reliability scores` for each
+   modality-label pair *reduces* macro F1.
+   → d = **−2.073**, p = 0.0001, CI **[−0.171, −0.015]**.
+2. **No Transfer — silent info filtering collapses at scale** (Stage
+   2 Exp 2 extended, bootstrap n=220). The apparent n=5 effect
+   (d=+0.447) was a small-sample artifact; n=220 lands at d=−0.115.
+   → teaches the "re-validate at larger n before acting" lesson.
+3. **Positive Go weak — ensemble voting over label-specific weights**
+   (Stage 1 Exp 5b extended, bootstrap n=220). Same 6-weight
+   label-specific rule as sdnd-proof, applied to the three Phase 1.4a
+   topologies A + B_v3 + C_v3 in a weighted vote.
+   → d = **+2.041**, p = 0.0001, CI **[+0.003, +0.026]**.
+4. **Positive Go strong — gate routing on top of the weights** (Stage
+   3 Target C). Adds an explicit per-label gate that rewards topologies
+   agreeing with the ensemble's own final prediction; effective
+   contribution = `w × g` per topology-label pair.
+   → trial t-test d = **+0.899**, p = 0.0007, CI **[+0.022, +0.069]** AND
+   bootstrap d = **+4.014**, p = 0.0001, CI **[+0.024, +0.067]**.
+   All three criteria pass on both trial and fold-level analyses —
+   Phase 1.4d's gold-standard Go.
+
+## Architecture boundary discovered
+
+The single clearest finding of the phase is where the sdnd-proof rule
+transfers and where it does not:
+
+- **Single-LLM substrate** (Stage 2 Exp 1/2/3): injecting learned
+  weights into the LLM prompt is either actively harmful (Exp 1) or
+  underpowered and fragile (Exp 2/3). Small-n positives dissolve at
+  n=220.
+- **Ensemble-voting substrate** (Stage 1 Exp 5b, Stage 3 Target C):
+  learned weights combined with the topologies' own binary
+  predictions transfer cleanly, and adding an explicit gate on top
+  nearly **doubles Cohen's d** (+2.041 → +4.014) while driving
+  positive trials from 4/20 to 10/20.
+
+Put bluntly: sdnd-proof `flow_weight` learning should be **applied
+outside the LLM** (as a mixing layer over heterogeneous topologies),
+not **shown to the LLM** as numerical advice.
+
+## Methodology
+
+- **Data**: clean 22 folds (11 self-recorded + 11 Robosheep-reviewed
+  YouTube; tiers A / B / B′ only). 20 of the 31 downloaded YouTube
+  clips (65%) were dropped for BGM / text overlays / human voice —
+  the tier review itself changed several Go verdicts and is written
+  up in `results/phase1_clean/`.
+- **Statistical protocol**: paired fold bootstrap over 20 trials × 11
+  second-half folds = n=220, 10,000 resamples, seed 42. Same rule for
+  every experiment. Applied to both small-n positive claims (to
+  detect artefacts) and negative claims (to validate harm).
+- **Go gate**: the sdnd-proof 3-criterion gate (p<0.05, |d|≥0.8, 95%
+  CI excludes 0), with direction reported separately so a negative d
+  that clears the thresholds is labelled "Negative Go" instead of
+  being silently reported as a success.
+
+## Documents
+
+- `docs/PHASE_1_4D_SUMMARY.md` — every Stage 1 / 2 / 3 experiment and
+  its verdict, in one place.
+- `docs/PAPER1_OUTLINE.md` — draft chapter skeleton for Paper 1.
+- `docs/TASKS.md` — task ledger (now mostly a log; active work has
+  shifted to Paper 1 drafting).
+- `docs/data_sources.md` — data attribution and license registry.
+- `docs/pre_registration.md` — hypotheses and sample sizes, frozen
+  before any experiment.
 
 ## Environment
 
 - OS: Windows 11 (Lenovo Legion, Ryzen 7 8745HX, 32 GB RAM)
-- GPU: NVIDIA RTX 5060 Ti 16 GB
+- GPU: NVIDIA RTX 5060 Ti 16 GB (LLM inference runs on CPU via Ollama)
 - Python: 3.12.10 (inside `.venv`)
 - ffmpeg: 8.1 (nvenc / nvdec enabled)
-- Ollama: 0.21.0 (Windows-native, used for `qwen2.5:7b` integrator node)
-- PyTorch: to be installed with CUDA 12.x (Phase 2)
+- Ollama: 0.21.0 (Windows-native, `qwen2.5:7b` integrator)
+- Additional: `ultralytics`, `birdnetlib`, `librosa`, `resampy`,
+  `tensorflow` (for the BirdNET TFLite model), `matplotlib`, `scipy`.
 
 ## Directory Layout
 
 ```
 multimodal-aas-bird/
-├── .venv/               # Python 3.12 virtualenv (not committed)
-├── data/                # Raw / processed datasets (not committed)
-│   ├── balcony/         # Balcony camera data (Pi HQ camera)
-│   ├── xeno_canto/      # Xeno-canto audio cache
-│   └── youtube_streams/ # Live-stream processing artefacts only
-├── docs/                # Design notes, license registry, pre-registration
-├── logs/                # Run logs (not committed)
-├── notebooks/           # Jupyter notebooks
-└── src/                 # Node implementations and utilities
+├── .venv/                          # Python 3.12 virtualenv (not committed)
+├── data/                           # Raw media and metadata (most not committed)
+│   ├── metadata.json               # self-recorded 11-clip metadata
+│   ├── youtube_metadata.json       # YouTube 31-clip metadata + Robosheep tiers
+│   ├── labels/phase1_labels.json   # ground-truth labels
+│   ├── raw/                        # mp4 / wav downloads (gitignored)
+│   └── processed/                  # cached frame / audio extractions (gitignored)
+├── docs/                           # Design notes, pre-registration, summaries
+├── logs/                           # Run logs (gitignored)
+├── notebooks/                      # Jupyter notebooks (empty so far)
+├── results/                        # Committed per-experiment artefacts
+│   ├── phase1_1/ … phase1_3_extended/
+│   ├── phase1_4a/ … phase1_4d/
+│   ├── phase1_clean/               # Robosheep tier re-evaluation
+│   └── reports/                    # Grok review packets
+└── src/                            # All code
+    ├── phase1_3_common/            # Shared loaders / metrics
+    ├── phase1_4a_common/           # bbox v3, frame extractor, tiers
+    └── phase1_4d/                  # Stage 1 / 2 / 3 experiments
 ```
 
-## Nodes (Phase 2 target)
+## Nodes and topologies
 
-1. `frame_extractor`        - ffmpeg-based frame / audio extraction
-2. `bird_detector_yolo`     - YOLOv8n bird detection
-3. `bird_detector_dino`     - Grounding DINO open-vocabulary detection
-4. `bird_classifier_clip`   - CLIP zero-shot classifier
-5. `bird_classifier_inat`   - iNaturalist fine-grained classifier
-6. `bird_classifier_audio`  - BirdNET (existing asset)
-7. `integrator_llm`         - Ollama `qwen2.5:7b` multimodal integrator
+| id | role | source |
+|---|---|---|
+| A (visual) | YOLOv8n bird class → LLM `qwen2.5:7b` | Phase 1.3 |
+| B (visual) | Same, with Phase 1.4a `bbox prompt v3` | `topology_b_v3` |
+| C (fusion) | YOLO + BirdNET parallel → LLM fusion | Phase 1.3 |
+| C_v3       | As C with `temporal_sync` info | Phase 1.4a |
 
-## Topologies (Phase 4b)
+The Stage 3 Target C `Adaptive` ensemble mixes A, B_v3, and C_v3 with
+six label-specific weights (`w`) and six label-specific gates (`g`);
+the effective contribution of each (topology, label) pair in the vote
+is `w × g` and both quantities are learned online via the sdnd-proof
+update rule.
 
-- A: Audio-Only
-- B: Visual-Only
-- C: Parallel Fusion
-- D: Audio-First Gating
-- E: Visual-Guided Audio
-- F: Cross-Validation
+## Reproducing headline numbers
 
-Hypothesis, sample size, and statistical test are defined in
-`docs/pre_registration.md` before any experiment is run.
-
-## Data Strategy
-
-Given sparse bird visits immediately after installing the bird-cake
-feeder, a four-tier hierarchy is used. Full policy and attribution rules
-are documented in `docs/data_sources.md`.
-
-| Tier | Source | Notes |
-|----:|--------|-------|
-| 1 | Xeno-canto, Macaulay Library | CC / research-licensed audio |
-| 2 | YouTube live streams | real-time processing only, no persistent download |
-| 3 | CC-licensed video | attribution and license tracked per clip |
-| 4 | Balcony (self-recorded) | primary evaluation set |
-
-## Running the Xeno-canto Smoke Test
-
-`src/xeno_canto_test.py` reads the API key from the shell environment
-variable `XENO_CANTO_API_KEY` (no `.env` file is used). Register at
-https://xeno-canto.org/account to obtain a free key, then:
-
-```powershell
-# PowerShell (current session)
-$env:XENO_CANTO_API_KEY = "<your key>"
-.\.venv\Scripts\python.exe src\xeno_canto_test.py
-```
+The committed per-fold JSONs are the source of truth; no LLM
+re-inference is needed to reproduce any of the Stage 1 / 3 statistical
+claims. Representative entry points:
 
 ```bash
-# bash / WSL
-export XENO_CANTO_API_KEY=<your key>
-./.venv/Scripts/python.exe src/xeno_canto_test.py
+# Stage 2 bootstrap (n=55 per experiment)
+.venv/Scripts/python.exe src/phase1_4d/stage2_fold_bootstrap.py
+
+# Stage 2 Exp 2 extended (n=220, detects the artifact)
+.venv/Scripts/python.exe src/phase1_4d/stage2_target_b_no_score_extended.py
+
+# Stage 1 Exp 5b extended (n=220, weak positive Go)
+.venv/Scripts/python.exe src/phase1_4d/stage1_exp5b_extended_validation.py
+
+# Stage 3 Target C (gold-standard positive Go)
+.venv/Scripts/python.exe src/phase1_4d/stage3_target_c_gate_learning.py
 ```
 
-To persist the key across PowerShell sessions:
-
-```powershell
-[Environment]::SetEnvironmentVariable("XENO_CANTO_API_KEY", "<your key>", "User")
-```
-
-The script exits with code 2 and prints an instruction message if the
-variable is missing, 1 on any HTTP / network error, and 0 on success.
+Each script writes `summary.md`, a `*_analysis.json`, and figures
+under `results/phase1_4d/…/graphs/`.
 
 ## References
 
-- sdnd-proof (AAS v1, LLM-node version):
-  https://github.com/piperendervt-glitch/sdnd-proof
-  (prior result: 5/5 trials, p = 0.0007, Cohen's d = 4.29)
-- Xeno-canto: https://xeno-canto.org/
-- Macaulay Library (Cornell Lab): https://www.macaulaylibrary.org/
+- **sdnd-proof** (AAS v1, LLM-node): https://github.com/piperendervt-glitch/sdnd-proof
+  — p=0.0007, Cohen's d=4.29, 5/5 trials.
 - BirdNET-Analyzer: https://github.com/kahst/BirdNET-Analyzer
 - YOLOv8: https://github.com/ultralytics/ultralytics
-- Grounding DINO: https://github.com/IDEA-Research/GroundingDINO
-- CLIP: https://github.com/openai/CLIP
 - Ollama: https://ollama.com/
+- Xeno-canto: https://xeno-canto.org/
 
 ## License
 
 TBD. Code will be released under an OSI-approved license once the
-experimental protocol is frozen. All data files follow the license of
+Paper 1 protocol is frozen. All media files follow the license of
 their original source (see `docs/data_sources.md`).
