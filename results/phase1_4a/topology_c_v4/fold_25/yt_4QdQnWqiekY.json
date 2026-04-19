@@ -1,0 +1,219 @@
+{
+  "video_id": "yt_4QdQnWqiekY",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_4QdQnWqiekY.wav",
+    "duration_sec": 16.022,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 16,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 16,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 0,
+      "medium_count": 0,
+      "large_count": 0,
+      "total_detections": 0,
+      "dominant_range": "none",
+      "dominant_ratio": 0.0
+    },
+    "size_consistency": 0.0,
+    "size_variation_type": "none",
+    "relative_position": {
+      "normalized_avg": 0.0,
+      "normalized_min": 0.0,
+      "normalized_max": 0.0
+    }
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7844,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8985,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8409,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9327,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9852,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 16,
+      "frames_with_bird": 0,
+      "max_bbox_size_relative": 0.0,
+      "avg_bbox_size_relative": 0.0,
+      "std_bbox_size": 0.0,
+      "max_detection_confidence": 0.0,
+      "avg_detection_confidence": 0.0,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 0,
+        "medium_count": 0,
+        "large_count": 0,
+        "total_detections": 0,
+        "dominant_range": "none",
+        "dominant_ratio": 0.0
+      },
+      "size_consistency": 0.0,
+      "size_variation_type": "none",
+      "relative_position": {
+        "normalized_avg": 0.0,
+        "normalized_min": 0.0,
+        "normalized_max": 0.0
+      }
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9852,
+          "avg_confidence": 0.8883,
+          "num_detections": 5
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 5,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.25, \"bulbul\": 0.75},\n  \"reasoning\": \"音声でbulbulが検出され、視覚情報は鳥なし\",\n  \"modality_used\": \"audio\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"none\",\n    \"size_variation_type\": \"none\",\n    \"decision_basis\": \"音声でbulbul検出\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.25,
+        "bulbul": 0.75
+      },
+      "reasoning": "音声でbulbulが検出され、視覚情報は鳥なし",
+      "modality_used": "audio",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "none",
+        "size_variation_type": "none",
+        "decision_basis": "音声でbulbul検出"
+      }
+    },
+    "elapsed_sec": 6.524
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.25,
+      "bulbul": 0.75
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.192,
+    "yolo": 0.359,
+    "llm": 6.524,
+    "total": 7.075
+  },
+  "topology": "C_v4",
+  "fold": 25,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

@@ -1,0 +1,403 @@
+{
+  "video_id": "yt_kMWUQOW-bTM",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_kMWUQOW-bTM.wav",
+    "duration_sec": 81.014,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 81,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 81,
+    "frames_with_bird": 37,
+    "max_bbox_size_relative": 0.333,
+    "avg_bbox_size_relative": 0.1162,
+    "std_bbox_size": 0.1184,
+    "max_detection_confidence": 0.8701,
+    "avg_detection_confidence": 0.5778,
+    "detection_counts_per_frame": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 16,
+      "medium_count": 12,
+      "large_count": 10,
+      "total_detections": 38,
+      "dominant_range": "small",
+      "dominant_ratio": 0.4211
+    },
+    "size_consistency": 1.0189,
+    "size_variation_type": "mixed",
+    "relative_position": {
+      "normalized_avg": 0.3489,
+      "normalized_min": 0.0547,
+      "normalized_max": 1.0
+    }
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2621,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2555,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.5055,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3419,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.5648,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1007,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8728,
+        "time_range": [
+          42.0,
+          45.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.4756,
+        "time_range": [
+          48.0,
+          51.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1193,
+        "time_range": [
+          51.0,
+          54.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9253,
+        "time_range": [
+          54.0,
+          57.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.522,
+        "time_range": [
+          57.0,
+          60.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 81,
+      "frames_with_bird": 37,
+      "max_bbox_size_relative": 0.333,
+      "avg_bbox_size_relative": 0.1162,
+      "std_bbox_size": 0.1184,
+      "max_detection_confidence": 0.8701,
+      "avg_detection_confidence": 0.5778,
+      "detection_counts_per_frame": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 16,
+        "medium_count": 12,
+        "large_count": 10,
+        "total_detections": 38,
+        "dominant_range": "small",
+        "dominant_ratio": 0.4211
+      },
+      "size_consistency": 1.0189,
+      "size_variation_type": "mixed",
+      "relative_position": {
+        "normalized_avg": 0.3489,
+        "normalized_min": 0.0547,
+        "normalized_max": 1.0
+      }
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9253,
+          "avg_confidence": 0.4496,
+          "num_detections": 11
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 11,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.75, \"bulbul\": 0.85},\n  \"reasoning\": \"視覚はsmall優位、音声はbulbul検出\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"small\",\n    \"size_variation_type\": \"mixed\",\n    \"decision_basis\": \"視覚のsmall優位と音声のbulbul検出\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.75,
+        "bulbul": 0.85
+      },
+      "reasoning": "視覚はsmall優位、音声はbulbul検出",
+      "modality_used": "both",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "small",
+        "size_variation_type": "mixed",
+        "decision_basis": "視覚のsmall優位と音声のbulbul検出"
+      }
+    },
+    "elapsed_sec": 6.351
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.75,
+      "bulbul": 0.85
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 1.013,
+    "yolo": 1.833,
+    "llm": 6.351,
+    "total": 9.197
+  },
+  "topology": "C_v4",
+  "fold": 26,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

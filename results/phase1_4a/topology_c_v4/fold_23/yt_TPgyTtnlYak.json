@@ -1,0 +1,281 @@
+{
+  "video_id": "yt_TPgyTtnlYak",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_TPgyTtnlYak.wav",
+    "duration_sec": 23.708,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 24,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 24,
+    "frames_with_bird": 0,
+    "max_bbox_size_relative": 0.0,
+    "avg_bbox_size_relative": 0.0,
+    "std_bbox_size": 0.0,
+    "max_detection_confidence": 0.0,
+    "avg_detection_confidence": 0.0,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 0,
+      "medium_count": 0,
+      "large_count": 0,
+      "total_detections": 0,
+      "dominant_range": "none",
+      "dominant_ratio": 0.0
+    },
+    "size_consistency": 0.0,
+    "size_variation_type": "none",
+    "relative_position": {
+      "normalized_avg": 0.0,
+      "normalized_min": 0.0,
+      "normalized_max": 0.0
+    }
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.132,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9458,
+        "time_range": [
+          3.0,
+          6.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9927,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9991,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9888,
+        "time_range": [
+          12.0,
+          15.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9952,
+        "time_range": [
+          15.0,
+          18.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9928,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Blue Rock-Thrush",
+        "scientific_name": "Monticola solitarius",
+        "confidence": 0.1136,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1064,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Blue Rock-Thrush"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 24,
+      "frames_with_bird": 0,
+      "max_bbox_size_relative": 0.0,
+      "avg_bbox_size_relative": 0.0,
+      "std_bbox_size": 0.0,
+      "max_detection_confidence": 0.0,
+      "avg_detection_confidence": 0.0,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 0,
+        "medium_count": 0,
+        "large_count": 0,
+        "total_detections": 0,
+        "dominant_range": "none",
+        "dominant_ratio": 0.0
+      },
+      "size_consistency": 0.0,
+      "size_variation_type": "none",
+      "relative_position": {
+        "normalized_avg": 0.0,
+        "normalized_min": 0.0,
+        "normalized_max": 0.0
+      }
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.9991,
+          "avg_confidence": 0.7691,
+          "num_detections": 8
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Monticola solitarius",
+          "common_name": "Blue Rock-Thrush",
+          "confidence": 0.1136,
+          "avg_confidence": 0.1136,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 9,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.25, \"bulbul\": 0.75},\n  \"reasoning\": \"音声でbulbulが高確度検出\",\n  \"modality_used\": \"audio\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"none\",\n    \"size_variation_type\": \"none\",\n    \"decision_basis\": \"音声でのbulbulの高確度検出\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.25,
+        "bulbul": 0.75
+      },
+      "reasoning": "音声でbulbulが高確度検出",
+      "modality_used": "audio",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "none",
+        "size_variation_type": "none",
+        "decision_basis": "音声でのbulbulの高確度検出"
+      }
+    },
+    "elapsed_sec": 6.383
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.25,
+      "bulbul": 0.75
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.298,
+    "yolo": 0.551,
+    "llm": 6.383,
+    "total": 7.232
+  },
+  "topology": "C_v4",
+  "fold": 23,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

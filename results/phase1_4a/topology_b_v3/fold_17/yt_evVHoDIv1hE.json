@@ -1,0 +1,134 @@
+{
+  "video_id": "yt_evVHoDIv1hE",
+  "frame_extraction": {
+    "num_frames": 10,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 10,
+    "frames_with_bird": 9,
+    "max_bbox_size_relative": 0.2288,
+    "avg_bbox_size_relative": 0.1876,
+    "std_bbox_size": 0.0647,
+    "max_detection_confidence": 0.9176,
+    "avg_detection_confidence": 0.8903,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 1,
+      "medium_count": 1,
+      "large_count": 7,
+      "total_detections": 9,
+      "dominant_range": "large",
+      "dominant_ratio": 0.7778
+    },
+    "size_consistency": 0.3447,
+    "size_variation_type": "mixed",
+    "relative_position": {
+      "normalized_avg": 0.82,
+      "normalized_min": 0.1849,
+      "normalized_max": 1.0
+    }
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 10,
+      "frames_with_bird": 9,
+      "max_bbox_size_relative": 0.2288,
+      "avg_bbox_size_relative": 0.1876,
+      "std_bbox_size": 0.0647,
+      "max_detection_confidence": 0.9176,
+      "avg_detection_confidence": 0.8903,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 1,
+        "medium_count": 1,
+        "large_count": 7,
+        "total_detections": 9,
+        "dominant_range": "large",
+        "dominant_ratio": 0.7778
+      },
+      "size_consistency": 0.3447,
+      "size_variation_type": "mixed",
+      "relative_position": {
+        "normalized_avg": 0.82,
+        "normalized_min": 0.1849,
+        "normalized_max": 1.0
+      }
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.75, \"bulbul\": 0.75},\n  \"reasoning\": \"大型のbboxが優位で、異なったサイズの鳥混在\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"large\",\n    \"size_variation_type\": \"mixed\",\n    \"decision_basis\": \"大型のbboxと異なったサイズの鳥が混在\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.75,
+        "bulbul": 0.75
+      },
+      "reasoning": "大型のbboxが優位で、異なったサイズの鳥混在",
+      "modality_used": "visual",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "large",
+        "size_variation_type": "mixed",
+        "decision_basis": "大型のbboxと異なったサイズの鳥が混在"
+      }
+    },
+    "elapsed_sec": 6.548
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.75,
+      "bulbul": 0.75
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.0,
+    "yolo": 0.221,
+    "llm": 6.548,
+    "total": 6.77
+  },
+  "topology": "B_v3",
+  "fold": 17,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

@@ -1,0 +1,248 @@
+{
+  "video_id": "balcony_011",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_011.wav",
+    "duration_sec": 42.818,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 43,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 43,
+    "frames_with_bird": 3,
+    "max_bbox_size_relative": 0.0061,
+    "avg_bbox_size_relative": 0.0044,
+    "std_bbox_size": 0.0015,
+    "max_detection_confidence": 0.4957,
+    "avg_detection_confidence": 0.4122,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 3,
+      "medium_count": 0,
+      "large_count": 0,
+      "total_detections": 3,
+      "dominant_range": "small",
+      "dominant_ratio": 1.0
+    },
+    "size_consistency": 0.3363,
+    "size_variation_type": "mixed",
+    "relative_position": {
+      "normalized_avg": 0.7213,
+      "normalized_min": 0.5574,
+      "normalized_max": 1.0
+    }
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Large-billed Crow",
+        "scientific_name": "Corvus macrorhynchos",
+        "confidence": 0.1434,
+        "time_range": [
+          0.0,
+          3.0
+        ]
+      },
+      {
+        "species": "Large-billed Crow",
+        "scientific_name": "Corvus macrorhynchos",
+        "confidence": 0.1313,
+        "time_range": [
+          27.0,
+          30.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Large-billed Crow"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 43,
+      "frames_with_bird": 3,
+      "max_bbox_size_relative": 0.0061,
+      "avg_bbox_size_relative": 0.0044,
+      "std_bbox_size": 0.0015,
+      "max_detection_confidence": 0.4957,
+      "avg_detection_confidence": 0.4122,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 3,
+        "medium_count": 0,
+        "large_count": 0,
+        "total_detections": 3,
+        "dominant_range": "small",
+        "dominant_ratio": 1.0
+      },
+      "size_consistency": 0.3363,
+      "size_variation_type": "mixed",
+      "relative_position": {
+        "normalized_avg": 0.7213,
+        "normalized_min": 0.5574,
+        "normalized_max": 1.0
+      }
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "other",
+          "scientific_name": "Corvus macrorhynchos",
+          "common_name": "Large-billed Crow",
+          "confidence": 0.1434,
+          "avg_confidence": 0.1373,
+          "num_detections": 2
+        }
+      ],
+      "target_species_found": false,
+      "total_detections": 2,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.0, \"bulbul\": 0.0},\n  \"reasoning\": \"視覚はスズメの可能性が高いが、音声はヒヨドリ。混ざり合っている。\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"small\",\n    \"size_variation_type\": \"mixed\",\n    \"decision_basis\": \"視覚と音声の矛盾\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "視覚はスズメの可能性が高いが、音声はヒヨドリ。混ざり合っている。",
+      "modality_used": "both",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "small",
+        "size_variation_type": "mixed",
+        "decision_basis": "視覚と音声の矛盾"
+      }
+    },
+    "elapsed_sec": 6.171
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.0,
+    "birdnet": 0.525,
+    "yolo": 0.988,
+    "llm": 6.171,
+    "total": 7.684
+  },
+  "topology": "C_v4",
+  "fold": 11,
+  "source": "self",
+  "category": "sparrow"
+}

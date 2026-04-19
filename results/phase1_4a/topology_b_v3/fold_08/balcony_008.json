@@ -1,0 +1,238 @@
+{
+  "video_id": "balcony_008",
+  "frame_extraction": {
+    "num_frames": 62,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 62,
+    "frames_with_bird": 21,
+    "max_bbox_size_relative": 0.2064,
+    "avg_bbox_size_relative": 0.0674,
+    "std_bbox_size": 0.0485,
+    "max_detection_confidence": 0.872,
+    "avg_detection_confidence": 0.4983,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      4,
+      3,
+      3,
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      1,
+      2,
+      0,
+      0,
+      0,
+      3,
+      5,
+      4,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 22,
+      "medium_count": 18,
+      "large_count": 3,
+      "total_detections": 43,
+      "dominant_range": "small",
+      "dominant_ratio": 0.5116
+    },
+    "size_consistency": 0.7184,
+    "size_variation_type": "mixed",
+    "relative_position": {
+      "normalized_avg": 0.3268,
+      "normalized_min": 0.0673,
+      "normalized_max": 1.0
+    }
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 62,
+      "frames_with_bird": 21,
+      "max_bbox_size_relative": 0.2064,
+      "avg_bbox_size_relative": 0.0674,
+      "std_bbox_size": 0.0485,
+      "max_detection_confidence": 0.872,
+      "avg_detection_confidence": 0.4983,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        4,
+        3,
+        3,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        5,
+        4,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 22,
+        "medium_count": 18,
+        "large_count": 3,
+        "total_detections": 43,
+        "dominant_range": "small",
+        "dominant_ratio": 0.5116
+      },
+      "size_consistency": 0.7184,
+      "size_variation_type": "mixed",
+      "relative_position": {
+        "normalized_avg": 0.3268,
+        "normalized_min": 0.0673,
+        "normalized_max": 1.0
+      }
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.85, \"bulbul\": 0.85},\n  \"reasoning\": \"small bbox優位でサイズ混在\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"small\",\n    \"size_variation_type\": \"mixed\",\n    \"decision_basis\": \"小サイズと混合サイズの鳥\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.85,
+        "bulbul": 0.85
+      },
+      "reasoning": "small bbox優位でサイズ混在",
+      "modality_used": "visual",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "small",
+        "size_variation_type": "mixed",
+        "decision_basis": "小サイズと混合サイズの鳥"
+      }
+    },
+    "elapsed_sec": 5.942
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.85,
+      "bulbul": 0.85
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.001,
+    "yolo": 1.793,
+    "llm": 5.942,
+    "total": 7.736
+  },
+  "topology": "B_v3",
+  "fold": 8,
+  "source": "self",
+  "category": "sparrow"
+}

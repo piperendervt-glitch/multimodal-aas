@@ -1,0 +1,431 @@
+{
+  "video_id": "yt_lnyw5TOMea8",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/yt_lnyw5TOMea8.wav",
+    "duration_sec": 95.016,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 95,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 95,
+    "frames_with_bird": 89,
+    "max_bbox_size_relative": 0.4664,
+    "avg_bbox_size_relative": 0.2768,
+    "std_bbox_size": 0.0873,
+    "max_detection_confidence": 0.9528,
+    "avg_detection_confidence": 0.8511,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 4,
+      "medium_count": 0,
+      "large_count": 89,
+      "total_detections": 93,
+      "dominant_range": "large",
+      "dominant_ratio": 0.957
+    },
+    "size_consistency": 0.3154,
+    "size_variation_type": "mixed",
+    "relative_position": {
+      "normalized_avg": 0.5935,
+      "normalized_min": 0.0079,
+      "normalized_max": 1.0
+    }
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.998,
+        "time_range": [
+          6.0,
+          9.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8974,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8351,
+        "time_range": [
+          18.0,
+          21.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2082,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8798,
+        "time_range": [
+          24.0,
+          27.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9067,
+        "time_range": [
+          30.0,
+          33.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.3503,
+        "time_range": [
+          33.0,
+          36.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.123,
+        "time_range": [
+          39.0,
+          42.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8835,
+        "time_range": [
+          81.0,
+          84.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9642,
+        "time_range": [
+          87.0,
+          90.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1491,
+        "time_range": [
+          90.0,
+          93.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 95,
+      "frames_with_bird": 89,
+      "max_bbox_size_relative": 0.4664,
+      "avg_bbox_size_relative": 0.2768,
+      "std_bbox_size": 0.0873,
+      "max_detection_confidence": 0.9528,
+      "avg_detection_confidence": 0.8511,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 4,
+        "medium_count": 0,
+        "large_count": 89,
+        "total_detections": 93,
+        "dominant_range": "large",
+        "dominant_ratio": 0.957
+      },
+      "size_consistency": 0.3154,
+      "size_variation_type": "mixed",
+      "relative_position": {
+        "normalized_avg": 0.5935,
+        "normalized_min": 0.0079,
+        "normalized_max": 1.0
+      }
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "bulbul",
+          "scientific_name": "Hypsipetes amaurotis",
+          "common_name": "Brown-eared Bulbul",
+          "confidence": 0.998,
+          "avg_confidence": 0.6541,
+          "num_detections": 11
+        }
+      ],
+      "target_species_found": true,
+      "total_detections": 11,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.75, \"bulbul\": 0.95},\n  \"reasoning\": \"大型鳥優位で視覚はヒヨドリ、音声もヒヨドリ\",\n  \"modality_used\": \"both\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"large\",\n    \"size_variation_type\": \"mixed\",\n    \"decision_basis\": \"大型鳥優位で視覚はヒヨドリ、音声もヒヨドリ\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.75,
+        "bulbul": 0.95
+      },
+      "reasoning": "大型鳥優位で視覚はヒヨドリ、音声もヒヨドリ",
+      "modality_used": "both",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "large",
+        "size_variation_type": "mixed",
+        "decision_basis": "大型鳥優位で視覚はヒヨドリ、音声もヒヨドリ"
+      }
+    },
+    "elapsed_sec": 6.801
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.75,
+      "bulbul": 0.95
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 1.182,
+    "yolo": 2.135,
+    "llm": 6.801,
+    "total": 10.119
+  },
+  "topology": "C_v4",
+  "fold": 29,
+  "source": "youtube-grok",
+  "category": "bulbul"
+}

@@ -1,0 +1,170 @@
+{
+  "video_id": "yt_ToG_e-OQWwI",
+  "frame_extraction": {
+    "num_frames": 28,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 28,
+    "frames_with_bird": 28,
+    "max_bbox_size_relative": 0.1043,
+    "avg_bbox_size_relative": 0.1038,
+    "std_bbox_size": 0.0005,
+    "max_detection_confidence": 0.9069,
+    "avg_detection_confidence": 0.8993,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 0,
+      "medium_count": 28,
+      "large_count": 0,
+      "total_detections": 28,
+      "dominant_range": "medium",
+      "dominant_ratio": 1.0
+    },
+    "size_consistency": 0.0049,
+    "size_variation_type": "uniform",
+    "relative_position": {
+      "normalized_avg": 0.9949,
+      "normalized_min": 0.9847,
+      "normalized_max": 1.0
+    }
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 28,
+      "frames_with_bird": 28,
+      "max_bbox_size_relative": 0.1043,
+      "avg_bbox_size_relative": 0.1038,
+      "std_bbox_size": 0.0005,
+      "max_detection_confidence": 0.9069,
+      "avg_detection_confidence": 0.8993,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 0,
+        "medium_count": 28,
+        "large_count": 0,
+        "total_detections": 28,
+        "dominant_range": "medium",
+        "dominant_ratio": 1.0
+      },
+      "size_consistency": 0.0049,
+      "size_variation_type": "uniform",
+      "relative_position": {
+        "normalized_avg": 0.9949,
+        "normalized_min": 0.9847,
+        "normalized_max": 1.0
+      }
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.05},\n  \"reasoning\": \"中型の鳥が優位で、サイズは一貫している。\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"medium\",\n    \"size_variation_type\": \"uniform\",\n    \"decision_basis\": \"中型の鳥とサイズの一貫性\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.05
+      },
+      "reasoning": "中型の鳥が優位で、サイズは一貫している。",
+      "modality_used": "visual",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "medium",
+        "size_variation_type": "uniform",
+        "decision_basis": "中型の鳥とサイズの一貫性"
+      }
+    },
+    "elapsed_sec": 6.073
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.05
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.0,
+    "yolo": 0.637,
+    "llm": 6.073,
+    "total": 6.711
+  },
+  "topology": "B_v3",
+  "fold": 14,
+  "source": "youtube-grok",
+  "category": "sparrow"
+}

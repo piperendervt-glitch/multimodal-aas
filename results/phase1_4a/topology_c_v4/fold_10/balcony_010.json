@@ -1,0 +1,398 @@
+{
+  "video_id": "balcony_010",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_010.wav",
+    "duration_sec": 89.211,
+    "sample_rate": 16000
+  },
+  "frame_extraction": {
+    "num_frames": 89,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 89,
+    "frames_with_bird": 64,
+    "max_bbox_size_relative": 0.4021,
+    "avg_bbox_size_relative": 0.1685,
+    "std_bbox_size": 0.0471,
+    "max_detection_confidence": 0.9431,
+    "avg_detection_confidence": 0.7372,
+    "detection_counts_per_frame": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      2,
+      1,
+      1,
+      1,
+      0,
+      1,
+      2,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 1,
+      "medium_count": 13,
+      "large_count": 56,
+      "total_detections": 70,
+      "dominant_range": "large",
+      "dominant_ratio": 0.8
+    },
+    "size_consistency": 0.2797,
+    "size_variation_type": "uniform",
+    "relative_position": {
+      "normalized_avg": 0.4191,
+      "normalized_min": 0.1074,
+      "normalized_max": 1.0
+    }
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.9201,
+        "time_range": [
+          9.0,
+          12.0
+        ]
+      },
+      {
+        "species": "Mallard",
+        "scientific_name": "Anas platyrhynchos",
+        "confidence": 0.1254,
+        "time_range": [
+          21.0,
+          24.0
+        ]
+      },
+      {
+        "species": "Common Merganser",
+        "scientific_name": "Mergus merganser",
+        "confidence": 0.2206,
+        "time_range": [
+          63.0,
+          66.0
+        ]
+      },
+      {
+        "species": "Mallard",
+        "scientific_name": "Anas platyrhynchos",
+        "confidence": 0.1237,
+        "time_range": [
+          63.0,
+          66.0
+        ]
+      },
+      {
+        "species": "Common Merganser",
+        "scientific_name": "Mergus merganser",
+        "confidence": 0.1241,
+        "time_range": [
+          66.0,
+          69.0
+        ]
+      },
+      {
+        "species": "Gray Heron",
+        "scientific_name": "Ardea cinerea",
+        "confidence": 0.1139,
+        "time_range": [
+          87.0,
+          90.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Common Merganser",
+      "Gray Heron",
+      "Mallard",
+      "Rock Pigeon"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 89,
+      "frames_with_bird": 64,
+      "max_bbox_size_relative": 0.4021,
+      "avg_bbox_size_relative": 0.1685,
+      "std_bbox_size": 0.0471,
+      "max_detection_confidence": 0.9431,
+      "avg_detection_confidence": 0.7372,
+      "detection_counts_per_frame": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 1,
+        "medium_count": 13,
+        "large_count": 56,
+        "total_detections": 70,
+        "dominant_range": "large",
+        "dominant_ratio": 0.8
+      },
+      "size_consistency": 0.2797,
+      "size_variation_type": "uniform",
+      "relative_position": {
+        "normalized_avg": 0.4191,
+        "normalized_min": 0.1074,
+        "normalized_max": 1.0
+      }
+    },
+    "audio": {
+      "all_detections": [
+        {
+          "species_code": "other",
+          "scientific_name": "Columba livia",
+          "common_name": "Rock Pigeon",
+          "confidence": 0.9201,
+          "avg_confidence": 0.9201,
+          "num_detections": 1
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Mergus merganser",
+          "common_name": "Common Merganser",
+          "confidence": 0.2206,
+          "avg_confidence": 0.1724,
+          "num_detections": 2
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Anas platyrhynchos",
+          "common_name": "Mallard",
+          "confidence": 0.1254,
+          "avg_confidence": 0.1246,
+          "num_detections": 2
+        },
+        {
+          "species_code": "other",
+          "scientific_name": "Ardea cinerea",
+          "common_name": "Gray Heron",
+          "confidence": 0.1139,
+          "avg_confidence": 0.1139,
+          "num_detections": 1
+        }
+      ],
+      "target_species_found": false,
+      "total_detections": 6,
+      "note": "音声品質は低い (Web カメラマイク)。対象種が検出されなくても視覚情報を優先可能。"
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.0, \"bulbul\": 0.0},\n  \"reasoning\": \"視覚情報のみで判定不能、音声品質が低い\",\n  \"modality_used\": \"none\",\n  \"fallback_used\": true\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "視覚情報のみで判定不能、音声品質が低い",
+      "modality_used": "none",
+      "fallback_used": true
+    },
+    "elapsed_sec": 4.685
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extraction": 0.0,
+    "frame_extraction": 0.001,
+    "birdnet": 1.166,
+    "yolo": 2.522,
+    "llm": 4.685,
+    "total": 8.374
+  },
+  "topology": "C_v4",
+  "fold": 10,
+  "source": "self",
+  "category": "both"
+}

@@ -1,0 +1,200 @@
+{
+  "video_id": "balcony_011",
+  "frame_extraction": {
+    "num_frames": 43,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 43,
+    "frames_with_bird": 3,
+    "max_bbox_size_relative": 0.0061,
+    "avg_bbox_size_relative": 0.0044,
+    "std_bbox_size": 0.0015,
+    "max_detection_confidence": 0.4957,
+    "avg_detection_confidence": 0.4122,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 3,
+      "medium_count": 0,
+      "large_count": 0,
+      "total_detections": 3,
+      "dominant_range": "small",
+      "dominant_ratio": 1.0
+    },
+    "size_consistency": 0.3363,
+    "size_variation_type": "mixed",
+    "relative_position": {
+      "normalized_avg": 0.7213,
+      "normalized_min": 0.5574,
+      "normalized_max": 1.0
+    }
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 43,
+      "frames_with_bird": 3,
+      "max_bbox_size_relative": 0.0061,
+      "avg_bbox_size_relative": 0.0044,
+      "std_bbox_size": 0.0015,
+      "max_detection_confidence": 0.4957,
+      "avg_detection_confidence": 0.4122,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 3,
+        "medium_count": 0,
+        "large_count": 0,
+        "total_detections": 3,
+        "dominant_range": "small",
+        "dominant_ratio": 1.0
+      },
+      "size_consistency": 0.3363,
+      "size_variation_type": "mixed",
+      "relative_position": {
+        "normalized_avg": 0.7213,
+        "normalized_min": 0.5574,
+        "normalized_max": 1.0
+      }
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.8, \"bulbul\": 0.6},\n  \"reasoning\": \"small bbox且大小不一，考虑多种鸟类\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"small\",\n    \"size_variation_type\": \"mixed\",\n    \"decision_basis\": \"小尺寸bbox且种类混合\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.8,
+        "bulbul": 0.6
+      },
+      "reasoning": "small bbox且大小不一，考虑多种鸟类",
+      "modality_used": "visual",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "small",
+        "size_variation_type": "mixed",
+        "decision_basis": "小尺寸bbox且种类混合"
+      }
+    },
+    "elapsed_sec": 5.69
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.8,
+      "bulbul": 0.6
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.001,
+    "yolo": 1.135,
+    "llm": 5.69,
+    "total": 6.826
+  },
+  "topology": "B_v3",
+  "fold": 11,
+  "source": "self",
+  "category": "sparrow"
+}

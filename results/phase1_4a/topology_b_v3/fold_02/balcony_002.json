@@ -1,0 +1,196 @@
+{
+  "video_id": "balcony_002",
+  "frame_extraction": {
+    "num_frames": 41,
+    "fps_sampling": 1.0
+  },
+  "yolo_output": {
+    "num_frames_analyzed": 41,
+    "frames_with_bird": 10,
+    "max_bbox_size_relative": 0.151,
+    "avg_bbox_size_relative": 0.1254,
+    "std_bbox_size": 0.0174,
+    "max_detection_confidence": 0.9606,
+    "avg_detection_confidence": 0.6117,
+    "detection_counts_per_frame": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bbox_distribution": {
+    "bbox_size_distribution": {
+      "small_count": 0,
+      "medium_count": 9,
+      "large_count": 1,
+      "total_detections": 10,
+      "dominant_range": "medium",
+      "dominant_ratio": 0.9
+    },
+    "size_consistency": 0.1388,
+    "size_variation_type": "uniform",
+    "relative_position": {
+      "normalized_avg": 0.8306,
+      "normalized_min": 0.6404,
+      "normalized_max": 1.0
+    }
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "visual_overall": {
+      "num_frames_analyzed": 41,
+      "frames_with_bird": 10,
+      "max_bbox_size_relative": 0.151,
+      "avg_bbox_size_relative": 0.1254,
+      "std_bbox_size": 0.0174,
+      "max_detection_confidence": 0.9606,
+      "avg_detection_confidence": 0.6117,
+      "detection_counts_per_frame": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "bbox_distribution": {
+      "bbox_size_distribution": {
+        "small_count": 0,
+        "medium_count": 9,
+        "large_count": 1,
+        "total_detections": 10,
+        "dominant_range": "medium",
+        "dominant_ratio": 0.9
+      },
+      "size_consistency": 0.1388,
+      "size_variation_type": "uniform",
+      "relative_position": {
+        "normalized_avg": 0.8306,
+        "normalized_min": 0.6404,
+        "normalized_max": 1.0
+      }
+    }
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 1, \"bulbul\": 0},\n  \"confidence\": {\"sparrow\": 0.95, \"bulbul\": 0.05},\n  \"reasoning\": \"mediumサイズが優位で、size_consistencyが低い。\",\n  \"modality_used\": \"visual\",\n  \"fallback_used\": false,\n  \"prompt_v3_factors\": {\n    \"dominant_range\": \"medium\",\n    \"size_variation_type\": \"uniform\",\n    \"decision_basis\": \"中型鳥の優位とサイズの一貫性\"\n  }\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 1,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.95,
+        "bulbul": 0.05
+      },
+      "reasoning": "mediumサイズが優位で、size_consistencyが低い。",
+      "modality_used": "visual",
+      "fallback_used": false,
+      "prompt_v3_factors": {
+        "dominant_range": "medium",
+        "size_variation_type": "uniform",
+        "decision_basis": "中型鳥の優位とサイズの一貫性"
+      }
+    },
+    "elapsed_sec": 6.48
+  },
+  "final_prediction": {
+    "sparrow": 1,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.95,
+      "bulbul": 0.05
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "frame_extract": 0.0,
+    "yolo": 1.006,
+    "llm": 6.48,
+    "total": 7.487
+  },
+  "topology": "B_v3",
+  "fold": 2,
+  "source": "self",
+  "category": "bulbul"
+}
