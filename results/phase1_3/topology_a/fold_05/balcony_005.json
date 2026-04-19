@@ -1,0 +1,213 @@
+{
+  "video_id": "balcony_005",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_005.wav",
+    "duration_sec": 197.346,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.112,
+        "time_range": [
+          54.0,
+          57.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1261,
+        "time_range": [
+          72.0,
+          75.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1525,
+        "time_range": [
+          75.0,
+          78.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1134,
+        "time_range": [
+          105.0,
+          108.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1092,
+        "time_range": [
+          108.0,
+          111.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.138,
+        "time_range": [
+          126.0,
+          129.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7122,
+        "time_range": [
+          162.0,
+          165.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1747,
+        "time_range": [
+          165.0,
+          168.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9627,
+        "time_range": [
+          168.0,
+          171.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.5252,
+        "time_range": [
+          171.0,
+          174.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.7182,
+        "time_range": [
+          174.0,
+          177.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.2737,
+        "time_range": [
+          177.0,
+          180.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.8917,
+        "time_range": [
+          180.0,
+          183.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.2136,
+        "time_range": [
+          183.0,
+          186.0
+        ]
+      },
+      {
+        "species": "Brown-eared Bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.1908,
+        "time_range": [
+          183.0,
+          186.0
+        ]
+      }
+    ],
+    "filtered_target_species": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9627,
+        "num_detections": 5
+      }
+    ],
+    "other_birds": [
+      "Rock Pigeon"
+    ]
+  },
+  "fallback_triggered": false,
+  "llm_input": {
+    "detections": [
+      {
+        "species_code": "bulbul",
+        "scientific_name": "Hypsipetes amaurotis",
+        "confidence": 0.9627,
+        "num_detections": 5
+      }
+    ],
+    "other_birds_detected": [
+      "Rock Pigeon"
+    ],
+    "total_audio_duration_sec": 197.35
+  },
+  "llm_output": {
+    "raw": "{\n  \"predictions\": {\"sparrow\": 0, \"bulbul\": 1},\n  \"confidence\": {\"sparrow\": 0.9627, \"bulbul\": 0.9627},\n  \"reasoning\": \"BirdNETがbulbulを高確信で検出\",\n  \"fallback_used\": false\n}",
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 1
+      },
+      "confidence": {
+        "sparrow": 0.9627,
+        "bulbul": 0.9627
+      },
+      "reasoning": "BirdNETがbulbulを高確信で検出",
+      "fallback_used": false
+    },
+    "elapsed_sec": 4.784
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 1,
+    "confidence": {
+      "sparrow": 0.9627,
+      "bulbul": 0.9627
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.0,
+    "birdnet": 2.611,
+    "llm": 4.784,
+    "total": 7.395
+  },
+  "topology": "A",
+  "fold": 5
+}

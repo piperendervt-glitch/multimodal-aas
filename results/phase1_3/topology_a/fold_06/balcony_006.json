@@ -1,0 +1,59 @@
+{
+  "video_id": "balcony_006",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_006.wav",
+    "duration_sec": 159.684,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [],
+    "filtered_target_species": [],
+    "other_birds": []
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [],
+    "total_audio_duration_sec": 159.68
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 1,
+    "bulbul": 0
+  },
+  "is_correct": {
+    "sparrow": false,
+    "bulbul": true
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.0,
+    "birdnet": 2.11,
+    "llm": 0.0,
+    "total": 2.11
+  },
+  "topology": "A",
+  "fold": 6
+}

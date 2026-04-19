@@ -1,0 +1,149 @@
+{
+  "video_id": "balcony_004",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_004.wav",
+    "duration_sec": 144.869,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Whooper Swan",
+        "scientific_name": "Cygnus cygnus",
+        "confidence": 0.1008,
+        "time_range": [
+          33.0,
+          36.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1315,
+        "time_range": [
+          36.0,
+          39.0
+        ]
+      },
+      {
+        "species": "Great Bittern",
+        "scientific_name": "Botaurus stellaris",
+        "confidence": 0.2563,
+        "time_range": [
+          66.0,
+          69.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1256,
+        "time_range": [
+          69.0,
+          72.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.122,
+        "time_range": [
+          78.0,
+          81.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1447,
+        "time_range": [
+          84.0,
+          87.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1326,
+        "time_range": [
+          87.0,
+          90.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1186,
+        "time_range": [
+          126.0,
+          129.0
+        ]
+      },
+      {
+        "species": "Rock Pigeon",
+        "scientific_name": "Columba livia",
+        "confidence": 0.1017,
+        "time_range": [
+          135.0,
+          138.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Great Bittern",
+      "Rock Pigeon",
+      "Whooper Swan"
+    ]
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [
+      "Great Bittern",
+      "Rock Pigeon",
+      "Whooper Swan"
+    ],
+    "total_audio_duration_sec": 144.87
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.0,
+    "birdnet": 1.895,
+    "llm": 0.0,
+    "total": 1.895
+  },
+  "topology": "A",
+  "fold": 4
+}

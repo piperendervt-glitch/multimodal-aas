@@ -1,0 +1,73 @@
+{
+  "video_id": "balcony_001",
+  "audio_extraction": {
+    "audio_path": "data/processed/audio/balcony_001.wav",
+    "duration_sec": 361.813,
+    "sample_rate": 16000
+  },
+  "birdnet_output": {
+    "all_detections": [
+      {
+        "species": "Northern Fulmar",
+        "scientific_name": "Fulmarus glacialis",
+        "confidence": 0.1556,
+        "time_range": [
+          240.0,
+          243.0
+        ]
+      }
+    ],
+    "filtered_target_species": [],
+    "other_birds": [
+      "Northern Fulmar"
+    ]
+  },
+  "fallback_triggered": true,
+  "llm_input": {
+    "detections": [],
+    "other_birds_detected": [
+      "Northern Fulmar"
+    ],
+    "total_audio_duration_sec": 361.81
+  },
+  "llm_output": {
+    "raw": null,
+    "parsed": {
+      "predictions": {
+        "sparrow": 0,
+        "bulbul": 0
+      },
+      "confidence": {
+        "sparrow": 0.0,
+        "bulbul": 0.0
+      },
+      "reasoning": "対象種の検出なし (LLM スキップ)",
+      "fallback_used": true
+    },
+    "elapsed_sec": 0.0
+  },
+  "final_prediction": {
+    "sparrow": 0,
+    "bulbul": 0,
+    "confidence": {
+      "sparrow": 0.0,
+      "bulbul": 0.0
+    }
+  },
+  "ground_truth": {
+    "sparrow": 0,
+    "bulbul": 1
+  },
+  "is_correct": {
+    "sparrow": true,
+    "bulbul": false
+  },
+  "elapsed_sec": {
+    "audio_extract": 0.0,
+    "birdnet": 8.598,
+    "llm": 0.0,
+    "total": 8.598
+  },
+  "topology": "A",
+  "fold": 1
+}
