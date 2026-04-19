@@ -1,0 +1,2830 @@
+{
+  "warmup_count": 11,
+  "n_bootstrap": 10000,
+  "seed": 42,
+  "experiments": {
+    "Exp 1": {
+      "label": "scores shown",
+      "n_pooled_folds": 55,
+      "pooled_records": [
+        {
+          "trial_seed": 42,
+          "step": 11,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 12,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 13,
+          "video_id": "balcony_002",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 14,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 15,
+          "video_id": "balcony_005",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 16,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 17,
+          "video_id": "balcony_008",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 18,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 19,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 20,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 21,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 11,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 12,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 13,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 14,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 15,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 16,
+          "video_id": "balcony_008",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 17,
+          "video_id": "balcony_007",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 19,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 20,
+          "video_id": "balcony_006",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 21,
+          "video_id": "balcony_003",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 11,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 12,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 13,
+          "video_id": "balcony_007",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 14,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 15,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 16,
+          "video_id": "balcony_002",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 17,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 18,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 19,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 20,
+          "video_id": "balcony_010",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 21,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 11,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 12,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 13,
+          "video_id": "balcony_003",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 14,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 15,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 16,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 17,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 19,
+          "video_id": "balcony_005",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 20,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 21,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 11,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 12,
+          "video_id": "yt_kMWUQOW-bTM",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 13,
+          "video_id": "balcony_006",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 14,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 15,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 16,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 17,
+          "video_id": "yt_ZRQLsbGEVG8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 19,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 20,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 21,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        }
+      ]
+    },
+    "Exp 2": {
+      "label": "scores hidden",
+      "n_pooled_folds": 55,
+      "pooled_records": [
+        {
+          "trial_seed": 42,
+          "step": 11,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 12,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 13,
+          "video_id": "balcony_002",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 14,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 15,
+          "video_id": "balcony_005",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 16,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 17,
+          "video_id": "balcony_008",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 18,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 19,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 20,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 21,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 11,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 12,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 13,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 14,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 15,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 16,
+          "video_id": "balcony_008",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 17,
+          "video_id": "balcony_007",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 19,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 20,
+          "video_id": "balcony_006",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 21,
+          "video_id": "balcony_003",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 11,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 12,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 13,
+          "video_id": "balcony_007",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 14,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 15,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 16,
+          "video_id": "balcony_002",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 17,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 18,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 19,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 20,
+          "video_id": "balcony_010",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 21,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 11,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 12,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 13,
+          "video_id": "balcony_003",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 14,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 15,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 16,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 17,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 19,
+          "video_id": "balcony_005",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 20,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 21,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 11,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 12,
+          "video_id": "yt_kMWUQOW-bTM",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 13,
+          "video_id": "balcony_006",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 14,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 15,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 16,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 17,
+          "video_id": "yt_ZRQLsbGEVG8",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 19,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 20,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 21,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        }
+      ]
+    },
+    "Exp 3": {
+      "label": "scores hidden, stronger penalty",
+      "n_pooled_folds": 55,
+      "pooled_records": [
+        {
+          "trial_seed": 42,
+          "step": 11,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 12,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 13,
+          "video_id": "balcony_002",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 14,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 15,
+          "video_id": "balcony_005",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 16,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 17,
+          "video_id": "balcony_008",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 18,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 19,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 20,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 42,
+          "step": 21,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 11,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 12,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 13,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 14,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 15,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 16,
+          "video_id": "balcony_008",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 17,
+          "video_id": "balcony_007",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 19,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 20,
+          "video_id": "balcony_006",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 137,
+          "step": 21,
+          "video_id": "balcony_003",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 11,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 12,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 13,
+          "video_id": "balcony_007",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 14,
+          "video_id": "yt_evVHoDIv1hE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 15,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 16,
+          "video_id": "balcony_002",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 17,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 18,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 19,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 20,
+          "video_id": "balcony_010",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 256,
+          "step": 21,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 11,
+          "video_id": "yt_lnyw5TOMea8",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 12,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 13,
+          "video_id": "balcony_003",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 14,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 15,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 16,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 17,
+          "video_id": "yt_8zanYHHEpiw",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 19,
+          "video_id": "balcony_005",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 20,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 512,
+          "step": 21,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 11,
+          "video_id": "yt_-DYmOCTDWc0",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 12,
+          "video_id": "yt_kMWUQOW-bTM",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 13,
+          "video_id": "balcony_006",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 14,
+          "video_id": "balcony_009",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 15,
+          "video_id": "yt_JCGgh5zvEeE",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 16,
+          "video_id": "balcony_004",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 17,
+          "video_id": "yt_ZRQLsbGEVG8",
+          "pred_fixed": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 18,
+          "video_id": "balcony_011",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 1,
+            "bulbul": 0
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 19,
+          "video_id": "yt_8HhsjaqFITQ",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 1,
+            "bulbul": 0
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 20,
+          "video_id": "yt_QxKLx__Nzn4",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        },
+        {
+          "trial_seed": 1024,
+          "step": 21,
+          "video_id": "balcony_001",
+          "pred_fixed": {
+            "sparrow": 0,
+            "bulbul": 0
+          },
+          "pred_adaptive": {
+            "sparrow": 0,
+            "bulbul": 1
+          },
+          "gt": {
+            "sparrow": 0,
+            "bulbul": 1
+          }
+        }
+      ]
+    }
+  }
+}
