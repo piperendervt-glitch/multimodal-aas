@@ -1,319 +1,357 @@
-# TASKS.md — multimodal-aas development plan
+# multimodal-aas-bird: TASKS.md
 
-This file tracks the development plan for multimodal-aas (AAS v2, heterogeneous nodes). It captures completed work, active phase design, future roadmap, frozen design decisions, and open questions. It is a living document: update as work progresses.
+## プロジェクト概要
 
-## 概要
+**プロジェクト名**: multimodal-aas-bird
+**リポジトリ**: https://github.com/piperendervt-glitch/multimodal-aas
+**開始日**: 2026-04-19
 
-multimodal-aas is the v2 continuation of sdnd-proof (AAS v1). It extends the LLM-only Adaptive Artificial Synapse (AAS) proof-of-concept to heterogeneous nodes (vision + audio + LLM) for bird observation tasks. The research orientation is deterrence-oriented AI development — verifying whether topology-learning multimodal architectures remain controllable at minimal scale before investing in larger systems.
+**研究目的**: AAS (Adaptive Artificial Synapse) v1 (sdnd-proof, Cohen's d = 4.29) の多モーダル拡張による、AI 安全性研究への貢献。Heterogeneous-node マルチモーダル AAS の実証と、統制可能な AI 設計の探求。
 
-- **Project root**: `C:\Users\pipe_render\research\multimodal-aas-bird`
-- **Repository**: https://github.com/piperendervt-glitch/multimodal-aas
-- **Predecessor**: sdnd-proof (AAS v1, 3-node LLM proof-of-concept, Cohen's d = 4.29, p = 0.0007)
-- **Current phase**: Phase 1 (architecture minimum validation)
-- **Research philosophy**: stage-gated, Go/No-Go at each sub-phase, judged by multiple AI systems plus other stakeholders (sdnd-proof style)
+**哲学**: Deterrence-oriented AI development — AI 能力の追求ではなく、制御不能な AI を抑止するための研究。
 
-## 全体ロードマップ
+**対象**:
+- スズメ (Passer montanus, Eurasian Tree Sparrow)
+- ヒヨドリ (Hypsipetes amaurotis, Brown-eared Bulbul)
+- 撮影環境: 自前ベランダ + バードケーキ
 
-| Phase | 目的 | 状態 |
-| --- | --- | --- |
-| Phase 0 | 環境構築 | 完了 |
-| Phase 1 | アーキテクチャ最小検証 | 進行中 |
-| Phase 2 | 拡張実装（本格データ、全ノード） | 未着手 |
-| Phase 3 | コンポーネント選択実験 | 未着手 |
-| Phase 4 | トポロジ比較実験（本実験） | 未着手 |
-| Phase 5 | 公開・論文化 | 未着手 |
+**技術スタック**:
+- YOLOv8n (視覚、COCO bird class)
+- BirdNET (音声、Japanese species model)
+- qwen2.5:7b (LLM、Ollama 経由)
+- GPU: RTX 5060 Ti 16GB VRAM
 
----
-
-## Phase 0: 環境構築 [完了 2026-04-19]
-
-- [x] Python 3.12 venv の構築
-- [x] ffmpeg / yt-dlp のインストール
-- [x] プロジェクト初期構造（src, docs, .gitignore, README, requirements.txt）
-- [x] Xeno-canto API v3 対応の疎通テストスクリプト（疎通は保留）
-- [x] 事前登録ドラフト（docs/pre_registration.md）
-- [x] データソース階層文書（docs/data_sources.md）
-- [x] Git 初期化・GitHub 公開（https://github.com/piperendervt-glitch/multimodal-aas）
-- [x] Phase 1 メタデータ生成スクリプト（src/generate_metadata.py）
-- [x] ラベルテンプレート生成スクリプト（src/generate_label_template.py）
-- [x] 11 本の自前撮影動画のインベントリ（data/metadata.json）
-- [x] 初期ラベルテンプレート（data/labels/phase1_labels.json）
-
-### Phase 0 残タスク（Phase 1 の前提として優先度中）
-
-- [ ] GitHub リポジトリの About セクション編集（Description、Topics）
-- [ ] sdnd-proof README への相互リンク追加
-- [ ] `phase1_labels.json` の review_needed を手動で確認し、必要な修正を反映
-- [ ] README.md と docs/data_sources.md の「data/ ディレクトリ構造」記述を現配置に同期
-- [ ] Claude Code が検出した VFR 動画（balcony_011）のフラグを metadata.json に追記
+**判定者プロセス (sdnd-proof スタイル)**:
+- 判定者 I: Claude (設計相談役)
+- 判定者 II: Claude Code (実装)
+- 判定者 III: Grok + ChatGPT + 人間 (独立評価)
 
 ---
 
-## Phase 1: アーキテクチャ最小検証 [進行中]
+## Phase 別の進捗と Go/No-Go 判定
 
-### Phase 1 全体方針
+### Phase 0: 環境構築 [完了]
 
-**目的**: 多モーダル異種ノード AAS アーキテクチャが機能するかを、最小コストで検証する。各サブ段階に Go/No-Go ゲートを設け、成立しない場合は Phase 2 への投資前に方向転換する。
+- 11 自前動画取得 (sparrow 5, bulbul 4, mixed 2)
+- Python 3.12 venv, ffmpeg, Ollama
+- 合計 27.7 分
+- data/metadata.json, data/labels/phase1_labels.json
 
-**判定者**: 複数の AI システム（Claude, ChatGPT, Grok）および他のステークホルダー（sdnd-proof と同じスタイル）。最終判断は Robosheep が行うが、全員の意見を記録する。
+### Phase 1.1: qwen2.5:7b 単独 [Go]
 
-**No-Go 時の対応**: 事前には決めず、状況を見て判断する。ただし判定者の複数化により主観バイアスは抑制する。
+- 5 プロンプト、スコア 3.0/5.0
+- ゲート基準 β (3.0 以上) を最小限達成
+- commit: 3a5ffc3
 
-### Phase 1 共通データセット
+### Phase 1.2: 両モダリティ [両方 Go]
 
-**出典**: 自前撮影動画 11 本（合計約 27.7 分、ベランダ 10 本 + 北海道 1 本）
+- Visual (YOLOv8n + LLM): 11/11 パース成功、macro F1 = 0.389
+- Audio (BirdNET + LLM): 11/11 パース成功、macro F1 = 0.268
+- Topology B の "always sparrow" collapse 発生
+- commit: 031d2a8
 
-**構成**: 
-- sparrow 単独: 5 本
-- bulbul 単独: 4 本
-- sparrow + bulbul 混在: 2 本
+### Phase 1.3: Topology A/B/C 実装 [Go]
 
-**データ取扱い**:
-- 分割方式: Leave-One-Out 交差検証（LOO-CV、11 fold）
-- ラベル方式: マルチラベル分類（sparrow と bulbul を独立にバイナリ予測）
-- Phase 4 との関係: 11 本は Phase 4 でも共通ベンチマークとして再利用、Phase 4 では追加データも併用
+- Topology A (Audio-Only): macro F1 = 0.143, fallback 10/11
+- Topology B (Visual-Only): macro F1 = 0.819
+- Topology C (Parallel Fusion): macro F1 = 0.733
+- Human review で正誤判定の妥当性を確認
+- commits: 16c77b1, 8ad78a9
 
-**既知の技術的注意点**:
-- balcony_011 は fps=29.947 の VFR 動画 → 前処理で `ffmpeg -vsync cfr` による CFR 変換を検討
-- 解像度が 480×360 〜 960×720 とばらつく → 検出・分類ノード前のリサイズ統一が必要
-- 全 11 本に AAC 音声トラックあり
+#### BirdNET 音質問題の切り分け [確定]
+- (a) BirdNET セットアップ: 北米鳥 423 検出で OK (commit: 998287f)
+- (b) 日本種モデル感度: スズメ 0.839, ヒヨドリ 0.981 で OK (commit: 5c36e3d)
+- (c) 自前動画 Web カメラマイク音質: **確定的な原因**
 
-### Phase 1 評価指標（バランス型 + Mirror Effect 包括計測）
+### Phase 1.3 拡張: 42 fold 評価 [強い Go]
 
-**主要指標**:
-- macro F1（sparrow クラスと bulbul クラス独立に計算し平均）
-- confusion matrix（クラスごとの誤り傾向）
+- 自前 11 + YouTube 31 = 42 fold
+- Topology A: self=0.143, YouTube=0.720, 全体=0.611 (音質問題の 5 倍改善)
+- Topology B: self=0.795, YouTube=0.542, 全体=0.610 (YouTube 退化 -0.253)
+- Topology C: self=0.733, YouTube=0.874, 全体=0.840
+- commit: 2a19fe5
 
-**Mirror Effect 関連指標（全候補を並行計測）**:
-- 候補 A: ノード間の予測一致率
-- 候補 B: 予測分布の類似度（KL divergence）
-- 候補 C: 重み変化の相関（Phase 1.4d 以降のみ）
-- 候補 D: 出力の時系列変化（動画内で予測がどう推移するか）
+#### 判明した事実
+- 音質仮説完全確定: Topology A は clean audio でマルチモーダル統合を有効化
+- Topology B の YouTube 退化: bbox プロンプト自前動画への過適合
+- Topology C の環境依存性: 両モダリティがクリーンな時に真価を発揮
+- Mirror Effect 初期観察: A vs C 一致率 > B vs C 一致率 (C が A の影響を強く受ける)
 
-**補助指標**:
-- 処理時間（end-to-end、ノード別）
-- 計算コスト（GPU メモリ、トークン使用量）
-- 出力確信度分布
+### Phase 1.4a: frame_extractor 追加実験
 
-**統計的評価**:
-- paired Welch t-test を計算（pre_registration.md 記載通り）
-- ただし p 値は参考指標として観察するのみ、統計的判断の根拠にはしない
-- 統計的判断の本格化は Phase 4
+#### 当初設計
+frame_extractor をノード化し、マルチモーダル統合を前処理レベルから改善。目的 A (処理効率), B (精度), C (時系列活用), D (モダリティ同期) の 4 つの目的。
 
-### Phase 1.1: Single node [未着手]
+#### Robosheep の優先順位
+1. 目的 B: macro F1 向上 (主)
+2. 目的 D: モダリティ同期度 (副)
+3. 目的 C: 時系列情報活用度 (副)
+4. 目的 A: 処理時間 (余力)
 
-**構成**: LLM（Ollama qwen2.5:7b）のみ
+#### 実装結果
 
-**目的**: LLM ノードの基盤動作確認
+##### 目的 B (C_v2, frame_extractor): No-Go [42 fold 基準]
+- YOLOv8n 事前検出で bird フレームのみを LLM に渡す
+- macro F1 = 0.826 (Phase 1.3 C より -0.014)
+- Clean 22-fold 再評価でも 0.791 < 0.86 → No-Go 確定
+- **含意**: density 情報の喪失による LLM 誤判断
+- commit: 4e402d1
 
-**検証内容**:
-- 鳥の記述テキスト（例: 「茶色い小鳥、チュンチュンと鳴く」）を与え、種名を答えさせる
-- 10 個のテストプロンプトを準備
-- JSON 形式での構造化出力に従えるか
+##### 目的 D (C_v3, temporal_sync): Go [clean 22-fold で逆転]
+- 2 秒時間窓で visual と audio の対応関係を LLM に提供
+- 全 42 fold: 0.819 → **No-Go 判定**
+- **Clean 22 fold: 0.869 > 0.86 → Go 逆転**
+- 実装試行錯誤: full timeline 150 → ReadTimeout、compact 40 → hallucinate、集計のみ (6 フィールド) → 成功
+- sync_rate と正誤の強い相関: 正答 0.283 vs 誤答 0.030 (約 9 倍)
+- commit: 3dcbac4
 
-**Go 基準 β**: 鳥の記述から種名（sparrow / bulbul / unknown）を答えられる
+##### bbox プロンプト v3 (B_v3, C_v4): B_v3 Go / C_v4 No-Go
+- Grok 判定第 1 ラウンド最優先項目への対応
+- bbox 絶対閾値 → 相対分布 (small/medium/large) + size_consistency
+- B_v3: YouTube clean で 0.500 → 0.721 (+0.221) → **Go (YouTube gate)**
+- C_v4 (bbox v3 + fusion): clean で 0.823 → 0.635 (-0.188) → **No-Go 確定**
+- **含意**: bbox 改良は visual-only で機能、fusion で干渉
+- commit: 4113107
 
-**No-Go 時**: 別モデル（llama3, mistral:7b）やプロンプトの見直し
+#### Phase 1.4a Go 判定 [完了]
 
-### Phase 1.2: Two nodes (single modality) [未着手]
+| 目的 | 判定 | 根拠 |
+|---|---|---|
+| 目的 B (frame_extractor) | **No-Go** | 情報削減が本質的に不利 |
+| 目的 D (temporal_sync) | **Go** (clean) | C_v3 clean 0.869 > 0.86 |
+| bbox v3 (B_v3) | **Go** (YouTube gate) | +0.221 on YouTube clean |
+| bbox v3 + fusion (C_v4) | **No-Go** | fusion で干渉 |
+| 目的 C (時系列活用) | **スキップ** | Grok 判定 Q4: sync_rate で既に活用済み、ROI 低い |
+| 目的 A (処理時間) | **スキップ** | 優先度最低、余力時のみ |
 
-**構成**: LLM + YOLOv8n（視覚）または LLM + BirdNET（音声）
+**統計的確認**: paired bootstrap (進行中)
+- C_v3 vs C (clean 22 fold) Δ=0.046
+- B_v3 vs B (YouTube clean 11 fold) Δ=0.221
 
-**目的**: 異種ノード間のデータ受け渡しとルーティング動作確認
+### Phase 1.4b-e: 今後のタスク
 
-**検証内容**:
-- 5 本の動画に対して end-to-end でパイプラインを実行
-- YOLOv8n / BirdNET の出力を LLM が解釈できるか
-- エラーハンドリング（検出失敗時の挙動）
+#### Phase 1.4b: YOLOv8n 並列化
+- 異なる閾値での multi-head YOLOv8n
+- adaptive routing
+- **優先度: 中** (Grok 判定 Q4: Phase 2 hardware 改善後に回せる)
 
-**Go 基準 β**: 5 本の動画で全て出力が得られる
+#### Phase 1.4c: LLM 並列化
+- qwen2.5:7b + llama3 + mistral の 3 LLM 多数決
+- VRAM 16GB 制約への対応
+- **優先度: 中** (Grok 判定 Q6 盲点: 複数モデル検証は重要)
 
-**No-Go 時**: 出力形式のアダプタ層見直し、プロンプト設計変更
+#### Phase 1.4d: 重み更新機構 [最優先]
+- AAS 学習ルールの実装
+- Mirror Effect の本格観察
+- topology 間 adaptive synapse
+- **優先度: 最高** (Grok 判定 Q4: AAS の本質)
+- C_v5 実験 (Phase 1.3 C プロンプト + bbox_distribution を純情報として追加) を 1.4d に吸収可能
 
-### Phase 1.3: Three nodes (multimodal, topology comparison) [未着手]
-
-**構成**: YOLOv8n + BirdNET + LLM（qwen2.5:7b）
-
-**目的**: マルチモーダル統合の確認、全 6 トポロジの比較
-
-**実施内容**:
-- 全 6 トポロジ × 11 動画 × LOO-CV = 66 実行
-- 各トポロジの動作ログ、予測、Mirror Effect 指標を記録
-
-**トポロジ一覧**:
-
-| ID | 名称 | 特徴 | LLM 呼出回数 |
-| --- | --- | --- | --- |
-| A | Audio-Only | BirdNET + LLM のみ（ベースライン） | 1 |
-| B | Visual-Only | YOLOv8n + LLM のみ（ベースライン） | 1 |
-| C | Parallel Fusion | 両モダリティ並列、LLM が統合 | 1 |
-| D | Audio-First Gating | 音声確信度 > 閾値の場合のみ視覚実行 | 2 |
-| E | Visual-Guided Audio | 視覚で鳥検出された場合のみ音声識別 | 2 |
-| F | Cross-Validation | 独立判断 + LLM 仲裁 | 3 |
-
-**ゲーティング閾値（D, E）**: Phase 1.3 では仮値 0.7。Phase 4 で事前登録値を確定。
-
-**Go 基準 β**: 複数トポロジで結果に差が観察される
-
-**No-Go 時**: トポロジ設計の根本的見直し、もしくは研究方向全体の再検討を要する重要な判断点
-
-### Phase 1.4: Extended architecture [段階的実装、工数大]
-
-**目的**: frame_extractor 追加および同種ノード並列化による拡張効果の検証
-
-**Go 基準 β'**: Phase 1.3 より性能（macro F1）か効率（処理時間）のいずれかが向上
-
-**実装方針**: 段階的実装 + 途中での再評価。1.4b 完了時点で 1.4c 以降の詳細を再議論する。
-
-#### Phase 1.4a: frame_extractor 追加 [設計確定]
-
-- 構成: frame_extractor + YOLOv8n + BirdNET + LLM（4 ノード）
-- 前処理の知能化（動画 → 代表フレーム選択）
-- Phase 1.3 ベースラインとの比較
-
-#### Phase 1.4b: YOLOv8n parallelism [設計確定]
-
-- 構成: frame_extractor + YOLOv8n × 2 + BirdNET + LLM
-- YOLOv8n × 2（異なる confidence 閾値、adaptive routing）
-- Mirror Effect のスケーリング挙動を観測
-- Phase 1.4a ベースラインとの比較
-
-#### Phase 1.4c: LLM parallelism [1.4b 完了後に詳細再議論]
-
-- 方向性: 異種 LLM × 3（qwen2.5:7b + llama3 + mistral:7b）による多数決
-- 具体的実装は 1.4b の結果次第で決定
-- 計算コスト課題: RTX 5060 Ti (16GB VRAM) で 3 モデル同時並列は困難 → シーケンシャル実行または量子化版を検討
-
-#### Phase 1.4d: 重み更新機構 [1.4c 後に設計]
-
-- 方向性: 正解フィードバックによる LLM 層重みの適応更新
-- 実装前に更新ルール（増減量、正規化方法）の事前登録が必要
-- AAS 原理を LLM 層に移植
-
-#### Phase 1.4e: 合議モード [1.4d 後に設計]
-
-- 重み更新が停滞した場合の escape hatch
-- Multi-agent debate 方式での LLM 間対話
-- 終了条件（最大ラウンド数、収束判定）の事前設計が必要
+#### Phase 1.4e: 合議モード
+- Escape hatch として、多数決による判定
+- **優先度: 低**
 
 ---
 
-## Phase 2: 拡張実装 [未着手]
+## データ品質の学び
 
-Phase 1 で全 Go/No-Go を通過した場合の、本格投資フェーズ。Phase 1.4c-e の詳細は 1.4b 完了時に再議論するため、Phase 2 の範囲もそれに応じて調整する。
+### データソース階層
 
-**主な内容（仮）**:
-- データ量の拡大（11 本 → 50-100 本）
-- Xeno-canto API 利用の再開検討（保留中）
-- 異種ノード拡充（Grounding DINO、CLIP、Wav2Vec2 などの追加）
-- Phase 1 で未実装だったトポロジ構成の追加
+**Tier A (完全に使える)**: 4 本
+- sparrow (1): yt_ZRQLsbGEVG8
+- bulbul (3): yt_8HhsjaqFITQ, yt_8zanYHHEpiw, yt_vmrbbEe9R6M
 
----
+**Tier B (冒頭除外、トリミング要)**: 6 本
+- sparrow (1): yt_JCGgh5zvEeE
+- bulbul (5): yt_-DYmOCTDWc0, yt_jk15DbXQV6A, yt_kMWUQOW-bTM, yt_lnyw5TOMea8, yt_QxKLx__Nzn4
 
-## Phase 3: コンポーネント選択実験 [未着手]
+**Tier B' (音ノイズ多いが使える)**: 1 本
+- sparrow (1): yt_evVHoDIv1hE
 
-複数の検出器・分類器を比較して最良の組み合わせを選ぶ。方向 2（異種ノード追加）の本格実施。
+**Tier C (使えない、除外)**: 20 本
+- sparrow (8): 多くは科学的編集が施された動画 (声紋解析、効果音等)
+- bulbul (4): 日本野鳥の会の声紋解析シリーズ等
+- mixed (8): **全滅** — 編集動画の性質上、テキスト・ナレーション過多
 
-**候補**:
-- 視覚検出: YOLOv8n vs Grounding DINO
-- 視覚分類: CLIP vs iNaturalist model
-- 音声分類: BirdNET（既に使用）vs Wav2Vec2 など
+### データ品質ゲートの教訓
 
----
+- **YouTube 検索ではタイトルのみで判断すると 65% が不適切**
+- 日本野鳥の会等の権威あるソースほど科学的編集が施されており、rawデータには向かない
+- **mixed カテゴリの取得が特に困難** — 「複数種を見せる」動画は編集必須
+- **Robosheep の「疲労時レビュー回避」判断は研究の誠実性の勝利** (Grok round 2 Q5)
 
-## Phase 4: トポロジ比較実験（本実験） [未着手]
+### 新ルール (TASKS.md に追加)
 
-事前登録の厳密運用で、統計的に意味のあるトポロジ比較を行う。
-
-**主な内容**:
-- 事前登録の最終化（SHA-256、freeze date、freeze commit、ゲーティング閾値、重み更新ルール）
-- 11 本共通ベンチマーク + 追加データで実行
-- paired Welch t-test による統計的判断を本格化
-- macro F1 が主要評価指標
-
----
-
-## Phase 5: 公開・論文化 [未着手]
-
-- Zenodo リリース（DOI 取得）
-- 結果レポート作成
-- sdnd-proof との比較論文ドラフト
-- 方向 1（同種ノード並列化）の AAS v3 への発展可能性を記述
+- **Review Gate**: データレビューは疲労時を避け、集中力のある状態で実施
+- **Scope Limitation**: Phase 1 の mixed 評価は self-recorded 2 例に限定
+- **Data Quality Audit**: 新データソース追加時は全件事前レビュー
 
 ---
 
-## 凍結された設計判断
+## データセット仕様
 
-以下は議論の結果凍結された事項。変更する場合は明示的に合意を取り直す。
+### Clean 22 fold (Phase 1 評価基準)
 
-- **対象種**: sparrow (Passer montanus) と bulbul (Hypsipetes amaurotis) の 2 クラス
-- **ラベル方式**: マルチラベル分類（各クラスを独立にバイナリ予測）
-- **Phase 1 データ**: 自前撮影 11 本（合計約 27.7 分）
-- **データ分割**: Leave-One-Out 交差検証（11 fold）
-- **Phase 1.3 トポロジ数**: 6（A-F、全実施）
-- **Phase 1.3 実行数**: 6 トポロジ × 11 動画 × LOO-CV = 66 実行
-- **Phase 1.4 実施方針**: 段階的実装（1.4a → 1.4b → [再議論] → 1.4c → 1.4d → 1.4e）
-- **Phase 1.4 実験デザイン**: 拡張オプション比較（frame のみ vs 並列のみ vs 両方）
-- **LLM（Phase 1.3 まで）**: Ollama qwen2.5:7b
-- **LLM（Phase 1.4c 以降）**: 異種モデル × 3（qwen2.5:7b + llama3 + mistral:7b、詳細は再議論）
-- **主要評価指標**: macro F1
-- **Mirror Effect 計測**: 候補 A, B, C, D を並行
-- **統計検定方針**: paired Welch t-test を計算、Phase 1 では p 値は参考指標
-- **Go/No-Go 判定者**: 複数 AI + 他者（sdnd-proof スタイル）
-- **ゲーティング閾値（Phase 1.3）**: 仮値 0.7
-- **研究方向順序**: 方向 1（同種ノード並列化）→ 方向 2（異種ノード追加）→ 方向 3（単調スケーリング）
+| カテゴリ | 自前 | YouTube (Tier A+B+B') | 合計 |
+|---|---|---|---|
+| sparrow | 5 | 3 | 8 |
+| bulbul | 4 | 8 | 12 |
+| mixed | 2 | 0 | **2** (統計的制限あり) |
+| **合計** | **11** | **11** | **22** |
 
----
+### Phase 2 への持ち越し
 
-## 未決定事項（TODO）
-
-- [ ] Phase 1.4c の LLM 並列化の詳細設計（1.4b 完了時に議論）
-- [ ] Phase 1.4d の重み更新ルール（1.4c 完了時に事前登録）
-- [ ] Phase 1.4e の合議モード実装方式（1.4d 完了時に設計）
-- [ ] Phase 4 での追加データ収集方針（Xeno-canto 再開 vs 自前追加録音 vs その他公開データセット）
-- [ ] Phase 4 ゲーティング閾値の事前登録値
-- [ ] Mirror Effect の定量化における閾値・重み付けの具体化
-- [ ] Zenodo 連携準備（v0.1.0 初期リリースで DOI 取得するかの判断）
-- [ ] Phase 1.4c で 3 LLM 並列する場合の VRAM 対応（量子化 vs シーケンシャル）
-- [ ] Phase 4b の pre_registration 凍結手順（SHA-256、freeze date、freeze commit）
+- Macaulay Library 申請 (Cornell Lab of Ornithology) — 研究利用無料、リクエスト制
+  - 優先度: 中 (Phase 1 完了後)
+  - Grok 判定: Phase 1 を止めずに並行検討
+- 外部マイク調達 (RODE VideoMicro / Zoom H1n 等) — Web カメラ音質問題の根本解決
+  - 優先度: 中 (Phase 2 hardware として)
+- 自前動画の長期蓄積 (外部マイク導入後)
 
 ---
 
-## ブロッカー・依存関係
+## 研究的発見のカタログ
 
-- Phase 1.2 以降は Phase 1.1 Go 判定後
-- Phase 1.3 は Phase 1.2 Go 判定後
-- Phase 1.4 は Phase 1.3 Go 判定後
-- Phase 1.4c の詳細設計は Phase 1.4b の結果次第
-- Phase 2 は Phase 1.4 全体の Go 判定後
-- Phase 4 は Phase 3 完了と pre_registration 凍結が前提
-- Phase 5 Zenodo は Phase 4 完了が前提
+### Phase 1 で得られた知見
+
+1. **音質がマルチモーダル統合の価値を決定する**
+   - Clean audio (YouTube): C - B = +0.332
+   - Webcam audio (self): C ≈ B
+   - 含意: ハードウェア選定が AAS 設計と不可分
+
+2. **情報追加は non-monotonic**
+   - C_v2 (objective B): 情報削減 → -0.014
+   - C_v3 (objective D): 情報追加 → +0.050 (clean) / -0.021 (full)
+   - LLM プロンプトの均衡が壊れると性能が退化
+
+3. **sync_rate が正答の強力な予測因子** (新発見)
+   - 正答 fold 平均 sync_rate = 0.283
+   - 誤答 fold 平均 sync_rate = 0.030
+   - 約 9 倍の差
+
+4. **エラー方向のトポロジ依存性**
+   - 各 topology が異なるエラーパターン
+   - sparrow と bulbul で F1 の trade-off
+
+5. **bbox プロンプトの環境依存性**
+   - 絶対閾値は自前動画に過適合
+   - 相対分布 (B_v3) で YouTube に対応可能
+   - ただし fusion への統合は逆効果
+
+6. **Phase 1.3 C の性能上限**
+   - 0.823 (clean) が qwen2.5:7b × 現 prompt の近傍最適
+   - 単純改良では超えられず、根本的アプローチ必要
+
+7. **データ品質がゲートとして機能**
+   - Full 42 fold: C_v3 No-Go
+   - Clean 22 fold: C_v3 Go
+   - **同じ実験結果の解釈が、データ品質で逆転する**
+
+### 論文化候補
+
+**Paper 1 (副次的、即時)**: "Negative results in multimodal LLM fusion: when adding information hurts"
+- Phase 1.4a の No-Go 群 (objective B, C_v4)
+- データ品質 gate の定量化 (65% unusable)
+- arXiv preprint 候補
+
+**Paper 2 (メイン、Phase 1.4d 完了後)**: AAS v2 — Heterogeneous-node adaptive synapse for multimodal classification
+- Mirror Effect の実証
+- 重み更新機構
+- sdnd-proof AAS v1 からの拡張
 
 ---
 
-## Future Research（Phase 5 以降、別プロジェクト化も視野）
+## 外部判定者プロセス
 
-これらは multimodal-aas v2 の直接スコープ外だが、研究系譜として明記する。
+### Grok 判定第 1 ラウンド (2026-04-19, 午前)
+- レポート: results/reports/session_summary_for_grok.md
+- 主要推奨:
+  - Q1: Phase 1.4a Objective C 限定継続 (コンパクト版)
+  - Q2: bbox v3 最優先 ← 実施、B_v3 Go
+  - Q3: 1.4d に全力移行
+  - Q5: YouTube GT review 盲点 ← Robosheep の判断で延期 (結果的に正解)
 
-- **AAS v3 構想**: 異種 × 同種並列 AAS（multimodal × parallel units）
-  - v1 sdnd-proof: 同種ノード AAS
-  - v2 multimodal-aas: 異種ノード AAS
-  - v3 (future): 異種 × 同種並列 AAS
-- 方向 3（単調スケーリング）: ノード数増加に対する性能スケーリング法則
-- 物理 AAS（アクアポニクス、HXP）との統合検討
-- TRUSS との接続（ホスト AI 安全性フレームワークへの multimodal-aas の組み込み）
+### Grok 判定第 2 ラウンド (2026-04-19, 午後)
+- レポート: results/reports/session_summary_for_grok_v2.md
+- 主要推奨:
+  - Q1: Phase 1.4a 完了宣言 OK (条件付き Go として記録)
+  - Q2: paired bootstrap 今日中実施
+  - Q3: mixed は Phase 1 で drop、scope 限定明記
+  - Q4: 1.4d 直行
+  - Q5: Robosheep の review 延期判断は称賛、新ルール明文化推奨
+  - Q6: 論文化価値あり (arXiv preprint 候補)
+
+### ChatGPT 判定 (未実施)
+- Phase 1 完了時にまとめて依頼予定
+- Claude + Grok + ChatGPT + 人間の 4 者判定
 
 ---
 
-## 関連プロジェクト
+## コミット履歴 (主要)
 
-- **sdnd-proof**: https://github.com/piperendervt-glitch/sdnd-proof （AAS v1、凍結済み）
-- **TRUSS**: ホスト AI 安全性フレームワーク
-- **Aquaponics Physical AAS**: 物理 AAS 実装テストベッド（構想段階）
-- **HXP (Human eXtension Platform)**: ウェアラブル感覚拡張（別プロジェクト）
+| Commit | 内容 |
+|---|---|
+| 7c82b1f | Bootstrap リポジトリ、TASKS.md 初版 |
+| 3a5ffc3 | Phase 1.1 単独 LLM |
+| 031d2a8 | Phase 1.2 両モダリティ |
+| 16c77b1 | Phase 1.3 Topology A, B |
+| 9300f37 | raw_analysis.md |
+| 998287f | BirdNET 北米 baseline |
+| 5c36e3d | BirdNET 日本種感度 |
+| 8ad78a9 | Phase 1.3 Topology C |
+| 6544295 | Video review sheet |
+| 2a19fe5 | Phase 1.3 extended (42 fold) |
+| 4e402d1 | Phase 1.4a C_v2 (objective B) |
+| 3dcbac4 | Phase 1.4a C_v3 (objective D) |
+| 4113107 | Phase 1.4a B_v3/C_v4 (bbox v3) |
+| 46770df | Clean dataset reevaluation |
+| e63162f | Session summary v2 for Grok |
 
 ---
 
-## 更新履歴
+## 次のマイルストーン
 
-- 2026-04-19: Phase 0 完了、Phase 1 詳細設計を反映した TASKS.md 初版作成
+### 今日中
+- [x] Paired bootstrap CI 計算 (進行中)
+- [ ] TASKS.md 更新 (このファイル)
+
+### 今週中
+- [ ] Phase 1.4d (Mirror Effect + weight update) 設計開始
+- [ ] C_v5 最小実験 (bbox_distribution 純情報として追加)
+- [ ] ChatGPT 判定取得 (Phase 1 完了時)
+
+### 今月中
+- [ ] Phase 1 complete 宣言
+- [ ] Paper 1 (negative results) arXiv preprint 準備
+- [ ] Phase 2 hardware (外部マイク) 調達計画
+
+### 長期 (2-3 ヶ月)
+- [ ] Phase 1.4d (Mirror Effect 本格観察)
+- [ ] Macaulay Library データ取得 (Phase 2)
+- [ ] Paper 2 メイン論文準備
+- [ ] Zenodo DOI リリース
+
+---
+
+## Future Research セクション
+
+### 未解決課題
+- qwen2.5:7b 単一依存 (llama3.2:3b での再現確認 — Grok 指摘)
+- Mixed カテゴリの評価 (Macaulay Library 申請 or Phase 2 自前データ)
+- bootstrap paired CI の統計的厳密化
+- Phase 2 hardware (外部マイク) 具体的スケジュール
+
+### 研究的深化の候補
+- C_v5 (bbox_distribution 情報としてのみ追加)
+- 時系列情報の更なる活用 (目的 C を 1.4d の中で)
+- 異種 LLM での Mirror Effect 観察 (1.4c + 1.4d)
+- Tier A-only データでの極限性能測定 (n=4 で C_v3 が perfect 1.000 の示唆)
+
+### 研究哲学の発展
+- Deterrence-oriented AI development の具体化
+- AI 能力追求 vs AI 制御の設計原理
+- Heterogeneous-node AAS の社会実装への含意
+
+---
+
+**Last Updated**: 2026-04-19 (Phase 1.4a 完了、paired bootstrap 実行中)
