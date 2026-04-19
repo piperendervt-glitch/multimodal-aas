@@ -101,10 +101,18 @@ def normalize_prediction(row: dict[str, Any]) -> dict[str, int]:
     }
 
 
-def build_fold_records() -> list[dict[str, Any]]:
-    """Return clean-set fold records with per-topology predictions and GT."""
+def build_fold_records(topology_bases: dict[str, Path] | None = None) -> list[dict[str, Any]]:
+    """Return clean-set fold records with per-topology predictions and GT.
+
+    ``topology_bases`` maps topology keys ("A", "B", "C") to fold-JSON
+    directories. Experiment 5 overrides this to load the Phase 1.4a
+    improved topologies (B_v3, C_v3) while keeping the rest of the
+    pipeline unchanged.
+    """
+    if topology_bases is None:
+        topology_bases = TOPOLOGY_BASES
     usable_yt = load_usable_video_ids(YT_METADATA_PATH)
-    topo = {k: load_topology(base) for k, base in TOPOLOGY_BASES.items()}
+    topo = {k: load_topology(base) for k, base in topology_bases.items()}
     common_ids = set(topo["A"]) & set(topo["B"]) & set(topo["C"])
     clean_ids = sorted([
         vid for vid in common_ids
