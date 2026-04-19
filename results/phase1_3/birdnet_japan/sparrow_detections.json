@@ -1,0 +1,113 @@
+{
+  "source": "YouTube Z6-WL8woFPk",
+  "source_description": "スズメの鳴き声01さえずりと地鳴き？Eurasian Tree Sparrow / Passer montanus (channel: 身近な生き物語)",
+  "source_url": "https://www.youtube.com/watch?v=Z6-WL8woFPk",
+  "target_species": "Passer montanus",
+  "target_common_name": "Eurasian Tree Sparrow",
+  "audio_duration_sec": 33.4,
+  "audio_sample_rate": 16000,
+  "birdnet_config": {
+    "min_conf": 0.1,
+    "sensitivity": 1.0,
+    "lat": 35.68,
+    "lon": 139.65
+  },
+  "total_detections": 9,
+  "unique_species": 2,
+  "target_species_detections": [
+    {
+      "confidence": 0.8393,
+      "time_range": [
+        0.0,
+        3.0
+      ]
+    },
+    {
+      "confidence": 0.1632,
+      "time_range": [
+        6.0,
+        9.0
+      ]
+    },
+    {
+      "confidence": 0.1104,
+      "time_range": [
+        9.0,
+        12.0
+      ]
+    },
+    {
+      "confidence": 0.2058,
+      "time_range": [
+        12.0,
+        15.0
+      ]
+    },
+    {
+      "confidence": 0.1286,
+      "time_range": [
+        18.0,
+        21.0
+      ]
+    },
+    {
+      "confidence": 0.2791,
+      "time_range": [
+        21.0,
+        24.0
+      ]
+    },
+    {
+      "confidence": 0.3938,
+      "time_range": [
+        27.0,
+        30.0
+      ]
+    },
+    {
+      "confidence": 0.2113,
+      "time_range": [
+        30.0,
+        33.0
+      ]
+    }
+  ],
+  "target_species_stats": {
+    "num_detections": 8,
+    "max_confidence": 0.8393,
+    "avg_confidence": 0.2914
+  },
+  "top_species": [
+    {
+      "species": "Eurasian Tree Sparrow",
+      "scientific_name": "Passer montanus",
+      "num_detections": 8,
+      "avg_confidence": 0.2914,
+      "max_confidence": 0.8393
+    },
+    {
+      "species": "Common Redpoll",
+      "scientific_name": "Acanthis flammea",
+      "num_detections": 1,
+      "avg_confidence": 0.5881,
+      "max_confidence": 0.5881
+    }
+  ],
+  "all_species_ranked": [
+    {
+      "species": "Eurasian Tree Sparrow",
+      "scientific_name": "Passer montanus",
+      "num_detections": 8,
+      "avg_confidence": 0.2914,
+      "max_confidence": 0.8393
+    },
+    {
+      "species": "Common Redpoll",
+      "scientific_name": "Acanthis flammea",
+      "num_detections": 1,
+      "avg_confidence": 0.5881,
+      "max_confidence": 0.5881
+    }
+  ],
+  "analysis_elapsed_sec": 4.1
+}

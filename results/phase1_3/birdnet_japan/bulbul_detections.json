@@ -1,0 +1,813 @@
+{
+  "source": "YouTube 8zanYHHEpiw",
+  "source_description": "ヒヨドリの群れ 鳴き声 Hypsipetes amaurotis",
+  "source_url": "https://www.youtube.com/watch?v=8zanYHHEpiw",
+  "target_species": "Hypsipetes amaurotis",
+  "target_common_name": "Brown-eared Bulbul",
+  "audio_duration_sec": 689.6,
+  "audio_sample_rate": 16000,
+  "birdnet_config": {
+    "min_conf": 0.1,
+    "sensitivity": 1.0,
+    "lat": 35.68,
+    "lon": 139.65
+  },
+  "total_detections": 122,
+  "unique_species": 5,
+  "target_species_detections": [
+    {
+      "confidence": 0.8638,
+      "time_range": [
+        18.0,
+        21.0
+      ]
+    },
+    {
+      "confidence": 0.2337,
+      "time_range": [
+        21.0,
+        24.0
+      ]
+    },
+    {
+      "confidence": 0.4128,
+      "time_range": [
+        24.0,
+        27.0
+      ]
+    },
+    {
+      "confidence": 0.2396,
+      "time_range": [
+        30.0,
+        33.0
+      ]
+    },
+    {
+      "confidence": 0.4333,
+      "time_range": [
+        33.0,
+        36.0
+      ]
+    },
+    {
+      "confidence": 0.4025,
+      "time_range": [
+        36.0,
+        39.0
+      ]
+    },
+    {
+      "confidence": 0.904,
+      "time_range": [
+        39.0,
+        42.0
+      ]
+    },
+    {
+      "confidence": 0.3013,
+      "time_range": [
+        42.0,
+        45.0
+      ]
+    },
+    {
+      "confidence": 0.6933,
+      "time_range": [
+        45.0,
+        48.0
+      ]
+    },
+    {
+      "confidence": 0.7633,
+      "time_range": [
+        48.0,
+        51.0
+      ]
+    },
+    {
+      "confidence": 0.9487,
+      "time_range": [
+        51.0,
+        54.0
+      ]
+    },
+    {
+      "confidence": 0.2364,
+      "time_range": [
+        57.0,
+        60.0
+      ]
+    },
+    {
+      "confidence": 0.1442,
+      "time_range": [
+        60.0,
+        63.0
+      ]
+    },
+    {
+      "confidence": 0.1027,
+      "time_range": [
+        63.0,
+        66.0
+      ]
+    },
+    {
+      "confidence": 0.6794,
+      "time_range": [
+        66.0,
+        69.0
+      ]
+    },
+    {
+      "confidence": 0.1632,
+      "time_range": [
+        72.0,
+        75.0
+      ]
+    },
+    {
+      "confidence": 0.2682,
+      "time_range": [
+        75.0,
+        78.0
+      ]
+    },
+    {
+      "confidence": 0.167,
+      "time_range": [
+        90.0,
+        93.0
+      ]
+    },
+    {
+      "confidence": 0.6652,
+      "time_range": [
+        93.0,
+        96.0
+      ]
+    },
+    {
+      "confidence": 0.6397,
+      "time_range": [
+        96.0,
+        99.0
+      ]
+    },
+    {
+      "confidence": 0.2019,
+      "time_range": [
+        99.0,
+        102.0
+      ]
+    },
+    {
+      "confidence": 0.7813,
+      "time_range": [
+        105.0,
+        108.0
+      ]
+    },
+    {
+      "confidence": 0.954,
+      "time_range": [
+        108.0,
+        111.0
+      ]
+    },
+    {
+      "confidence": 0.3033,
+      "time_range": [
+        117.0,
+        120.0
+      ]
+    },
+    {
+      "confidence": 0.8222,
+      "time_range": [
+        147.0,
+        150.0
+      ]
+    },
+    {
+      "confidence": 0.4366,
+      "time_range": [
+        153.0,
+        156.0
+      ]
+    },
+    {
+      "confidence": 0.5553,
+      "time_range": [
+        174.0,
+        177.0
+      ]
+    },
+    {
+      "confidence": 0.5158,
+      "time_range": [
+        219.0,
+        222.0
+      ]
+    },
+    {
+      "confidence": 0.1813,
+      "time_range": [
+        222.0,
+        225.0
+      ]
+    },
+    {
+      "confidence": 0.3979,
+      "time_range": [
+        234.0,
+        237.0
+      ]
+    },
+    {
+      "confidence": 0.6056,
+      "time_range": [
+        237.0,
+        240.0
+      ]
+    },
+    {
+      "confidence": 0.517,
+      "time_range": [
+        240.0,
+        243.0
+      ]
+    },
+    {
+      "confidence": 0.8728,
+      "time_range": [
+        255.0,
+        258.0
+      ]
+    },
+    {
+      "confidence": 0.5494,
+      "time_range": [
+        261.0,
+        264.0
+      ]
+    },
+    {
+      "confidence": 0.9565,
+      "time_range": [
+        264.0,
+        267.0
+      ]
+    },
+    {
+      "confidence": 0.6246,
+      "time_range": [
+        267.0,
+        270.0
+      ]
+    },
+    {
+      "confidence": 0.2312,
+      "time_range": [
+        270.0,
+        273.0
+      ]
+    },
+    {
+      "confidence": 0.4021,
+      "time_range": [
+        279.0,
+        282.0
+      ]
+    },
+    {
+      "confidence": 0.5131,
+      "time_range": [
+        282.0,
+        285.0
+      ]
+    },
+    {
+      "confidence": 0.7193,
+      "time_range": [
+        303.0,
+        306.0
+      ]
+    },
+    {
+      "confidence": 0.6154,
+      "time_range": [
+        306.0,
+        309.0
+      ]
+    },
+    {
+      "confidence": 0.3044,
+      "time_range": [
+        309.0,
+        312.0
+      ]
+    },
+    {
+      "confidence": 0.7029,
+      "time_range": [
+        312.0,
+        315.0
+      ]
+    },
+    {
+      "confidence": 0.9087,
+      "time_range": [
+        315.0,
+        318.0
+      ]
+    },
+    {
+      "confidence": 0.367,
+      "time_range": [
+        318.0,
+        321.0
+      ]
+    },
+    {
+      "confidence": 0.1178,
+      "time_range": [
+        321.0,
+        324.0
+      ]
+    },
+    {
+      "confidence": 0.1915,
+      "time_range": [
+        324.0,
+        327.0
+      ]
+    },
+    {
+      "confidence": 0.3585,
+      "time_range": [
+        327.0,
+        330.0
+      ]
+    },
+    {
+      "confidence": 0.6793,
+      "time_range": [
+        333.0,
+        336.0
+      ]
+    },
+    {
+      "confidence": 0.7822,
+      "time_range": [
+        348.0,
+        351.0
+      ]
+    },
+    {
+      "confidence": 0.8483,
+      "time_range": [
+        351.0,
+        354.0
+      ]
+    },
+    {
+      "confidence": 0.8417,
+      "time_range": [
+        354.0,
+        357.0
+      ]
+    },
+    {
+      "confidence": 0.7046,
+      "time_range": [
+        363.0,
+        366.0
+      ]
+    },
+    {
+      "confidence": 0.6708,
+      "time_range": [
+        366.0,
+        369.0
+      ]
+    },
+    {
+      "confidence": 0.1384,
+      "time_range": [
+        369.0,
+        372.0
+      ]
+    },
+    {
+      "confidence": 0.1995,
+      "time_range": [
+        372.0,
+        375.0
+      ]
+    },
+    {
+      "confidence": 0.1963,
+      "time_range": [
+        378.0,
+        381.0
+      ]
+    },
+    {
+      "confidence": 0.1236,
+      "time_range": [
+        384.0,
+        387.0
+      ]
+    },
+    {
+      "confidence": 0.7606,
+      "time_range": [
+        387.0,
+        390.0
+      ]
+    },
+    {
+      "confidence": 0.3035,
+      "time_range": [
+        390.0,
+        393.0
+      ]
+    },
+    {
+      "confidence": 0.5709,
+      "time_range": [
+        396.0,
+        399.0
+      ]
+    },
+    {
+      "confidence": 0.2134,
+      "time_range": [
+        405.0,
+        408.0
+      ]
+    },
+    {
+      "confidence": 0.4158,
+      "time_range": [
+        420.0,
+        423.0
+      ]
+    },
+    {
+      "confidence": 0.7056,
+      "time_range": [
+        426.0,
+        429.0
+      ]
+    },
+    {
+      "confidence": 0.53,
+      "time_range": [
+        429.0,
+        432.0
+      ]
+    },
+    {
+      "confidence": 0.4612,
+      "time_range": [
+        432.0,
+        435.0
+      ]
+    },
+    {
+      "confidence": 0.1047,
+      "time_range": [
+        447.0,
+        450.0
+      ]
+    },
+    {
+      "confidence": 0.4061,
+      "time_range": [
+        459.0,
+        462.0
+      ]
+    },
+    {
+      "confidence": 0.6588,
+      "time_range": [
+        474.0,
+        477.0
+      ]
+    },
+    {
+      "confidence": 0.5396,
+      "time_range": [
+        477.0,
+        480.0
+      ]
+    },
+    {
+      "confidence": 0.4616,
+      "time_range": [
+        480.0,
+        483.0
+      ]
+    },
+    {
+      "confidence": 0.1786,
+      "time_range": [
+        489.0,
+        492.0
+      ]
+    },
+    {
+      "confidence": 0.3554,
+      "time_range": [
+        492.0,
+        495.0
+      ]
+    },
+    {
+      "confidence": 0.1052,
+      "time_range": [
+        495.0,
+        498.0
+      ]
+    },
+    {
+      "confidence": 0.7386,
+      "time_range": [
+        498.0,
+        501.0
+      ]
+    },
+    {
+      "confidence": 0.9661,
+      "time_range": [
+        501.0,
+        504.0
+      ]
+    },
+    {
+      "confidence": 0.9726,
+      "time_range": [
+        504.0,
+        507.0
+      ]
+    },
+    {
+      "confidence": 0.3364,
+      "time_range": [
+        507.0,
+        510.0
+      ]
+    },
+    {
+      "confidence": 0.2504,
+      "time_range": [
+        510.0,
+        513.0
+      ]
+    },
+    {
+      "confidence": 0.6142,
+      "time_range": [
+        513.0,
+        516.0
+      ]
+    },
+    {
+      "confidence": 0.1577,
+      "time_range": [
+        516.0,
+        519.0
+      ]
+    },
+    {
+      "confidence": 0.4315,
+      "time_range": [
+        519.0,
+        522.0
+      ]
+    },
+    {
+      "confidence": 0.3836,
+      "time_range": [
+        525.0,
+        528.0
+      ]
+    },
+    {
+      "confidence": 0.3858,
+      "time_range": [
+        531.0,
+        534.0
+      ]
+    },
+    {
+      "confidence": 0.7123,
+      "time_range": [
+        552.0,
+        555.0
+      ]
+    },
+    {
+      "confidence": 0.9813,
+      "time_range": [
+        555.0,
+        558.0
+      ]
+    },
+    {
+      "confidence": 0.9763,
+      "time_range": [
+        561.0,
+        564.0
+      ]
+    },
+    {
+      "confidence": 0.2141,
+      "time_range": [
+        564.0,
+        567.0
+      ]
+    },
+    {
+      "confidence": 0.1279,
+      "time_range": [
+        567.0,
+        570.0
+      ]
+    },
+    {
+      "confidence": 0.122,
+      "time_range": [
+        576.0,
+        579.0
+      ]
+    },
+    {
+      "confidence": 0.3803,
+      "time_range": [
+        579.0,
+        582.0
+      ]
+    },
+    {
+      "confidence": 0.102,
+      "time_range": [
+        582.0,
+        585.0
+      ]
+    },
+    {
+      "confidence": 0.9456,
+      "time_range": [
+        588.0,
+        591.0
+      ]
+    },
+    {
+      "confidence": 0.1874,
+      "time_range": [
+        597.0,
+        600.0
+      ]
+    },
+    {
+      "confidence": 0.8998,
+      "time_range": [
+        603.0,
+        606.0
+      ]
+    },
+    {
+      "confidence": 0.1623,
+      "time_range": [
+        645.0,
+        648.0
+      ]
+    },
+    {
+      "confidence": 0.4604,
+      "time_range": [
+        648.0,
+        651.0
+      ]
+    },
+    {
+      "confidence": 0.1751,
+      "time_range": [
+        660.0,
+        663.0
+      ]
+    },
+    {
+      "confidence": 0.8129,
+      "time_range": [
+        663.0,
+        666.0
+      ]
+    },
+    {
+      "confidence": 0.6443,
+      "time_range": [
+        672.0,
+        675.0
+      ]
+    },
+    {
+      "confidence": 0.9139,
+      "time_range": [
+        681.0,
+        684.0
+      ]
+    },
+    {
+      "confidence": 0.5714,
+      "time_range": [
+        684.0,
+        687.0
+      ]
+    }
+  ],
+  "target_species_stats": {
+    "num_detections": 102,
+    "max_confidence": 0.9813,
+    "avg_confidence": 0.4956
+  },
+  "top_species": [
+    {
+      "species": "Brown-eared Bulbul",
+      "scientific_name": "Hypsipetes amaurotis",
+      "num_detections": 102,
+      "avg_confidence": 0.4956,
+      "max_confidence": 0.9813
+    },
+    {
+      "species": "Eurasian Siskin",
+      "scientific_name": "Spinus spinus",
+      "num_detections": 15,
+      "avg_confidence": 0.2893,
+      "max_confidence": 0.6395
+    },
+    {
+      "species": "Blue Rock-Thrush",
+      "scientific_name": "Monticola solitarius",
+      "num_detections": 3,
+      "avg_confidence": 0.2429,
+      "max_confidence": 0.3596
+    },
+    {
+      "species": "Rock Pigeon",
+      "scientific_name": "Columba livia",
+      "num_detections": 1,
+      "avg_confidence": 0.1325,
+      "max_confidence": 0.1325
+    },
+    {
+      "species": "Ashy Minivet",
+      "scientific_name": "Pericrocotus divaricatus",
+      "num_detections": 1,
+      "avg_confidence": 0.1171,
+      "max_confidence": 0.1171
+    }
+  ],
+  "all_species_ranked": [
+    {
+      "species": "Brown-eared Bulbul",
+      "scientific_name": "Hypsipetes amaurotis",
+      "num_detections": 102,
+      "avg_confidence": 0.4956,
+      "max_confidence": 0.9813
+    },
+    {
+      "species": "Eurasian Siskin",
+      "scientific_name": "Spinus spinus",
+      "num_detections": 15,
+      "avg_confidence": 0.2893,
+      "max_confidence": 0.6395
+    },
+    {
+      "species": "Blue Rock-Thrush",
+      "scientific_name": "Monticola solitarius",
+      "num_detections": 3,
+      "avg_confidence": 0.2429,
+      "max_confidence": 0.3596
+    },
+    {
+      "species": "Rock Pigeon",
+      "scientific_name": "Columba livia",
+      "num_detections": 1,
+      "avg_confidence": 0.1325,
+      "max_confidence": 0.1325
+    },
+    {
+      "species": "Ashy Minivet",
+      "scientific_name": "Pericrocotus divaricatus",
+      "num_detections": 1,
+      "avg_confidence": 0.1171,
+      "max_confidence": 0.1171
+    }
+  ],
+  "analysis_elapsed_sec": 8.4
+}

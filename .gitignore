@@ -12,6 +12,7 @@ __pycache__/
 # Data — raw media is not committed; JSON metadata and labels are.
 data/raw/
 data/raw/birdnet_baseline/
+data/raw/birdnet_japan/
 data/balcony/
 data/xeno_canto/
 data/youtube_streams/
