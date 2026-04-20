@@ -215,6 +215,39 @@ Paper 1 の下書きに必要な統計的根拠が揃った。詳細は
    - Routing: sparrow → C_v3 70%, bulbul → C_v3 56% + A 34%
    - commit: `bfd840d`
 
+### Stage 3 Ablation Study [完了 — 最高優先度 2 実験]
+
+Target C の 4 要素 (2 変数の存在、異なる更新信号、乗算統合、per-label routing) の
+うち、どれが "novel contribution" かを切り分けた。
+
+| 実験 | Weight 学習 | Gate 学習 | Gate 信号 | bootstrap d (n=220) | Go |
+|---|---|---|---|---:|:---:|
+| Exp 5b extended | Yes (GT) | — | — | +2.041 | ✓ |
+| **Ablation 1** — gate only | **No (frozen 0.5)** | Yes | consensus | **+2.217** | ✓ |
+| **Ablation 5** — GT gate | Yes (GT) | Yes | **ground truth** | **+2.042** | ✓ |
+| Target C | Yes (GT) | Yes | consensus | **+4.014** | ✓ |
+
+**結論**:
+- **Ablation 1 ≈ Exp 5b** → gate と weight は独立かつ同等寄与
+- **Ablation 5 collapses** → consensus signal が load-bearing novelty
+- **Target C ≈ Ablation 1 + Exp 5b** → 加法的に結合
+
+Paper 1 Chapter 5 の novelty 主張は「gate の consensus-agreement 更新信号」に
+焦点化。乗算 `w × g` は信号 decorrelation があって初めて機能する
+engineering choice と位置付け。
+
+commits: `49d4273` (Ablation 1), `49615c4` (Ablation 5), `38933b1` (summary)
+
+### 残りの Ablation (optional)
+
+Target C の効果は既に consensus signal に帰属されたため、以下は
+Paper 1 の submission blocker ではない。追加検証が必要になった場合のみ実施。
+
+- **Ablation 3**: Per-label gate を shared gate に縮約 (routing の label 依存性を検証)
+- **Ablation 6**: Gate update rule の asymmetry を対称化 (success/failure 係数を揃える)
+- **Ablation 7**: Gate の初期値変動 (0.3 / 0.7 start でロバストネス確認)
+- **Ablation 8**: Topology subset (A+B_v3 のみ、C_v3 なしでの consensus signal 効果)
+
 ### 発見したアーキテクチャ境界
 
 **sdnd-proof `flow_weight` ルールは "LLM の外" では転移、"LLM の中" では破綻する。**
@@ -394,14 +427,18 @@ Paper 1 の submission blocker ではない。Paper 2 以降で再検討。
 | d2fc14e | Phase 1.4d Stage 2 Exp 2 extended (n=220 artefact reveal) |
 | 2db9ca2 | Phase 1.4d Stage 1 Exp 5b extended (n=220 Positive Go weak) |
 | bfd840d | Phase 1.4d Stage 3 Target C (gate learning, Positive Go strong) |
+| 49d4273 | Phase 1.4d Stage 3 Ablation 1 (gate only, Weight fixed) |
+| 49615c4 | Phase 1.4d Stage 3 Ablation 5 (GT-based gate) |
+| 38933b1 | Phase 1.4d Stage 3 ablation summary (4 実験比較) |
 
 ---
 
 ## 次のマイルストーン
 
-### Paper 1 drafting (現在のフォーカス)
-- [ ] `docs/PAPER1_OUTLINE.md` を元に第一稿執筆
-- [ ] 4 figures の作成 (architecture boundary table, Cohen's d vs n, routing share, Δ-sign stacked)
+### Paper 1 first draft (確定フォーカス)
+- [ ] `docs/PAPER1_OUTLINE.md` Chapter 5 (ablation 結果反映済み) を元に第一稿執筆
+- [ ] Chapter 5 の novelty claim を consensus-agreement signal に絞る
+- [ ] 5 figures の作成 (architecture boundary table, Cohen's d vs n, routing share, Δ-sign stacked, Chapter 5 ablation bar chart)
 - [ ] Robosheep 内部レビュー → Grok / ChatGPT / 人間 (判定者 III round 3)
 - [ ] 投稿先最終決定 (workshop / short-paper track)
 
@@ -435,4 +472,4 @@ Paper 1 の submission blocker ではない。Paper 2 以降で再検討。
 
 ---
 
-**Last Updated**: 2026-04-20 (Phase 1.4d 完了、Paper 1 drafting ready、アーキテクチャ境界の発見)
+**Last Updated**: 2026-04-20 (Phase 1.4d Stage 3 Ablation 1/5 完了、consensus-agreement signal が load-bearing novelty と確定、Paper 1 first draft フェーズへ)

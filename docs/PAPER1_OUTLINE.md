@@ -33,6 +33,12 @@ philosophy). Length target: 8–12 pages.
   (n=5 trial t-test) was re-audited at n=220 paired fold bootstrap.
   One positive result dissolved; one survived and strengthened. The
   paper names this re-audit as a standing requirement.
+- Ablation: two minimal edits to Target C's update rule (gate only
+  with frozen weight; gate fed ground truth instead of consensus)
+  localise the +4.014 effect to the **consensus-agreement reward on
+  the gate**, not to the multiplicative `w × g` arithmetic. The
+  multiplicative form pays off only when the two variables encode
+  different signals.
 
 ## Chapter 1 — The architecture boundary
 
@@ -86,7 +92,9 @@ philosophy). Length target: 8–12 pages.
   engineered to remove the sparrow/bulbul split) — weight learning
   recovers the engineering effect.
 
-## Chapter 5 — Positive Go strong: gate routing
+## Chapter 5 — Positive Go strong: gate routing (and what in it is novel)
+
+### 5.1 Target C — the gold-standard positive Go
 
 - Experiment: Stage 3 Target C (commit `bfd840d`).
 - Protocol: on top of the 6 weights, add 6 gates — one per topology
@@ -101,9 +109,85 @@ philosophy). Length target: 8–12 pages.
   - `sparrow` ends up 70% on `C_v3` (the audio-aware fusion topology)
   - `bulbul` splits 56% on `C_v3` and 34% on `A` (audio-only) — the
     BirdNET bulbul signal is strong enough to deserve its own route.
-- Take-away: adding an explicit routing gate on top of the weight
-  nearly doubles Cohen's d (+2.041 → +4.014) by driving positive
-  trials from 4/20 to 10/20. The ensemble *learns to specialise*.
+- Take-away: adding the routing gate on top of the weight nearly
+  doubles Cohen's d (+2.041 → +4.014) and drives positive trials
+  from 4/20 to 10/20. The ensemble *learns to specialise*.
+
+### 5.2 Ablation study — isolating the novel component
+
+Target C stacks four design elements (second online variable, distinct
+update signal, multiplicative integration, per-label routing). Two
+ablations — each a minimal edit to Target C's `run_trial` — isolate
+where the effect actually lives. Every cell below uses the same 20
+seeds, 11-fold eval, and n=220 paired-fold bootstrap as Target C.
+
+| experiment | Weight learned | Gate learned | Gate signal | Integration | bootstrap d (n=220) | 95% CI | bootstrap p | Go |
+|---|---|---|---|---|---:|:---:|---:|:---:|
+| Exp 5b extended | Yes (label-spec, GT) | — | — | additive `Σw · pred / Σw` | +2.041 | [+0.003, +0.026] | 0.0001 | ✓ |
+| Ablation 1 — gate only | **No (frozen 0.5)** | Yes | consensus | multiplicative | **+2.217** | [+0.004, +0.044] | 0.0174 | ✓ |
+| Ablation 5 — GT gate | Yes (label-spec, GT) | Yes | **ground truth** | multiplicative | **+2.042** | [+0.001, +0.042] | 0.0350 | ✓ |
+| Target C | Yes (label-spec, GT) | Yes | consensus | multiplicative | **+4.014** | [+0.024, +0.067] | 0.0001 | ✓ |
+
+Commits: Ablation 1 = `49d4273`, Ablation 5 = `49615c4`, ablation
+summary = `38933b1` (consolidated table in
+`results/phase1_4d/stage3_ablation_summary.md`).
+
+Three findings come out of that table.
+
+**Finding 1 — the gate contributes independently (Ablation 1 ≈ Exp
+5b).** Freezing the weight at 0.5 and letting the consensus-agreement
+gate learn alone reproduces essentially the same d as letting the GT-
+driven weight learn alone (+2.217 vs +2.041, difference well inside
+either CI). The two mechanisms are on the same performance tier when
+applied singly. This rules out any "gate is weaker / a sharpener" or
+"synergy is essential" reading.
+
+**Finding 2 — the consensus signal is the essential novelty (Ablation
+5 collapses).** Keeping the gate but swapping its update signal from
+consensus-agreement to ground truth (the same signal the weight
+already uses) drops bootstrap d from +4.014 to +2.042 — exactly the
+Exp 5b extended level. With matched init and matched signal the gate
+trajectory collapses onto the weight, and the multiplicative `w × g`
+integration degenerates to `w² · pred / Σw²`. So the gate only adds
+information when its reward source *differs* from the weight's.
+
+**Finding 3 — near-additive combination (Target C ≈ sum of parts).**
+Target C's d = +4.014 is close to the arithmetic sum of the two
+single-mechanism d-values (+2.217 + +2.041 ≈ +4.258). Nothing in the
+data demands a super-additive interaction; the two differently-
+informed variables appear to capture complementary dimensions of the
+signal and combine roughly additively under `w × g`.
+
+### 5.3 Interpretation — what Paper 1 claims as novel
+
+The ablations let the paper make a precise novelty claim instead of
+crediting the whole Target C stack equally:
+
+- **Weight = ground-truth agreement.** "This topology is accurate."
+  This is the Exp 5b contribution and is already in the literature
+  (sdnd-proof `flow_weight`, applied per-label).
+- **Gate = consensus agreement.** "This topology follows the current
+  majority." This is the load-bearing novelty. Ablation 5 shows that
+  removing this signal sends Target C back to Exp 5b's level;
+  Ablation 1 shows the signal alone is strong enough to clear the
+  3-criterion Go gate without a GT-driven weight at all.
+- **Multiplicative `w × g` = engineering choice.** Ablation 5 is the
+  cleanest demonstration that multiplicative integration, taken by
+  itself with matched signals, does not beat the additive Exp 5b
+  pipeline. It only becomes valuable as a *carrier* for two
+  differently-informed variables — i.e. it pays off only with signal
+  decorrelation.
+- **Per-label routing = inherited.** Already isolated in Stage 1; not
+  re-claimed in Chapter 5.
+
+Recommended paper framing: "Target C introduces a second online
+variable that shares the sdnd-proof asymmetric update rule with the
+weight but is fed a different correctness signal — agreement with the
+ensemble's own decision rather than with ground truth. Ablation 5
+shows this signal split is the reason the gate adds information on
+top of the weight; Ablation 1 shows the signal alone recovers Exp 5b's
+accuracy lift; and the two effects combine approximately additively
+to nearly double Cohen's d."
 
 ## Chapter 6 — Methodological contribution: re-audit at n=220
 
@@ -133,6 +217,11 @@ philosophy). Length target: 8–12 pages.
   effect size. Paper 1's strongest positive is built from three
   layers: ensemble voting (substrate), label-specific weights
   (direction), and explicit gates (routing).
+- Ablation localises the extra effect to the **gate's
+  consensus-agreement update signal** — not the multiplicative
+  `w × g` integration, which by itself matches the additive weight-
+  only baseline. The novel idea to defend in Chapter 5 is the signal
+  split, not the arithmetic.
 - Phase 1.4d's most portable contribution is procedural: pair every
   small-n result with an n=220 bootstrap before believing it.
 
@@ -147,6 +236,10 @@ philosophy). Length target: 8–12 pages.
 4. **Δ-sign distribution** — stacked bar of positive / zero /
    negative trials across Stage 2 Exp 2 extended, Stage 1 Exp 5b
    extended, Stage 3 Target C.
+5. **Chapter 5 ablation bar chart** — 4-bar Cohen's d chart (Exp 5b
+   extended, Ablation 1, Ablation 5, Target C) with the Go threshold
+   line. Source:
+   `results/phase1_4d/stage3_ablation_5_gt_based_gate/graphs/cohens_d_comparison.png`.
 
 ## Supplementary / reproduction
 

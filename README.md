@@ -53,6 +53,16 @@ YouTube clips) and pass / fail the sdnd-proof 3-criterion gate
    bootstrap d = **+4.014**, p = 0.0001, CI **[+0.024, +0.067]**.
    All three criteria pass on both trial and fold-level analyses —
    Phase 1.4d's gold-standard Go.
+   Two ablations localise the extra effect: freezing the weight at
+   0.5 leaves the gate alone at d = **+2.217** (matches Exp 5b's
+   weight-alone d = +2.041); swapping the gate's update signal from
+   consensus to ground truth collapses d back to **+2.042** (Exp 5b
+   level). The novel mechanism is the **gate's consensus-agreement
+   update signal** — rewarding topologies that match the emerging
+   majority. The multiplicative `w × g` arithmetic only pays off when
+   the two factors encode *different* signals.
+   Commits: Ablation 1 `49d4273`, Ablation 5 `49615c4`, summary
+   `38933b1` (`results/phase1_4d/stage3_ablation_summary.md`).
 
 ## Architecture boundary discovered
 
@@ -68,6 +78,10 @@ transfers and where it does not:
   predictions transfer cleanly, and adding an explicit gate on top
   nearly **doubles Cohen's d** (+2.041 → +4.014) while driving
   positive trials from 4/20 to 10/20.
+- **Source of the extra +2.0 in Target C**: the ablation isolates it
+  to the gate's **consensus-agreement update signal**, not the
+  multiplicative integration. A second online variable helps only
+  when its reward source is decorrelated from the weight's.
 
 Put bluntly: sdnd-proof `flow_weight` learning should be **applied
 outside the LLM** (as a mixing layer over heterogeneous topologies),
@@ -168,6 +182,12 @@ claims. Representative entry points:
 
 # Stage 3 Target C (gold-standard positive Go)
 .venv/Scripts/python.exe src/phase1_4d/stage3_target_c_gate_learning.py
+
+# Stage 3 Ablation 1 (gate only, weight frozen at 0.5)
+.venv/Scripts/python.exe src/phase1_4d/stage3_ablation_1_gate_only.py
+
+# Stage 3 Ablation 5 (both weight and gate updated against ground truth)
+.venv/Scripts/python.exe src/phase1_4d/stage3_ablation_5_gt_based_gate.py
 ```
 
 Each script writes `summary.md`, a `*_analysis.json`, and figures

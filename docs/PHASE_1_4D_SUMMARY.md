@@ -181,6 +181,42 @@ These are exactly the per-label strengths the project measured
 upstream (Phase 1.3 BirdNET sensitivity check, Phase 1.4a bbox prompt
 v3). The learning rule re-derived them online.
 
+### Target C ablation study (commits `49d4273`, `49615c4`, `38933b1`)
+
+Target C stacks four design elements (second online variable,
+distinct update signal, multiplicative integration, per-label
+routing). Two ablations — each a minimal edit to Target C's update
+rule — localise which of those is load-bearing. Same 20 seeds, same
+11-fold eval, same n=220 paired-fold bootstrap.
+
+| experiment | Weight learned | Gate learned | Gate signal | Integration | bootstrap d (n=220) | 95% CI | bootstrap p | Go |
+|---|---|---|---|---|---:|:---:|---:|:---:|
+| Exp 5b extended | Yes (GT) | — | — | additive | +2.041 | [+0.003, +0.026] | 0.0001 | ✓ |
+| **Ablation 1** — gate only | **No (frozen 0.5)** | Yes | consensus | multiplicative | **+2.217** | [+0.004, +0.044] | 0.0174 | ✓ |
+| **Ablation 5** — GT gate | Yes (GT) | Yes | **ground truth** | multiplicative | **+2.042** | [+0.001, +0.042] | 0.0350 | ✓ |
+| Target C | Yes (GT) | Yes | consensus | multiplicative | **+4.014** | [+0.024, +0.067] | 0.0001 | ✓ |
+
+Three findings:
+
+1. **Gate contributes independently** — Ablation 1 (d=+2.217) ≈
+   Exp 5b extended (d=+2.041). Gate alone and weight alone sit on the
+   same tier.
+2. **Consensus signal is the essential novelty** — Ablation 5
+   (d=+2.042) collapses to the Exp 5b extended level when the gate
+   is fed ground truth instead of consensus. With matched signals the
+   gate trajectory collapses onto the weight and `w × g` degenerates
+   to `w² · pred`.
+3. **Near-additive combination** — Target C (+4.014) ≈ Ablation 1
+   (+2.217) + Exp 5b extended (+2.041). Two differently-informed
+   variables carry complementary signal dimensions.
+
+Load-bearing novelty for Paper 1 Chapter 5: the **gate's
+consensus-agreement update rule** (reward topologies that agree with
+the emerging majority). Multiplicative `w × g` integration is an
+engineering choice that only pays off when its two factors encode
+different signals. See `results/phase1_4d/stage3_ablation_summary.md`
+for the full write-up.
+
 ---
 
 ## Big picture — the architecture boundary
